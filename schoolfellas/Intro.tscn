@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5ynvntn3xdsq"]
+
+[ext_resource type="Texture2D" uid="uid://cxq6dctc087gq" path="res://Asset/LED-Black-screen-3.jpg" id="1_gla8q"]
+[ext_resource type="PackedScene" uid="uid://dg0ddh1js6hbq" path="res://Character/player.tscn" id="2_ho6sj"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
+
+[node name="Led-black-screen-3" type="Sprite2D" parent="."]
+position = Vector2(578.5, 324.5)
+scale = Vector2(1.35176, 1.34937)
+texture = ExtResource("1_gla8q")
+
+[node name="Player" parent="." instance=ExtResource("2_ho6sj")]
+position = Vector2(-33, -8)
