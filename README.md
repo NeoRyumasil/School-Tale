@@ -1,2 +1,2 @@
-# SchoolFellas
-School Fellas untuk Game Jam Suara Gama
+# School Tale
+Sebuah game dengan tema inklusivitas untuk Game Jam Suara Gama
