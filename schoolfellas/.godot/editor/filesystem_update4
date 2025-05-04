@@ -1,0 +1,5 @@
+res://Intro.tscn
+res://Character/player.tscn
+res://Script/playerMovement.gd
+res://Character/pak_heri.tscn
+res://Character/andi.tscn

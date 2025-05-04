@@ -1,11 +1,25 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1746345777
-Intro.tscn::PackedScene::6928879277986396888::1746345730::0::1::::<><>::uid://cxq6dctc087gq::::res://Asset/LED-Black-screen-3.jpg<>uid://dg0ddh1js6hbq::::res://Character/player.tscn
+::res://::1746350360
+Intro.tscn::PackedScene::6928879277986396888::1746350360::0::1::::<><>::uid://cxq6dctc087gq::::res://Asset/LED-Black-screen-3.jpg<>uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://dg0ddh1js6hbq::::res://Character/player.tscn
 ::res://Asset/::1746345847
 LED-Black-screen-3.jpg::CompressedTexture2D::6422102533806976116::1746345730::1746345780::1::::<><>::
-::res://Asset/CharacterSprite/::1746345832
-::res://Asset/ObjectSprite/::1746345841
-::res://Asset/TileSet/::1746345916
+::res://Asset/CharacterSprite/::1746351014
+Andi.png::CompressedTexture2D::5852841059218961130::1746350989::1746351017::1::::<><>::
+Pak Heri.png::CompressedTexture2D::3178402545243078275::1746350989::1746351017::1::::<><>::
+Raka.png::CompressedTexture2D::5805692006807898949::1746350989::1746351017::1::::<><>::
+::res://Asset/ObjectSprite/::1746350809
+BangkuMeja Kelas.png::CompressedTexture2D::8631541901561577547::1746350642::1746350809::1::::<><>::
+Meja Guru.png::CompressedTexture2D::7049787949296819658::1746350642::1746350809::1::::<><>::
+Mobil Biru.png::CompressedTexture2D::5560407276635770671::1746350491::1746350809::1::::<><>::
+Mobil Hijau.png::CompressedTexture2D::7216622046905951350::1746350491::1746350809::1::::<><>::
+Mobil Kuning.png::CompressedTexture2D::2039376914199389201::1746350491::1746350809::1::::<><>::
+Mobil Merah.png::CompressedTexture2D::1001612952488065631::1746350491::1746350809::1::::<><>::
+Mobil Putih.png::CompressedTexture2D::1187562659895065338::1746350491::1746350809::1::::<><>::
+Papan Tulis.png::CompressedTexture2D::6931677760629266954::1746350642::1746350809::1::::<><>::
+Tempat Sampah Besar.png::CompressedTexture2D::5269489320168167799::1746350642::1746350809::1::::<><>::
+Tempat Sampah Kecil (Depan).png::CompressedTexture2D::6920645280285863064::1746350642::1746350809::1::::<><>::
+Tempat Sampah Kecil.png::CompressedTexture2D::6356116421145334118::1746350642::1746350809::1::::<><>::
+::res://Asset/TileSet/::1746345920
 EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png::CompressedTexture2D::3129777422490717572::1746345896::1746345920::1::::<><>::
 ::res://Character/::1746345780
 icon.svg::CompressedTexture2D::3214667454421332020::1746345730::1746345780::1::::<><>::

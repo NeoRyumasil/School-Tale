@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://bidupqssu2o52"]
+
+[ext_resource type="Texture2D" uid="uid://bljv3cln3auid" path="res://Asset/CharacterSprite/Pak Heri.png" id="1_3he3i"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wc6ia"]
+atlas = ExtResource("1_3he3i")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kijsi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wc6ia")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s5h48"]
+size = Vector2(15.0578, 19.6289)
+
+[node name="PakHeri" type="CharacterBody2D"]
+position = Vector2(74, 24)
+
+[node name="Animation" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(423, 304)
+scale = Vector2(3.719, 3.719)
+sprite_frames = SubResource("SpriteFrames_kijsi")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(435, 307.5)
+scale = Vector2(3.719, 3.719)
+shape = SubResource("RectangleShape2D_s5h48")
