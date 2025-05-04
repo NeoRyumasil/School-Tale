@@ -7,3 +7,6 @@ res://Object/tempat_sampah_besar.tscn
 res://Object/tempat_sampah_kecil_depan.tscn
 res://Object/tempat_sampah_kecil_samping.tscn
 res://Object/mobil_merah.tscn
+res://lorong.tscn
+res://Object/loker.tscn
+res://cameraLorong.gd

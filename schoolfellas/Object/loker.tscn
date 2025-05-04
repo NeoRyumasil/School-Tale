@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bj3nl1bygp06t"]
+
+[ext_resource type="Texture2D" uid="uid://nld2qn7mvjhq" path="res://Asset/ObjectSprite/Loker.png" id="1_1238g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_doxjr"]
+size = Vector2(22, 128.5)
+
+[node name="Loker" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_1238g")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.75)
+shape = SubResource("RectangleShape2D_doxjr")
