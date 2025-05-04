@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://buywt0vlicdeh" path="res://Object/tempat_sampah_kecil_samping.tscn" id="8_xkjrx"]
 [ext_resource type="Script" path="res://cameraLorong.gd" id="9_86cy0"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rsjpa"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6qkpt"]
 texture = ExtResource("2_8ppso")
 35:5/0 = 0
 36:5/0 = 0
@@ -4085,9 +4085,9 @@ texture = ExtResource("2_8ppso")
 
 [sub_resource type="TileSet" id="TileSet_m8oy2"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_rsjpa")
+sources/0 = SubResource("TileSetAtlasSource_6qkpt")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bbywj"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rqcqn"]
 texture = ExtResource("3_oqsop")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -4265,9 +4265,9 @@ texture = ExtResource("3_oqsop")
 
 [sub_resource type="TileSet" id="TileSet_cjsly"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_bbywj")
+sources/0 = SubResource("TileSetAtlasSource_rqcqn")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o7gr0"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0ncm7"]
 texture = ExtResource("4_sdy73")
 1:0/0 = 0
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -4477,7 +4477,7 @@ texture = ExtResource("4_sdy73")
 
 [sub_resource type="TileSet" id="TileSet_oovrq"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_o7gr0")
+sources/0 = SubResource("TileSetAtlasSource_0ncm7")
 
 [node name="Lorong" type="Node2D"]
 

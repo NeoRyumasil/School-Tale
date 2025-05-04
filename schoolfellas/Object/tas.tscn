@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpidheki4q8sw"]
+
+[ext_resource type="Texture2D" uid="uid://b5kecuid4sp55" path="res://Asset/ObjectSprite/Tas.png" id="1_l4k55"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jb454"]
+size = Vector2(40, 48)
+
+[node name="Tas" type="Area2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("1_l4k55")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(-4, 0)
+shape = SubResource("RectangleShape2D_jb454")
