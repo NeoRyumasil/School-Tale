@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bp8m25m3wt57x"]
+
+[ext_resource type="Texture2D" uid="uid://q6i8o6u813de" path="res://Asset/ObjectSprite/Mobil Putih.png" id="1_v0gip"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q57uq"]
+size = Vector2(42, 77)
+
+[node name="MobilPutih" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_v0gip")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_q57uq")

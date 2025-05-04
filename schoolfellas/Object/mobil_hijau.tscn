@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cviihflifib1j"]
+
+[ext_resource type="Texture2D" uid="uid://da21yfvl75l3c" path="res://Asset/ObjectSprite/Mobil Hijau.png" id="1_g3jgf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yk8bn"]
+size = Vector2(40, 75)
+
+[node name="MobilHijau" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_g3jgf")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_yk8bn")

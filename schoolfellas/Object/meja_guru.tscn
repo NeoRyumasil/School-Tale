@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1fn1a7v5v46w"]
+
+[ext_resource type="Texture2D" uid="uid://c7o78ibfh6ape" path="res://Asset/ObjectSprite/Meja Guru.png" id="1_h47rj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p80do"]
+size = Vector2(56.5, 23)
+
+[node name="MejaGuru" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_h47rj")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(-0.25, -5)
+shape = SubResource("RectangleShape2D_p80do")

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bb3ry6pursk8d"]
+
+[ext_resource type="Texture2D" uid="uid://chctypojdw3h0" path="res://Asset/ObjectSprite/Tempat Sampah Besar.png" id="1_al5yh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_om2j3"]
+size = Vector2(49, 21)
+
+[node name="TempatSampahBesar" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_al5yh")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(-2.5, -17.5)
+shape = SubResource("RectangleShape2D_om2j3")

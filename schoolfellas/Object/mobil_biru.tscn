@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cn53so5eabh7"]
+
+[ext_resource type="Texture2D" uid="uid://clhrdil8lioix" path="res://Asset/ObjectSprite/Mobil Biru.png" id="1_q8qf0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cc8of"]
+size = Vector2(40, 75)
+
+[node name="MobilBiru" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_q8qf0")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_cc8of")

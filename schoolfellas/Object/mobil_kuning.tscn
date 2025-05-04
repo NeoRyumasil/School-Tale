@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccwr58lebqsxr"]
+
+[ext_resource type="Texture2D" uid="uid://4b5ifh5lalm4" path="res://Asset/ObjectSprite/Mobil Kuning.png" id="1_qec3b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dcap2"]
+size = Vector2(42, 77)
+
+[node name="MobilKuning" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_qec3b")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_dcap2")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://3n0hoq53um48"]
+
+[ext_resource type="Texture2D" uid="uid://c500yqkmieakw" path="res://Asset/ObjectSprite/Papan Tulis.png" id="1_obiyb"]
+
+[node name="PapanTulis" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_obiyb")
