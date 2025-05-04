@@ -126,6 +126,3 @@ animation = &"JalanKanan"
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2(623.5, 320.5)
 shape = SubResource("RectangleShape2D_uqb6p")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(606, 326)

@@ -1,9 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1746350360
-Intro.tscn::PackedScene::6928879277986396888::1746350360::0::1::::<><>::uid://cxq6dctc087gq::::res://Asset/LED-Black-screen-3.jpg<>uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://dg0ddh1js6hbq::::res://Character/player.tscn
+::res://::1746361668
+Intro.tscn::PackedScene::6928879277986396888::1746355440::0::1::::<><>::uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>uid://bidupqssu2o52::::res://Character/pak_heri.tscn<>uid://dpyiwsxo2ngmb::::res://Character/andi.tscn
 ::res://Asset/::1746345847
 LED-Black-screen-3.jpg::CompressedTexture2D::6422102533806976116::1746345730::1746345780::1::::<><>::
-::res://Asset/CharacterSprite/::1746351014
+::res://Asset/CharacterSprite/::1746351017
 Andi.png::CompressedTexture2D::5852841059218961130::1746350989::1746351017::1::::<><>::
 Pak Heri.png::CompressedTexture2D::3178402545243078275::1746350989::1746351017::1::::<><>::
 Raka.png::CompressedTexture2D::5805692006807898949::1746350989::1746351017::1::::<><>::
@@ -21,8 +21,24 @@ Tempat Sampah Kecil (Depan).png::CompressedTexture2D::6920645280285863064::17463
 Tempat Sampah Kecil.png::CompressedTexture2D::6356116421145334118::1746350642::1746350809::1::::<><>::
 ::res://Asset/TileSet/::1746345920
 EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png::CompressedTexture2D::3129777422490717572::1746345896::1746345920::1::::<><>::
-::res://Character/::1746345780
+::res://Character/::1746355440
 icon.svg::CompressedTexture2D::3214667454421332020::1746345730::1746345780::1::::<><>::
-player.tscn::PackedScene::7632192473381571206::1746345730::0::1::::<><>::res://Script/playerMovement.gd<>uid://bl2hdrok5nj1u::::res://Character/icon.svg
-::res://Script/::1746345730
-playerMovement.gd::GDScript::-1::1746345730::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::7632192473381571206::1746355440::0::1::::<><>::res://Script/playerMovement.gd<>uid://coyk5tnnwvbvp::::res://Asset/CharacterSprite/Raka.png
+pak_heri.tscn::PackedScene::2955366561849166759::1746355440::0::1::::<><>::uid://bljv3cln3auid::::res://Asset/CharacterSprite/Pak Heri.png
+andi.tscn::PackedScene::8262165776778762441::1746355440::0::1::::<><>::uid://cpnfo4lev5hrm::::res://Asset/CharacterSprite/Andi.png
+::res://Designs/::1746361678
+Desain Map.png::CompressedTexture2D::7195175627196581676::1746361678::1746361692::1::::<><>::
+::res://Object/::1746361100
+bangku_meja_kelas.tscn::PackedScene::1647783431290660068::1746360207::0::1::::<><>::uid://du8gh7sq7h26j::::res://Asset/ObjectSprite/BangkuMeja Kelas.png
+meja_guru.tscn::PackedScene::4222488309028568528::1746360287::0::1::::<><>::uid://c7o78ibfh6ape::::res://Asset/ObjectSprite/Meja Guru.png
+mobil_biru.tscn::PackedScene::169087078507146770::1746360404::0::1::::<><>::uid://clhrdil8lioix::::res://Asset/ObjectSprite/Mobil Biru.png
+mobil_hijau.tscn::PackedScene::6263820622296907217::1746360491::0::1::::<><>::uid://da21yfvl75l3c::::res://Asset/ObjectSprite/Mobil Hijau.png
+mobil_kuning.tscn::PackedScene::4959722878392890551::1746360593::0::1::::<><>::uid://4b5ifh5lalm4::::res://Asset/ObjectSprite/Mobil Kuning.png
+mobil_merah.tscn::PackedScene::7843787675597039860::1746360686::0::1::::<><>::uid://ojgoil8oca12::::res://Asset/ObjectSprite/Mobil Merah.png
+mobil_putih.tscn::PackedScene::3508156220036720327::1746360766::0::1::::<><>::uid://q6i8o6u813de::::res://Asset/ObjectSprite/Mobil Putih.png
+papan_tulis.tscn::PackedScene::1993655719489233483::1746360812::0::1::::<><>::uid://c500yqkmieakw::::res://Asset/ObjectSprite/Papan Tulis.png
+tempat_sampah_kecil_samping.tscn::PackedScene::3841113672511447499::1746361100::0::1::::<><>::uid://cws7kq8x8m4vy::::res://Asset/ObjectSprite/Tempat Sampah Kecil.png
+tempat_sampah_kecil_depan.tscn::PackedScene::697789069340722740::1746361027::0::1::::<><>::uid://c5uoatikqx56k::::res://Asset/ObjectSprite/Tempat Sampah Kecil (Depan).png
+tempat_sampah_besar.tscn::PackedScene::2515488804703621613::1746360917::0::1::::<><>::uid://chctypojdw3h0::::res://Asset/ObjectSprite/Tempat Sampah Besar.png
+::res://Script/::1746353038
+playerMovement.gd::GDScript::-1::1746353038::0::1::::<>CharacterBody2D<>::
