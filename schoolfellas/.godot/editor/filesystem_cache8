@@ -1,0 +1,14 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1746345777
+Intro.tscn::PackedScene::6928879277986396888::1746345730::0::1::::<><>::uid://cxq6dctc087gq::::res://Asset/LED-Black-screen-3.jpg<>uid://dg0ddh1js6hbq::::res://Character/player.tscn
+::res://Asset/::1746345847
+LED-Black-screen-3.jpg::CompressedTexture2D::6422102533806976116::1746345730::1746345780::1::::<><>::
+::res://Asset/CharacterSprite/::1746345832
+::res://Asset/ObjectSprite/::1746345841
+::res://Asset/TileSet/::1746345916
+EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png::CompressedTexture2D::3129777422490717572::1746345896::1746345920::1::::<><>::
+::res://Character/::1746345780
+icon.svg::CompressedTexture2D::3214667454421332020::1746345730::1746345780::1::::<><>::
+player.tscn::PackedScene::7632192473381571206::1746345730::0::1::::<><>::res://Script/playerMovement.gd<>uid://bl2hdrok5nj1u::::res://Character/icon.svg
+::res://Script/::1746345730
+playerMovement.gd::GDScript::-1::1746345730::0::1::::<>CharacterBody2D<>::
