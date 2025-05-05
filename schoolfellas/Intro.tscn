@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://c5ynvntn3xdsq"]
+[gd_scene load_steps=16 format=3 uid="uid://c5ynvntn3xdsq"]
 
 [ext_resource type="Texture2D" uid="uid://bkuc8hjm41jwu" path="res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png" id="1_wcc6y"]
 [ext_resource type="Texture2D" uid="uid://darnqyac33x8o" path="res://Designs/Desain Map.png" id="2_4pm3h"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://bp8m25m3wt57x" path="res://Object/mobil_putih.tscn" id="6_ryvcy"]
 [ext_resource type="PackedScene" uid="uid://cn53so5eabh7" path="res://Object/mobil_biru.tscn" id="8_0sj33"]
 [ext_resource type="PackedScene" uid="uid://bb3ry6pursk8d" path="res://Object/tempat_sampah_besar.tscn" id="8_57bjm"]
+[ext_resource type="Script" path="res://Script/scene_trigger_parkiran.gd" id="11_0iotl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_to4wa"]
 texture = ExtResource("1_wcc6y")
@@ -4088,6 +4089,11 @@ texture = ExtResource("1_wcc6y")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_to4wa")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q5mn1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n72e1"]
+size = Vector2(396, 139)
+
 [node name="MapParkiran" type="Node2D"]
 
 [node name="TileMaps" type="Node2D" parent="."]
@@ -4153,3 +4159,20 @@ scale = Vector2(3.719, 3.719)
 
 [node name="TempatSampahBesar2" parent="Objects" instance=ExtResource("8_57bjm")]
 position = Vector2(52.9712, 0.268889)
+
+[node name="SceneTriggers" type="Node2D" parent="."]
+
+[node name="SceneTrigger" type="StaticBody2D" parent="SceneTriggers"]
+script = ExtResource("11_0iotl")
+
+[node name="Block" type="CollisionShape2D" parent="SceneTriggers/SceneTrigger"]
+shape = SubResource("RectangleShape2D_q5mn1")
+
+[node name="Area2D" type="Area2D" parent="SceneTriggers/SceneTrigger"]
+position = Vector2(3140, -609)
+
+[node name="Collision" type="CollisionShape2D" parent="SceneTriggers/SceneTrigger/Area2D"]
+position = Vector2(129, 59.5)
+shape = SubResource("RectangleShape2D_n72e1")
+
+[connection signal="body_entered" from="SceneTriggers/SceneTrigger/Area2D" to="SceneTriggers/SceneTrigger" method="_on_area_2d_body_entered"]
