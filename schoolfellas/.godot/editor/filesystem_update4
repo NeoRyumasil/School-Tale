@@ -1,13 +1,5 @@
+res://ruang_kelas.tscn
 res://Intro.tscn
-res://Character/player.tscn
-res://Script/playerMovement.gd
-res://Character/pak_heri.tscn
-res://Character/andi.tscn
-res://Object/tempat_sampah_besar.tscn
-res://Object/tempat_sampah_kecil_depan.tscn
-res://Object/tempat_sampah_kecil_samping.tscn
-res://Object/mobil_merah.tscn
 res://lorong.tscn
 res://Object/loker.tscn
-res://cameraLorong.gd
-res://ruang_kelas.tscn
+res://Object/tas.tscn
