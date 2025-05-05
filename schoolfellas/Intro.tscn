@@ -1,9 +1,8 @@
-[gd_scene load_steps=15 format=3 uid="uid://c5ynvntn3xdsq"]
+[gd_scene load_steps=14 format=3 uid="uid://c5ynvntn3xdsq"]
 
 [ext_resource type="Texture2D" uid="uid://bkuc8hjm41jwu" path="res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png" id="1_wcc6y"]
 [ext_resource type="PackedScene" uid="uid://dg0ddh1js6hbq" path="res://Character/player.tscn" id="2_ho6sj"]
 [ext_resource type="PackedScene" uid="uid://bidupqssu2o52" path="res://Character/pak_heri.tscn" id="4_cl683"]
-[ext_resource type="PackedScene" uid="uid://dpyiwsxo2ngmb" path="res://Character/andi.tscn" id="5_4nwcs"]
 [ext_resource type="PackedScene" uid="uid://dj0ubi2ilaln5" path="res://Object/mobil_merah.tscn" id="6_7wnwg"]
 [ext_resource type="PackedScene" uid="uid://ccwr58lebqsxr" path="res://Object/mobil_kuning.tscn" id="6_eorlo"]
 [ext_resource type="PackedScene" uid="uid://bp8m25m3wt57x" path="res://Object/mobil_putih.tscn" id="6_ryvcy"]
@@ -4123,10 +4122,6 @@ limit_top = -720
 limit_right = 5250
 limit_bottom = 630
 
-[node name="Andi" parent="Characters" instance=ExtResource("5_4nwcs")]
-position = Vector2(132.831, -148.696)
-scale = Vector2(0.268889, 0.268889)
-
 [node name="Cars" type="Node2D" parent="."]
 
 [node name="MobilKuning" parent="Cars" instance=ExtResource("6_eorlo")]
@@ -4168,5 +4163,7 @@ position = Vector2(3140, -609)
 [node name="Collision" type="CollisionShape2D" parent="SceneTriggers/SceneTrigger/Area2D"]
 position = Vector2(129, 59.5)
 shape = SubResource("RectangleShape2D_n72e1")
+
+[node name="UI" type="CanvasLayer" parent="."]
 
 [connection signal="body_entered" from="SceneTriggers/SceneTrigger/Area2D" to="SceneTriggers/SceneTrigger" method="_on_area_2d_body_entered"]

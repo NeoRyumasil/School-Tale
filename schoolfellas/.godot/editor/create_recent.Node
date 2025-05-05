@@ -1,9 +1,14 @@
+CanvasLayer
+Control
+VBoxContainer
+Label
 CollisionShape2D
 Area2D
+RichTextLabel
+TextureRect
 StaticBody2D
 Node2D
 TileMap
 Sprite2D
 Camera2D
 AnimatedSprite2D
-CharacterBody2D

@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://bqwa363n22cv5"]
+[gd_scene load_steps=27 format=3 uid="uid://bqwa363n22cv5"]
 
 [ext_resource type="Texture2D" uid="uid://bkuc8hjm41jwu" path="res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png" id="3_d8iwh"]
 [ext_resource type="Texture2D" uid="uid://r4pakdofcvcv" path="res://Designs/Dinding Kelas.png" id="4_fpt6m"]
@@ -6,10 +6,11 @@
 [ext_resource type="PackedScene" uid="uid://dg0ddh1js6hbq" path="res://Character/player.tscn" id="4_vx1h3"]
 [ext_resource type="Texture2D" uid="uid://cd53rbp3l8sjv" path="res://Asset/TileSet/D4288EBD-1092-49D0-9967-5986F1E6E978.png" id="5_bytpj"]
 [ext_resource type="Texture2D" uid="uid://d2pnssg6qvo64" path="res://Asset/TileSet/C1D33C88-9086-4418-8749-74059A4F2F05.png" id="5_sftdk"]
-[ext_resource type="Script" path="res://cameraLorong.gd" id="5_v5hjv"]
+[ext_resource type="Script" path="res://Script/cameraLorong.gd" id="5_v5hjv"]
 [ext_resource type="Texture2D" uid="uid://dklmfg6ec2j6v" path="res://Asset/TileSet/703A7DEC-39C3-4050-87A4-3C68020A9808.png" id="6_5ct4f"]
 [ext_resource type="PackedScene" uid="uid://b1fn1a7v5v46w" path="res://Object/meja_guru.tscn" id="11_fdxpu"]
 [ext_resource type="PackedScene" uid="uid://3n0hoq53um48" path="res://Object/papan_tulis.tscn" id="12_yf7sc"]
+[ext_resource type="PackedScene" uid="uid://dpyiwsxo2ngmb" path="res://Character/andi.tscn" id="13_oy1qx"]
 [ext_resource type="PackedScene" uid="uid://xqg0t0ea6mo7" path="res://Object/bangku_meja_kelas.tscn" id="13_r514h"]
 [ext_resource type="Script" path="res://Script/scene_trigger_to_lorong.gd" id="14_h2uuj"]
 
@@ -5241,5 +5242,11 @@ script = ExtResource("14_h2uuj")
 [node name="Collision" type="CollisionShape2D" parent="Scene_Triggers/Scene_Trigger_To_Lorong/Area2D"]
 position = Vector2(1856.25, 272)
 shape = SubResource("RectangleShape2D_0eupt")
+
+[node name="Andi" parent="." instance=ExtResource("13_oy1qx")]
+position = Vector2(909, 240)
+scale = Vector2(0.8, 0.8)
+
+[node name="UI" type="CanvasLayer" parent="."]
 
 [connection signal="body_entered" from="Scene_Triggers/Scene_Trigger_To_Lorong/Area2D" to="Scene_Triggers/Scene_Trigger_To_Lorong" method="_on_area_2d_body_entered"]

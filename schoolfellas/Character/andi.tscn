@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dpyiwsxo2ngmb"]
+[gd_scene load_steps=7 format=3 uid="uid://dpyiwsxo2ngmb"]
 
 [ext_resource type="Texture2D" uid="uid://cpnfo4lev5hrm" path="res://Asset/CharacterSprite/Andi.png" id="1_20tjx"]
+[ext_resource type="Script" path="res://Script/andi.gd" id="1_posxs"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g7tne"]
 atlas = ExtResource("1_20tjx")
@@ -20,7 +21,11 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ibavc"]
 size = Vector2(59, 89)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mnq3e"]
+size = Vector2(131, 164)
+
 [node name="Andi" type="CharacterBody2D"]
+script = ExtResource("1_posxs")
 
 [node name="Animation" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
@@ -30,3 +35,20 @@ sprite_frames = SubResource("SpriteFrames_viqff")
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -0.5)
 shape = SubResource("RectangleShape2D_ibavc")
+
+[node name="InteractionArea" type="Area2D" parent="."]
+
+[node name="InteractionCollision" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(4, 5)
+shape = SubResource("RectangleShape2D_mnq3e")
+
+[node name="Tutorial" type="Label" parent="."]
+texture_filter = 2
+offset_left = 54.0
+offset_top = -14.0
+offset_right = 178.0
+offset_bottom = 9.0
+text = "Interaksi (Enter)"
+
+[connection signal="body_entered" from="InteractionArea" to="." method="_on_interaction_area_body_entered"]
+[connection signal="body_exited" from="InteractionArea" to="." method="_on_interaction_area_body_exited"]
