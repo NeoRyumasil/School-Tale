@@ -1,6 +1,5 @@
 extends CharacterBody2D
 
-
 var canInteract = false
 var isChat = false
 var dialog = preload("res://UI/Dialogs/dialog_box_andi.tscn")

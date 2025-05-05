@@ -11,3 +11,8 @@ res://Script/dialog_box_andi.gd
 res://Script/andi.gd
 res://Character/andi.tscn
 res://UI/Dialogs/dialog_box_andi.tscn
+res://Script/global_items.gd
+res://Script/tas.gd
+res://Script/checkpoint.gd
+res://Object/checkpoint.tscn
+res://Script/playerMovement.gd

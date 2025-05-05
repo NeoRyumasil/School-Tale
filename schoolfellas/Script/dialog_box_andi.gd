@@ -1,10 +1,11 @@
 extends Control
 
-var dialogIntro =["Oh.. Iya... Aku... Minta maaf telah merepotkanmu"
-				]
+var dialogHaveTas =["Oh.. Iya... Tasku... Aku... Minta maaf telah merepotkanmu"]
+var normal = ["Hallo..."]
 
 var dialogIndex = 0
 var isFinished = false
+var currentDialog : Array = []
 
 @onready var dialogText: RichTextLabel = $Box/DialogText
 
@@ -17,20 +18,25 @@ func _process(delta: float) -> void:
 		
 func showDialog():
 	dialogIndex = 0
+	if GlobalItems.haveTasHitam:
+		currentDialog = dialogHaveTas
+	elif !GlobalItems.haveTasHitam:
+		currentDialog = normal
 	dialogLoader()
 
 func dialogLoader():
-	if dialogIndex < dialogIntro.size():
+	if dialogIndex < currentDialog.size():
 		isFinished = false
-		dialogText.bbcode_text = dialogIntro[dialogIndex]
+		dialogText.bbcode_text = currentDialog[dialogIndex]
 		dialogText.visible_characters = 0 
 
 		var tween = create_tween()
-		tween.tween_property(dialogText, "visible_characters", dialogIntro[dialogIndex].length(), 1).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
+		tween.tween_property(dialogText, "visible_characters", currentDialog[dialogIndex].length(), 1).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 		
 	else:
 		queue_free()
 		isFinished = true
+		
 	dialogIndex += 1
 
 	
