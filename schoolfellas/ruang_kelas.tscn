@@ -1,7 +1,5 @@
-[gd_scene load_steps=28 format=3 uid="uid://bqwa363n22cv5"]
+[gd_scene load_steps=26 format=3 uid="uid://bqwa363n22cv5"]
 
-[ext_resource type="Texture2D" uid="uid://itd6gf5l1xki" path="res://Designs/Desain Kelas.png" id="1_t2uq8"]
-[ext_resource type="Texture2D" uid="uid://bk4761msadbdh" path="res://Designs/Isi Kelas.jpeg" id="2_6eo43"]
 [ext_resource type="Texture2D" uid="uid://bkuc8hjm41jwu" path="res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png" id="3_d8iwh"]
 [ext_resource type="Texture2D" uid="uid://r4pakdofcvcv" path="res://Designs/Dinding Kelas.png" id="4_fpt6m"]
 [ext_resource type="Texture2D" uid="uid://bnekncxsf58ly" path="res://Asset/TileSet/2115675A-D06A-453E-933D-F5B18A5F5717.png" id="4_o40q1"]
@@ -5108,14 +5106,6 @@ sources/0 = SubResource("TileSetAtlasSource_jgvuk")
 size = Vector2(89.5, 96)
 
 [node name="RuangKelas" type="Node2D"]
-
-[node name="DesainKelas" type="Sprite2D" parent="."]
-position = Vector2(-1251, 405)
-texture = ExtResource("1_t2uq8")
-
-[node name="IsiKelas" type="Sprite2D" parent="."]
-position = Vector2(-2714, 849)
-texture = ExtResource("2_6eo43")
 
 [node name="TileMaps" type="Node2D" parent="."]
 position = Vector2(-158, 395)
