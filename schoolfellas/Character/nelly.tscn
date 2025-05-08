@@ -1,0 +1,145 @@
+[gd_scene load_steps=18 format=3 uid="uid://6m7qbi5vvm78"]
+
+[ext_resource type="Texture2D" uid="uid://bdjrmfsyru683" path="res://Asset/CharacterSprite/Nelly.png" id="1_65dhb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yb5ya"]
+atlas = ExtResource("1_65dhb")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jrocc"]
+atlas = ExtResource("1_65dhb")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0jlme"]
+atlas = ExtResource("1_65dhb")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hsu1e"]
+atlas = ExtResource("1_65dhb")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_py22j"]
+atlas = ExtResource("1_65dhb")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0jq2i"]
+atlas = ExtResource("1_65dhb")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2t0en"]
+atlas = ExtResource("1_65dhb")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cqbdk"]
+atlas = ExtResource("1_65dhb")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7k322"]
+atlas = ExtResource("1_65dhb")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x7o66"]
+atlas = ExtResource("1_65dhb")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b3nwf"]
+atlas = ExtResource("1_65dhb")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xcm47"]
+atlas = ExtResource("1_65dhb")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7ehda"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yb5ya")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jrocc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0jlme")
+}],
+"loop": true,
+"name": &"JalanAtas",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hsu1e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_py22j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0jq2i")
+}],
+"loop": true,
+"name": &"JalanBawah",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2t0en")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cqbdk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7k322")
+}],
+"loop": true,
+"name": &"JalanKanan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x7o66")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b3nwf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xcm47")
+}],
+"loop": true,
+"name": &"JalanKiri",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jokqu"]
+size = Vector2(14, 23)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0d8dd"]
+size = Vector2(26, 35)
+
+[sub_resource type="LabelSettings" id="LabelSettings_j3tbo"]
+font_size = 8
+
+[node name="Nelly" type="CharacterBody2D"]
+scale = Vector2(3.719, 3.719)
+
+[node name="Animation" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_7ehda")
+animation = &"JalanBawah"
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_jokqu")
+
+[node name="InteractionArea" type="Area2D" parent="."]
+
+[node name="Collision" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(1, 0.5)
+shape = SubResource("RectangleShape2D_0d8dd")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 16.6711
+offset_top = -5.1089
+offset_right = 140.671
+offset_bottom = 17.8911
+text = "Interaksi (Enter)"
+label_settings = SubResource("LabelSettings_j3tbo")

@@ -13,5 +13,7 @@ var isCheckpointKelas = false
 #Checkpoint
 var checkpoint = Vector2.ZERO
 
+var isParkiran = false
+
 func _setCheckpointPosition(position:Vector2):
 	checkpoint = position

@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bidupqssu2o52"]
+[gd_scene load_steps=8 format=3 uid="uid://bidupqssu2o52"]
 
 [ext_resource type="Texture2D" uid="uid://bljv3cln3auid" path="res://Asset/CharacterSprite/Pak Heri.png" id="1_3he3i"]
 [ext_resource type="Script" path="res://Script/pak_heri.gd" id="1_rf1wo"]
@@ -23,6 +23,8 @@ size = Vector2(15.0578, 19.6289)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bkt0k"]
 size = Vector2(131, 164)
+
+[sub_resource type="LabelSettings" id="LabelSettings_4idod"]
 
 [node name="PakHeri" type="CharacterBody2D"]
 position = Vector2(74, 24)
@@ -53,6 +55,7 @@ offset_top = 287.0
 offset_right = 613.0
 offset_bottom = 310.0
 text = "Interaksi (Enter)"
+label_settings = SubResource("LabelSettings_4idod")
 
 [connection signal="body_entered" from="InteractionArea" to="." method="_on_interaction_area_body_entered"]
 [connection signal="body_exited" from="InteractionArea" to="." method="_on_interaction_area_body_exited"]

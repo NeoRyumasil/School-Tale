@@ -1,13 +1,16 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1746445197
-Intro.tscn::PackedScene::6928879277986396888::1746430410::0::1::::<><>::uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>uid://bidupqssu2o52::::res://Character/pak_heri.tscn<>uid://dpyiwsxo2ngmb::::res://Character/andi.tscn<>uid://dj0ubi2ilaln5::::res://Object/mobil_merah.tscn<>uid://ccwr58lebqsxr::::res://Object/mobil_kuning.tscn<>uid://bp8m25m3wt57x::::res://Object/mobil_putih.tscn<>uid://cn53so5eabh7::::res://Object/mobil_biru.tscn<>uid://bb3ry6pursk8d::::res://Object/tempat_sampah_besar.tscn<>res://Script/scene_trigger_parkiran.gd
-lorong.tscn::PackedScene::869156347605470147::1746430411::0::1::::<><>::uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://cq35y22s5blao::::res://Asset/TileSet/DC55F088-EB2C-4379-986E-3C8B53E8C019.png<>uid://dxohp5sad1ukh::::res://Asset/TileSet/8F965E9F-4433-46E1-B34B-27F5C45570DB.png<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>uid://bj3nl1bygp06t::::res://Object/loker.tscn<>uid://buywt0vlicdeh::::res://Object/tempat_sampah_kecil_samping.tscn<>res://Script/scene_trigger_Lorong.gd<>res://Script/scene_trigger_lorong_kelas.gd
-ruang_kelas.tscn::PackedScene::3554910166826455320::1746430412::0::1::::<><>::uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://r4pakdofcvcv::::res://Designs/Dinding Kelas.png<>uid://bnekncxsf58ly::::res://Asset/TileSet/2115675A-D06A-453E-933D-F5B18A5F5717.png<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>uid://cd53rbp3l8sjv::::res://Asset/TileSet/D4288EBD-1092-49D0-9967-5986F1E6E978.png<>uid://d2pnssg6qvo64::::res://Asset/TileSet/C1D33C88-9086-4418-8749-74059A4F2F05.png<>res://cameraLorong.gd<>uid://dklmfg6ec2j6v::::res://Asset/TileSet/703A7DEC-39C3-4050-87A4-3C68020A9808.png<>uid://b1fn1a7v5v46w::::res://Object/meja_guru.tscn<>uid://3n0hoq53um48::::res://Object/papan_tulis.tscn<>uid://xqg0t0ea6mo7::::res://Object/bangku_meja_kelas.tscn<>res://Script/scene_trigger_to_lorong.gd
+::res://::1746671213
+Intro.tscn::PackedScene::6928879277986396888::1746591396::0::1::::<><>::res://Script/Map_Parkiran.gd<>uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>uid://bidupqssu2o52::::res://Character/pak_heri.tscn<>uid://dj0ubi2ilaln5::::res://Object/mobil_merah.tscn<>uid://ccwr58lebqsxr::::res://Object/mobil_kuning.tscn<>uid://bp8m25m3wt57x::::res://Object/mobil_putih.tscn<>uid://cn53so5eabh7::::res://Object/mobil_biru.tscn<>uid://bb3ry6pursk8d::::res://Object/tempat_sampah_besar.tscn<>uid://dpidheki4q8sw::::res://Object/tas.tscn<>res://Script/scene_trigger_parkiran.gd<>uid://b71q43ylglp3q::::res://Object/checkpoint.tscn
+lorong.tscn::PackedScene::869156347605470147::1746453914::0::1::::<><>::uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://cq35y22s5blao::::res://Asset/TileSet/DC55F088-EB2C-4379-986E-3C8B53E8C019.png<>uid://dxohp5sad1ukh::::res://Asset/TileSet/8F965E9F-4433-46E1-B34B-27F5C45570DB.png<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>uid://bj3nl1bygp06t::::res://Object/loker.tscn<>uid://buywt0vlicdeh::::res://Object/tempat_sampah_kecil_samping.tscn<>res://Script/scene_trigger_Lorong.gd<>res://Script/scene_trigger_lorong_kelas.gd
+ruang_kelas.tscn::PackedScene::3554910166826455320::1746453915::0::1::::<><>::uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://r4pakdofcvcv::::res://Designs/Dinding Kelas.png<>uid://bnekncxsf58ly::::res://Asset/TileSet/2115675A-D06A-453E-933D-F5B18A5F5717.png<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>uid://cd53rbp3l8sjv::::res://Asset/TileSet/D4288EBD-1092-49D0-9967-5986F1E6E978.png<>uid://d2pnssg6qvo64::::res://Asset/TileSet/C1D33C88-9086-4418-8749-74059A4F2F05.png<>res://Script/cameraLorong.gd<>uid://dklmfg6ec2j6v::::res://Asset/TileSet/703A7DEC-39C3-4050-87A4-3C68020A9808.png<>uid://b1fn1a7v5v46w::::res://Object/meja_guru.tscn<>uid://3n0hoq53um48::::res://Object/papan_tulis.tscn<>uid://dpyiwsxo2ngmb::::res://Character/andi.tscn<>uid://xqg0t0ea6mo7::::res://Object/bangku_meja_kelas.tscn<>res://Script/scene_trigger_to_lorong.gd
 scene_trigger.gd::GDScript::-1::1746418397::0::1::::<>StaticBody2D<>::
 ::res://Asset/::1746345847
 LED-Black-screen-3.jpg::CompressedTexture2D::6422102533806976116::1746345730::1746345780::1::::<><>::
-::res://Asset/CharacterSprite/::1746351017
+::res://Asset/CharacterSprite/::1746589306
 Andi.png::CompressedTexture2D::5852841059218961130::1746350989::1746351017::1::::<><>::
+Edi.png::CompressedTexture2D::2481990214602535492::1746589281::1746589306::1::::<><>::
+Guntur.png::CompressedTexture2D::9148826072861906324::1746589281::1746589306::1::::<><>::
+Nelly.png::CompressedTexture2D::2616620524334845994::1746589281::1746589306::1::::<><>::
 Pak Heri.png::CompressedTexture2D::3178402545243078275::1746350989::1746351017::1::::<><>::
 Raka.png::CompressedTexture2D::5805692006807898949::1746350989::1746351017::1::::<><>::
 ::res://Asset/ObjectSprite/::1746370180
@@ -32,11 +35,12 @@ C1D33C88-9086-4418-8749-74059A4F2F05.png::CompressedTexture2D::90861489169331775
 D4288EBD-1092-49D0-9967-5986F1E6E978.png::CompressedTexture2D::5047069742199562887::1746415938::1746415953::1::::<><>::
 DC55F088-EB2C-4379-986E-3C8B53E8C019.png::CompressedTexture2D::5955531272243258274::1746364610::1746364632::1::::<><>::
 EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png::CompressedTexture2D::3129777422490717572::1746345896::1746345920::1::::<><>::
-::res://Character/::1746430413
-andi.tscn::PackedScene::8262165776778762441::1746355440::0::1::::<><>::uid://cpnfo4lev5hrm::::res://Asset/CharacterSprite/Andi.png
+::res://Character/::1746591396
+andi.tscn::PackedScene::8262165776778762441::1746453915::0::1::::<><>::uid://cpnfo4lev5hrm::::res://Asset/CharacterSprite/Andi.png<>res://Script/andi.gd
 icon.svg::CompressedTexture2D::3214667454421332020::1746345730::1746345780::1::::<><>::
-pak_heri.tscn::PackedScene::2955366561849166759::1746430413::0::1::::<><>::uid://bljv3cln3auid::::res://Asset/CharacterSprite/Pak Heri.png<>res://Script/pak_heri.gd
-player.tscn::PackedScene::7632192473381571206::1746430413::0::1::::<><>::res://Script/playerMovement.gd<>uid://coyk5tnnwvbvp::::res://Asset/CharacterSprite/Raka.png
+nelly.tscn::PackedScene::2202598268572478025::1746591396::0::1::::<><>::uid://bdjrmfsyru683::::res://Asset/CharacterSprite/Nelly.png
+pak_heri.tscn::PackedScene::2955366561849166759::1746591396::0::1::::<><>::uid://bljv3cln3auid::::res://Asset/CharacterSprite/Pak Heri.png<>res://Script/pak_heri.gd
+player.tscn::PackedScene::7632192473381571206::1746453915::0::1::::<><>::res://Script/playerMovement.gd<>uid://coyk5tnnwvbvp::::res://Asset/CharacterSprite/Raka.png
 ::res://Designs/::1746369139
 Desain Kelas.png::CompressedTexture2D::600971761263680184::1746368446::1746368525::1::::<><>::
 Desain Lorong.png::CompressedTexture2D::2584893074465718937::1746364101::1746364104::1::::<><>::
@@ -44,8 +48,9 @@ Desain Map.png::CompressedTexture2D::7195175627196581676::1746361678::1746361692
 Dinding Kelas.png::CompressedTexture2D::1253988582116576269::1746369116::1746369139::1::::<><>::
 Isi Kelas.jpeg::CompressedTexture2D::3150175763283450569::1746368488::1746368525::1::::<><>::
 Isi Lorong.jpeg::CompressedTexture2D::5627159334479508147::1746364229::1746364397::1::::<><>::
-::res://Object/::1746430412
+::res://Object/::1746591396
 bangku_meja_kelas.tscn::PackedScene::1647783431290660068::1746360207::0::1::::<><>::uid://du8gh7sq7h26j::::res://Asset/ObjectSprite/BangkuMeja Kelas.png
+checkpoint.tscn::PackedScene::4687162269860565276::1746591396::0::1::::<><>::res://Script/checkpoint.gd
 loker.tscn::PackedScene::3076733186438980013::1746417325::0::1::::<><>::uid://nld2qn7mvjhq::::res://Asset/ObjectSprite/Loker.png
 meja_guru.tscn::PackedScene::4222488309028568528::1746360287::0::1::::<><>::uid://c7o78ibfh6ape::::res://Asset/ObjectSprite/Meja Guru.png
 mobil_biru.tscn::PackedScene::169087078507146770::1746360404::0::1::::<><>::uid://clhrdil8lioix::::res://Asset/ObjectSprite/Mobil Biru.png
@@ -54,19 +59,27 @@ mobil_kuning.tscn::PackedScene::4959722878392890551::1746360593::0::1::::<><>::u
 mobil_merah.tscn::PackedScene::7843787675597039860::1746363893::0::1::::<><>::uid://ojgoil8oca12::::res://Asset/ObjectSprite/Mobil Merah.png
 mobil_putih.tscn::PackedScene::3508156220036720327::1746360766::0::1::::<><>::uid://q6i8o6u813de::::res://Asset/ObjectSprite/Mobil Putih.png
 papan_tulis.tscn::PackedScene::1993655719489233483::1746360812::0::1::::<><>::uid://c500yqkmieakw::::res://Asset/ObjectSprite/Papan Tulis.png
-tas.tscn::PackedScene::8228804605162250318::1746430412::0::1::::<><>::uid://b5kecuid4sp55::::res://Asset/ObjectSprite/Tas.png
+tas.tscn::PackedScene::8228804605162250318::1746453915::0::1::::<><>::uid://b5kecuid4sp55::::res://Asset/ObjectSprite/Tas.png<>res://Script/tas.gd
 tempat_sampah_besar.tscn::PackedScene::2515488804703621613::1746363892::0::1::::<><>::uid://chctypojdw3h0::::res://Asset/ObjectSprite/Tempat Sampah Besar.png
 tempat_sampah_kecil_depan.tscn::PackedScene::697789069340722740::1746363893::0::1::::<><>::uid://c5uoatikqx56k::::res://Asset/ObjectSprite/Tempat Sampah Kecil (Depan).png
 tempat_sampah_kecil_samping.tscn::PackedScene::3841113672511447499::1746363893::0::1::::<><>::uid://cws7kq8x8m4vy::::res://Asset/ObjectSprite/Tempat Sampah Kecil.png
-::res://Script/::1746430407
+::res://Script/::1746597404
+andi.gd::GDScript::-1::1746450299::0::1::::<>CharacterBody2D<>::
 cameraLorong.gd::GDScript::-1::1746418211::0::1::::<>Camera2D<>::
-dialog_box_pak_heri.gd::GDScript::-1::1746429697::0::1::::<>Control<>::
-pak_heri.gd::GDScript::-1::1746430407::0::1::::<>CharacterBody2D<>::
-playerMovement.gd::GDScript::-1::1746418040::0::1::::<>CharacterBody2D<>::
+checkpoint.gd::GDScript::-1::1746591390::0::1::::<>Area2D<>::
+dialog_box_andi.gd::GDScript::-1::1746597404::0::1::::<>Control<>::
+dialog_box_pak_heri.gd::GDScript::-1::1746448279::0::1::::<>Control<>::
+global_items.gd::GDScript::-1::1746590336::0::1::::<>Node<>::
+Map_Parkiran.gd::GDScript::-1::1746590563::0::1::::<>Node2D<>::
+pak_heri.gd::GDScript::-1::1746449115::0::1::::<>CharacterBody2D<>::
+playerMovement.gd::GDScript::-1::1746453697::0::1::::<>CharacterBody2D<>::
 scene_trigger_Lorong.gd::GDScript::-1::1746418514::0::1::::<>StaticBody2D<>::
 scene_trigger_lorong_kelas.gd::GDScript::-1::1746418789::0::1::::<>StaticBody2D<>::
-scene_trigger_parkiran.gd::GDScript::-1::1746418211::0::1::::<>StaticBody2D<>::
+scene_trigger_parkiran.gd::GDScript::-1::1746591345::0::1::::<>StaticBody2D<>::
 scene_trigger_to_lorong.gd::GDScript::-1::1746419270::0::1::::<>StaticBody2D<>::
+tas.gd::GDScript::-1::1746450638::0::1::::<>Area2D<>::
 ::res://UI/::1746427338
-::res://UI/Dialogs/::1746432652
-dialog_box_pak_heri.tscn::PackedScene::5444842209036364271::1746432652::0::1::::<><>::res://Script/dialog_box_pak_heri.gd<>uid://cxq6dctc087gq::::res://Asset/LED-Black-screen-3.jpg
+::res://UI/Dialogs/::1746592353
+dialog_box_andi.tscn::PackedScene::5981474437846266032::1746453915::0::1::::<><>::res://Script/dialog_box_andi.gd<>uid://cxq6dctc087gq::::res://Asset/LED-Black-screen-3.jpg
+dialog_box_pak_heri.tscn::PackedScene::5444842209036364271::1746453915::0::1::::<><>::res://Script/dialog_box_pak_heri.gd<>uid://cxq6dctc087gq::::res://Asset/LED-Black-screen-3.jpg
+dialog_box_raka.tscn::PackedScene::8594649434022363201::1746592353::0::1::::<><>::res://Script/dialog_box_andi.gd<>uid://cxq6dctc087gq::::res://Asset/LED-Black-screen-3.jpg

@@ -1,11 +1,9 @@
 extends Control
 
-var dialogHaveTas =["Oh.. Iya... Tasku... Aku... Minta maaf telah merepotkanmu"]
-var normal = ["Hallo..."]
-
 var dialogIndex = 0
 var isFinished = false
 var currentDialog : Array = []
+var None
 
 @onready var dialogText: RichTextLabel = $Box/DialogText
 
@@ -19,9 +17,9 @@ func _process(delta: float) -> void:
 func showDialog():
 	dialogIndex = 0
 	if GlobalItems.haveTasHitam:
-		currentDialog = dialogHaveTas
+		currentDialog = None
 	elif !GlobalItems.haveTasHitam:
-		currentDialog = normal
+		currentDialog = None
 	dialogLoader()
 
 func dialogLoader():

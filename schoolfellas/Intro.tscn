@@ -1,5 +1,6 @@
-[gd_scene load_steps=16 format=3 uid="uid://c5ynvntn3xdsq"]
+[gd_scene load_steps=17 format=3 uid="uid://c5ynvntn3xdsq"]
 
+[ext_resource type="Script" path="res://Script/Map_Parkiran.gd" id="1_20v8c"]
 [ext_resource type="Texture2D" uid="uid://bkuc8hjm41jwu" path="res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png" id="1_wcc6y"]
 [ext_resource type="PackedScene" uid="uid://dg0ddh1js6hbq" path="res://Character/player.tscn" id="2_ho6sj"]
 [ext_resource type="PackedScene" uid="uid://bidupqssu2o52" path="res://Character/pak_heri.tscn" id="4_cl683"]
@@ -4095,6 +4096,7 @@ sources/0 = SubResource("TileSetAtlasSource_to4wa")
 size = Vector2(396, 139)
 
 [node name="MapParkiran" type="Node2D"]
+script = ExtResource("1_20v8c")
 
 [node name="TileMaps" type="Node2D" parent="."]
 
@@ -4176,7 +4178,7 @@ shape = SubResource("RectangleShape2D_n72e1")
 [node name="Checkpoints" type="Node2D" parent="."]
 
 [node name="Checkpoint" parent="Checkpoints" instance=ExtResource("11_inoyg")]
-position = Vector2(3271, -401)
+position = Vector2(3276, -362)
 scale = Vector2(6, 2)
 
 [connection signal="body_entered" from="SceneTriggers/SceneTrigger/Area2D" to="SceneTriggers/SceneTrigger" method="_on_area_2d_body_entered"]
