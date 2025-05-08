@@ -5,3 +5,4 @@ res://UI/Dialogs/dialog_box_andi.tscn
 res://Script/dialog_box_pak_heri.gd
 res://Script/DialogCharacter/DialogPakHeri.gd
 res://Script/DialogCharacter/DialogAndi.gd
+res://Script/DialogCharacter/DialogNelly.gd
