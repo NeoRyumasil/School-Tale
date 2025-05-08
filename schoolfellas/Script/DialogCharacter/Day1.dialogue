@@ -1,0 +1,64 @@
+~ Act1Parkiran
+Pak Heri : Pagi, Nak Raka. Rajin amat datang pagi-pagi gini.
+Raka : Pagi, Pak. Iya, saya pikir lebih baik datang lebih awal.
+Pak Heri: Oh ya, semalem waktu saya patroli, saya nemuin tas yang ketinggalan di kelas lantai dua. Nggak ada nama, tapi isinya kayak punya siswa di kelas mu.
+Raka : Tas warna hitam? Ada gantungan kunci berbentuk robot?
+Pak Her i: Nah, itu dia. Kamu kenal?
+Raka : Iya, itu punya Andi. Dia duduk di sebelah saya kemarin. Kayaknya dia buru-buru pulang.
+Pak Heri : Kalau gitu, titip ya. Tasnya ada di ruang barang hilang. Kamu bisa ambil dulu sebelum bel masuk.
+Raka : Baik, Pak. Saya kembalikan ke Andi nanti.
+=> END
+
+~ Act1LorongKelas
+Raka : Apakah itu tempat barang yang tertinggal yang dibilang pak Heri?
+=> END
+
+~ Act1RuangTemu
+Raka: Kok bisa ya ada orang seceroboh itu meninggalkan tas (muka keheranan), untung bukan orang jahat yang menemukannya.
+Suara riuh para pelajar...
+Raka: Tampaknya sudah mulai ramai di luar. Sebaiknya aku harus keluar.
+=> END
+
+~ Act1RuangKelas
+Raka: Andi!
+Andi: Raka, Ada apa?
+if GlobalItems.haveTasHitam && GlobalItems.isDay1:
+	- Kembalikan Tas Andi
+		Raka: Hei, Andi. Ini... tas kamu, kan?
+		Andi: Oh... iya. Aku.. minta maaf merepotkan mu.
+		set GlobalItems.Day1SceneTriggerKelas = true
+		=> Act2RuangKelas
+	- Diam saja
+		Andi: ...
+else:
+	Andi : Halo Raka.
+=> END
+
+~ Act2RuangKelas
+Edi:  Hei ANDI, Apa kabar ngabs.
+Guntur: Semalem kok kamu langsung balik sih? Kan aku bilang ke belakang sekolah dulu!
+Nelly: Hey Raka♡, Kamu bisa bantu aku gak membuang sampah dari piket pagi? Kebetulan kamu yang terakhir kali datang ke kelas?
+Raka: Hah!? Tapi aku kan...
+Zara: Yo, kenapa lu perhitungan sih dengan teman sendiri! Kamu tau ga kalau gua capek nyapu kelas?
+Edi: Hahahaha!, ayo buruan taruh di di depan kelas 10 B. Mau gak?
+- Hah, iya deh gua kerjain.
+	set GlobalItems.reputation += 10
+- Loh kok gua!
+	set GlobalItems.reputation -= 5
+Guntur:  Pokoknya lu ya yang angkut sampah, Thank you RAKA.
+Endi: Oke Andi, kamu harus jelasin ke kita sekarang!
+Andi: Kenapa harus aku?
+=> END
+
+~ Act1Kantin
+Murid: Kamu tau gak, EDI kasih kado HP Iphonk 16S ke NELLY! Katanya hadiah menang lomba Miss Jawa Barat. So Sweet bet anjirr.
+Murid: Mereka memang pasangan romantis bgt ya sis! NELLY juga siswi berprestasi tahun pertama sekolah ini. Mana mereka berdua temenan sama ZARA, cewek anak donatur sekolah ini.
+Murid: Iya kan!!!, Bahkan sekelas GUNTUR, anak Geng motor yang rusuh itu bisa jadi kawan baik mereka.
+Murid: Aku pengeeeeen bisa masuk ke grup gaul mereka. 
+Raka: Dari yang aku lihat, sepertinya mereka berempat adalah grup siswa-siswi famous di sekolah ini.
+Raka: Gawat, Sebentar lagi aku harus pulang.
+=> END
+
+~ Act2Kantin
+Raka: Loh ini liontin siapa? Sepertinya sangat mahal
+set GlobalItems.NellyMission = true

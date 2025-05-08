@@ -18,6 +18,7 @@ func showDialog():
 	dialogLoader()
 
 func dialogLoader():
+		
 	if dialogIndex < currentDialog.size():
 		isFinished = false
 		dialogText.bbcode_text = currentDialog[dialogIndex]
@@ -26,10 +27,12 @@ func dialogLoader():
 		var tween = create_tween()
 		tween.tween_property(dialogText, "visible_characters", currentDialog[dialogIndex].length(), 1).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
 		
+		if GlobalItems.isHeriTurns:
+			dialogIndex += 1
 	else:
 		queue_free()
 		isFinished = true
-	dialogIndex += 1
+	
 
 	
 

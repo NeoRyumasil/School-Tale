@@ -5,6 +5,7 @@ var player
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	GlobalItems.isParkiran = true
+	GlobalItems.isDay1 = true
 	player = get_node("Characters/Player")
 	_spawn()
 	pass # Replace with function body.

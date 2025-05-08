@@ -1,0 +1,717 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_yjxg7"]
+
+[resource]
+script = ExtResource("1_yjxg7")
+using_states = PackedStringArray()
+titles = {
+"Act1Kantin": "54",
+"Act1LorongKelas": "13",
+"Act1Parkiran": "2",
+"Act1RuangKelas": "23",
+"Act1RuangTemu": "17",
+"Act2Kantin": "63",
+"Act2RuangKelas": "38"
+}
+character_names = PackedStringArray("Pak Heri", "Raka", "Pak Her i", "Andi", "Edi", "Guntur", "Nelly", "Zara", "Endi", "Murid")
+first_title = "2"
+lines = {
+"1": {
+"id": "1",
+"next_id": "2",
+"text": "Act1Parkiran",
+"type": &"title"
+},
+"10": {
+"id": "10",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"12": {
+"id": "12",
+"next_id": "13",
+"text": "Act1LorongKelas",
+"type": &"title"
+},
+"13": {
+"character": "Raka",
+"character_replacements": Array[Dictionary]([]),
+"id": "13",
+"next_id": "14",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Apakah itu tempat barang yang tertinggal yang dibilang pak Heri?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Apakah itu tempat barang yang tertinggal yang dibilang pak Heri?",
+"type": &"dialogue"
+},
+"14": {
+"id": "14",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"16": {
+"id": "16",
+"next_id": "17",
+"text": "Act1RuangTemu",
+"type": &"title"
+},
+"17": {
+"character": "Raka",
+"character_replacements": Array[Dictionary]([]),
+"id": "17",
+"next_id": "18",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Kok bisa ya ada orang seceroboh itu meninggalkan tas (muka keheranan), untung bukan orang jahat yang menemukannya.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Kok bisa ya ada orang seceroboh itu meninggalkan tas (muka keheranan), untung bukan orang jahat yang menemukannya.",
+"type": &"dialogue"
+},
+"18": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "18",
+"next_id": "19",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Suara riuh para pelajar...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Suara riuh para pelajar...",
+"type": &"dialogue"
+},
+"19": {
+"character": "Raka",
+"character_replacements": Array[Dictionary]([]),
+"id": "19",
+"next_id": "20",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Tampaknya sudah mulai ramai di luar. Sebaiknya aku harus keluar.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tampaknya sudah mulai ramai di luar. Sebaiknya aku harus keluar.",
+"type": &"dialogue"
+},
+"2": {
+"character": "Pak Heri",
+"character_replacements": Array[Dictionary]([]),
+"id": "2",
+"next_id": "3",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Pagi, Nak Raka. Rajin amat datang pagi-pagi gini.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Pagi, Nak Raka. Rajin amat datang pagi-pagi gini.",
+"type": &"dialogue"
+},
+"20": {
+"id": "20",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"22": {
+"id": "22",
+"next_id": "23",
+"text": "Act1RuangKelas",
+"type": &"title"
+},
+"23": {
+"character": "Raka",
+"character_replacements": Array[Dictionary]([]),
+"id": "23",
+"next_id": "24",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Andi!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Andi!",
+"type": &"dialogue"
+},
+"24": {
+"character": "Andi",
+"character_replacements": Array[Dictionary]([]),
+"id": "24",
+"next_id": "25",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Raka, Ada apa?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Raka, Ada apa?",
+"type": &"dialogue"
+},
+"25": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "haveTasHitam"
+}, {
+"type": "and_or",
+"value": "and"
+}, {
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "isDay1"
+}, {
+"type": "colon"
+}])
+},
+"id": "25",
+"next_conditional_id": "33",
+"next_id": "26",
+"next_id_after": "35",
+"type": &"condition"
+},
+"26": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "26",
+"next_id": "27",
+"next_id_after": "35",
+"notes": "",
+"parent_id": "25",
+"responses": PackedStringArray("26", "31"),
+"tags": PackedStringArray(),
+"text": "Kembalikan Tas Andi",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Kembalikan Tas Andi",
+"type": &"response"
+},
+"27": {
+"character": "Raka",
+"character_replacements": Array[Dictionary]([]),
+"id": "27",
+"next_id": "28",
+"notes": "",
+"parent_id": "26",
+"tags": PackedStringArray(),
+"text": "Hei, Andi. Ini... tas kamu, kan?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hei, Andi. Ini... tas kamu, kan?",
+"type": &"dialogue"
+},
+"28": {
+"character": "Andi",
+"character_replacements": Array[Dictionary]([]),
+"id": "28",
+"next_id": "29",
+"notes": "",
+"parent_id": "26",
+"tags": PackedStringArray(),
+"text": "Oh... iya. Aku.. minta maaf merepotkan mu.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Oh... iya. Aku.. minta maaf merepotkan mu.",
+"type": &"dialogue"
+},
+"29": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "29",
+"next_id": "30",
+"notes": "",
+"parent_id": "26",
+"tags": PackedStringArray(),
+"text": "GlobalItems.Day1SceneTriggerKelas = true",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "GlobalItems.Day1SceneTriggerKelas = true",
+"type": &"dialogue"
+},
+"3": {
+"character": "Raka",
+"character_replacements": Array[Dictionary]([]),
+"id": "3",
+"next_id": "4",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Pagi, Pak. Iya, saya pikir lebih baik datang lebih awal.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Pagi, Pak. Iya, saya pikir lebih baik datang lebih awal.",
+"type": &"dialogue"
+},
+"30": {
+"id": "30",
+"is_snippet": false,
+"next_id": "38",
+"parent_id": "26",
+"type": &"goto"
+},
+"31": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "31",
+"next_id": "32",
+"next_id_after": "35",
+"notes": "",
+"parent_id": "25",
+"tags": PackedStringArray(),
+"text": "Diam saja",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Diam saja",
+"type": &"response"
+},
+"32": {
+"character": "Andi",
+"character_replacements": Array[Dictionary]([]),
+"id": "32",
+"next_id": "35",
+"notes": "",
+"parent_id": "31",
+"tags": PackedStringArray(),
+"text": "...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "...",
+"type": &"dialogue"
+},
+"33": {
+"id": "33",
+"next_conditional_id": "35",
+"next_id": "34",
+"next_id_after": "35",
+"type": &"condition"
+},
+"34": {
+"character": "Andi",
+"character_replacements": Array[Dictionary]([]),
+"id": "34",
+"next_id": "35",
+"notes": "",
+"parent_id": "33",
+"tags": PackedStringArray(),
+"text": "Halo Raka.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Halo Raka.",
+"type": &"dialogue"
+},
+"35": {
+"id": "35",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"37": {
+"id": "37",
+"next_id": "38",
+"text": "Act2RuangKelas",
+"type": &"title"
+},
+"38": {
+"character": "Edi",
+"character_replacements": Array[Dictionary]([]),
+"id": "38",
+"next_id": "39",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Hei ANDI, Apa kabar ngabs.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hei ANDI, Apa kabar ngabs.",
+"type": &"dialogue"
+},
+"39": {
+"character": "Guntur",
+"character_replacements": Array[Dictionary]([]),
+"id": "39",
+"next_id": "40",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Semalem kok kamu langsung balik sih? Kan aku bilang ke belakang sekolah dulu!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Semalem kok kamu langsung balik sih? Kan aku bilang ke belakang sekolah dulu!",
+"type": &"dialogue"
+},
+"4": {
+"character": "Pak Heri",
+"character_replacements": Array[Dictionary]([]),
+"id": "4",
+"next_id": "5",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Oh ya, semalem waktu saya patroli, saya nemuin tas yang ketinggalan di kelas lantai dua. Nggak ada nama, tapi isinya kayak punya siswa di kelas mu.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Oh ya, semalem waktu saya patroli, saya nemuin tas yang ketinggalan di kelas lantai dua. Nggak ada nama, tapi isinya kayak punya siswa di kelas mu.",
+"type": &"dialogue"
+},
+"40": {
+"character": "Nelly",
+"character_replacements": Array[Dictionary]([]),
+"id": "40",
+"next_id": "41",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Hey Raka♡, Kamu bisa bantu aku gak membuang sampah dari piket pagi? Kebetulan kamu yang terakhir kali datang ke kelas?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hey Raka♡, Kamu bisa bantu aku gak membuang sampah dari piket pagi? Kebetulan kamu yang terakhir kali datang ke kelas?",
+"type": &"dialogue"
+},
+"41": {
+"character": "Raka",
+"character_replacements": Array[Dictionary]([]),
+"id": "41",
+"next_id": "42",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Hah!? Tapi aku kan...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hah!? Tapi aku kan...",
+"type": &"dialogue"
+},
+"42": {
+"character": "Zara",
+"character_replacements": Array[Dictionary]([]),
+"id": "42",
+"next_id": "43",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Yo, kenapa lu perhitungan sih dengan teman sendiri! Kamu tau ga kalau gua capek nyapu kelas?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Yo, kenapa lu perhitungan sih dengan teman sendiri! Kamu tau ga kalau gua capek nyapu kelas?",
+"type": &"dialogue"
+},
+"43": {
+"character": "Edi",
+"character_replacements": Array[Dictionary]([]),
+"id": "43",
+"next_id": "44",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Hahahaha!, ayo buruan taruh di di depan kelas 10 B. Mau gak?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hahahaha!, ayo buruan taruh di di depan kelas 10 B. Mau gak?",
+"type": &"dialogue"
+},
+"44": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "44",
+"next_id": "45",
+"next_id_after": "48",
+"notes": "",
+"responses": PackedStringArray("44", "46"),
+"tags": PackedStringArray(),
+"text": "Hah, iya deh gua kerjain.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hah, iya deh gua kerjain.",
+"type": &"response"
+},
+"45": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "45",
+"next_id": "48",
+"notes": "",
+"parent_id": "44",
+"tags": PackedStringArray(),
+"text": "GlobalItems.reputation += 10",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "GlobalItems.reputation += 10",
+"type": &"dialogue"
+},
+"46": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "46",
+"next_id": "47",
+"next_id_after": "48",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Loh kok gua!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Loh kok gua!",
+"type": &"response"
+},
+"47": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "47",
+"next_id": "48",
+"notes": "",
+"parent_id": "46",
+"tags": PackedStringArray(),
+"text": "GlobalItems.reputation -= 5",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "GlobalItems.reputation -= 5",
+"type": &"dialogue"
+},
+"48": {
+"character": "Guntur",
+"character_replacements": Array[Dictionary]([]),
+"id": "48",
+"next_id": "49",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Pokoknya lu ya yang angkut sampah, Thank you RAKA.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Pokoknya lu ya yang angkut sampah, Thank you RAKA.",
+"type": &"dialogue"
+},
+"49": {
+"character": "Endi",
+"character_replacements": Array[Dictionary]([]),
+"id": "49",
+"next_id": "50",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Oke Andi, kamu harus jelasin ke kita sekarang!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Oke Andi, kamu harus jelasin ke kita sekarang!",
+"type": &"dialogue"
+},
+"5": {
+"character": "Raka",
+"character_replacements": Array[Dictionary]([]),
+"id": "5",
+"next_id": "6",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Tas warna hitam? Ada gantungan kunci berbentuk robot?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tas warna hitam? Ada gantungan kunci berbentuk robot?",
+"type": &"dialogue"
+},
+"50": {
+"character": "Andi",
+"character_replacements": Array[Dictionary]([]),
+"id": "50",
+"next_id": "51",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Kenapa harus aku?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Kenapa harus aku?",
+"type": &"dialogue"
+},
+"51": {
+"id": "51",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"53": {
+"id": "53",
+"next_id": "54",
+"text": "Act1Kantin",
+"type": &"title"
+},
+"54": {
+"character": "Murid",
+"character_replacements": Array[Dictionary]([]),
+"id": "54",
+"next_id": "55",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Kamu tau gak, EDI kasih kado HP Iphonk 16S ke NELLY! Katanya hadiah menang lomba Miss Jawa Barat. So Sweet bet anjirr.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Kamu tau gak, EDI kasih kado HP Iphonk 16S ke NELLY! Katanya hadiah menang lomba Miss Jawa Barat. So Sweet bet anjirr.",
+"type": &"dialogue"
+},
+"55": {
+"character": "Murid",
+"character_replacements": Array[Dictionary]([]),
+"id": "55",
+"next_id": "56",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Mereka memang pasangan romantis bgt ya sis! NELLY juga siswi berprestasi tahun pertama sekolah ini. Mana mereka berdua temenan sama ZARA, cewek anak donatur sekolah ini.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Mereka memang pasangan romantis bgt ya sis! NELLY juga siswi berprestasi tahun pertama sekolah ini. Mana mereka berdua temenan sama ZARA, cewek anak donatur sekolah ini.",
+"type": &"dialogue"
+},
+"56": {
+"character": "Murid",
+"character_replacements": Array[Dictionary]([]),
+"id": "56",
+"next_id": "57",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Iya kan!!!, Bahkan sekelas GUNTUR, anak Geng motor yang rusuh itu bisa jadi kawan baik mereka.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Iya kan!!!, Bahkan sekelas GUNTUR, anak Geng motor yang rusuh itu bisa jadi kawan baik mereka.",
+"type": &"dialogue"
+},
+"57": {
+"character": "Murid",
+"character_replacements": Array[Dictionary]([]),
+"id": "57",
+"next_id": "58",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Aku pengeeeeen bisa masuk ke grup gaul mereka.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Aku pengeeeeen bisa masuk ke grup gaul mereka.",
+"type": &"dialogue"
+},
+"58": {
+"character": "Raka",
+"character_replacements": Array[Dictionary]([]),
+"id": "58",
+"next_id": "59",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Dari yang aku lihat, sepertinya mereka berempat adalah grup siswa-siswi famous di sekolah ini.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Dari yang aku lihat, sepertinya mereka berempat adalah grup siswa-siswi famous di sekolah ini.",
+"type": &"dialogue"
+},
+"59": {
+"character": "Raka",
+"character_replacements": Array[Dictionary]([]),
+"id": "59",
+"next_id": "60",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Gawat, Sebentar lagi aku harus pulang.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Gawat, Sebentar lagi aku harus pulang.",
+"type": &"dialogue"
+},
+"6": {
+"character": "Pak Her i",
+"character_replacements": Array[Dictionary]([]),
+"id": "6",
+"next_id": "7",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Nah, itu dia. Kamu kenal?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Nah, itu dia. Kamu kenal?",
+"type": &"dialogue"
+},
+"60": {
+"id": "60",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"62": {
+"id": "62",
+"next_id": "63",
+"text": "Act2Kantin",
+"type": &"title"
+},
+"63": {
+"character": "Raka",
+"character_replacements": Array[Dictionary]([]),
+"id": "63",
+"next_id": &"end",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Loh ini liontin siapa? Sepertinya sangat mahal
+ ",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Loh ini liontin siapa? Sepertinya sangat mahal
+ ",
+"type": &"dialogue"
+},
+"7": {
+"character": "Raka",
+"character_replacements": Array[Dictionary]([]),
+"id": "7",
+"next_id": "8",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Iya, itu punya Andi. Dia duduk di sebelah saya kemarin. Kayaknya dia buru-buru pulang.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Iya, itu punya Andi. Dia duduk di sebelah saya kemarin. Kayaknya dia buru-buru pulang.",
+"type": &"dialogue"
+},
+"8": {
+"character": "Pak Heri",
+"character_replacements": Array[Dictionary]([]),
+"id": "8",
+"next_id": "9",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Kalau gitu, titip ya. Tasnya ada di ruang barang hilang. Kamu bisa ambil dulu sebelum bel masuk.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Kalau gitu, titip ya. Tasnya ada di ruang barang hilang. Kamu bisa ambil dulu sebelum bel masuk.",
+"type": &"dialogue"
+},
+"9": {
+"character": "Raka",
+"character_replacements": Array[Dictionary]([]),
+"id": "9",
+"next_id": "10",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Baik, Pak. Saya kembalikan ke Andi nanti.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Baik, Pak. Saya kembalikan ke Andi nanti.",
+"type": &"dialogue"
+}
+}
+raw_text = "~ Act1Parkiran
+Pak Heri : Pagi, Nak Raka. Rajin amat datang pagi-pagi gini.
+Raka : Pagi, Pak. Iya, saya pikir lebih baik datang lebih awal.
+Pak Heri: Oh ya, semalem waktu saya patroli, saya nemuin tas yang ketinggalan di kelas lantai dua. Nggak ada nama, tapi isinya kayak punya siswa di kelas mu.
+Raka : Tas warna hitam? Ada gantungan kunci berbentuk robot?
+Pak Her i: Nah, itu dia. Kamu kenal?
+Raka : Iya, itu punya Andi. Dia duduk di sebelah saya kemarin. Kayaknya dia buru-buru pulang.
+Pak Heri : Kalau gitu, titip ya. Tasnya ada di ruang barang hilang. Kamu bisa ambil dulu sebelum bel masuk.
+Raka : Baik, Pak. Saya kembalikan ke Andi nanti.
+=> END
+
+~ Act1LorongKelas
+Raka : Apakah itu tempat barang yang tertinggal yang dibilang pak Heri?
+=> END
+
+~ Act1RuangTemu
+Raka: Kok bisa ya ada orang seceroboh itu meninggalkan tas (muka keheranan), untung bukan orang jahat yang menemukannya.
+Suara riuh para pelajar...
+Raka: Tampaknya sudah mulai ramai di luar. Sebaiknya aku harus keluar.
+=> END
+
+~ Act1RuangKelas
+Raka: Andi!
+Andi: Raka, Ada apa?
+if GlobalItems.haveTasHitam && GlobalItems.isDay1:
+	- Kembalikan Tas Andi
+		Raka: Hei, Andi. Ini... tas kamu, kan?
+		Andi: Oh... iya. Aku.. minta maaf merepotkan mu.
+		GlobalItems.Day1SceneTriggerKelas = true
+		=> Act2RuangKelas
+	- Diam saja
+		Andi: ...
+else:
+	Andi : Halo Raka.
+=> END
+
+~ Act2RuangKelas
+Edi:  Hei ANDI, Apa kabar ngabs.
+Guntur: Semalem kok kamu langsung balik sih? Kan aku bilang ke belakang sekolah dulu!
+Nelly: Hey Raka♡, Kamu bisa bantu aku gak membuang sampah dari piket pagi? Kebetulan kamu yang terakhir kali datang ke kelas?
+Raka: Hah!? Tapi aku kan...
+Zara: Yo, kenapa lu perhitungan sih dengan teman sendiri! Kamu tau ga kalau gua capek nyapu kelas?
+Edi: Hahahaha!, ayo buruan taruh di di depan kelas 10 B. Mau gak?
+- Hah, iya deh gua kerjain.
+	GlobalItems.reputation += 10
+- Loh kok gua!
+	GlobalItems.reputation -= 5
+Guntur:  Pokoknya lu ya yang angkut sampah, Thank you RAKA.
+Endi: Oke Andi, kamu harus jelasin ke kita sekarang!
+Andi: Kenapa harus aku?
+=> END
+
+~ Act1Kantin
+Murid: Kamu tau gak, EDI kasih kado HP Iphonk 16S ke NELLY! Katanya hadiah menang lomba Miss Jawa Barat. So Sweet bet anjirr.
+Murid: Mereka memang pasangan romantis bgt ya sis! NELLY juga siswi berprestasi tahun pertama sekolah ini. Mana mereka berdua temenan sama ZARA, cewek anak donatur sekolah ini.
+Murid: Iya kan!!!, Bahkan sekelas GUNTUR, anak Geng motor yang rusuh itu bisa jadi kawan baik mereka.
+Murid: Aku pengeeeeen bisa masuk ke grup gaul mereka. 
+Raka: Dari yang aku lihat, sepertinya mereka berempat adalah grup siswa-siswi famous di sekolah ini.
+Raka: Gawat, Sebentar lagi aku harus pulang.
+=> END
+
+~ Act2Kantin
+Raka: Loh ini liontin siapa? Sepertinya sangat mahal
+	"
+metadata/dialogue_manager_version = "2.45.0"

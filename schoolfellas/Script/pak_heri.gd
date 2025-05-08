@@ -2,7 +2,9 @@ extends CharacterBody2D
 
 var canInteract = false
 var isChat = false
-var dialog = preload("res://UI/Dialogs/dialog_box_pak_heri.tscn")
+
+@export var dialogResource = DialogueResource
+@export var dialogStart : String = "start"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -28,17 +30,10 @@ func _on_interaction_area_body_exited(body: Node2D) -> void:
 
 func _interaction():
 	$Tutorial.visible = false
+	if GlobalItems.isDay1:
+		dialogStart = "Act1Parkiran"
 	
-	var ui_node = get_tree().get_root().get_node("MapParkiran/UI")
-	if not ui_node:
-		print("Error: Node 'UI' tidak ditemukan! Pastikan sudah ditambahkan ke root scene.")
-		return
-
-	var dialogInstance = dialog.instantiate()
-	if dialogInstance && !isChat:
-		ui_node.add_child(dialogInstance)
-		dialogInstance.position = Vector2(0, 0)  
+	if !isChat:
+		DialogueManager.show_example_dialogue_balloon(load("res://Script/DialogCharacter/Day1.dialogue"), dialogStart)
 		isChat = true
-	else:
-		print("Gagal membuat dialog!")
 	
