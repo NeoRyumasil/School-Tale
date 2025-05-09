@@ -1,5 +1,5 @@
-AnimatedSprite2D
 CharacterBody2D
+AnimatedSprite2D
 Label
 CollisionShape2D
 Area2D
