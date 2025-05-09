@@ -1,0 +1,148 @@
+[gd_scene load_steps=18 format=3 uid="uid://b7vdgcsrgnv8r"]
+
+[ext_resource type="Texture2D" uid="uid://fmgolofhml41" path="res://Asset/CharacterSprite/Ucup.png" id="1_frh80"]
+[ext_resource type="Script" path="res://Script/ucup.gd" id="1_tfwem"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b8fci"]
+atlas = ExtResource("1_frh80")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_utgpn"]
+atlas = ExtResource("1_frh80")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4xwyg"]
+atlas = ExtResource("1_frh80")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kuome"]
+atlas = ExtResource("1_frh80")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yjlkw"]
+atlas = ExtResource("1_frh80")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n282d"]
+atlas = ExtResource("1_frh80")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_85drx"]
+atlas = ExtResource("1_frh80")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oxfnn"]
+atlas = ExtResource("1_frh80")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_irbn7"]
+atlas = ExtResource("1_frh80")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6nlsn"]
+atlas = ExtResource("1_frh80")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5f4ht"]
+atlas = ExtResource("1_frh80")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_57exq"]
+atlas = ExtResource("1_frh80")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_47ght"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b8fci")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_utgpn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4xwyg")
+}],
+"loop": true,
+"name": &"JalanAtas",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kuome")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yjlkw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n282d")
+}],
+"loop": true,
+"name": &"JalanBawah",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_85drx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oxfnn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_irbn7")
+}],
+"loop": true,
+"name": &"JalanKanan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6nlsn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5f4ht")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_57exq")
+}],
+"loop": true,
+"name": &"JalanKiri",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7c2yy"]
+size = Vector2(59, 89)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3yksx"]
+size = Vector2(131, 164)
+
+[node name="Ucup" type="CharacterBody2D"]
+script = ExtResource("1_tfwem")
+
+[node name="Animation" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(3.719, 3.719)
+sprite_frames = SubResource("SpriteFrames_47ght")
+animation = &"JalanKiri"
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_7c2yy")
+
+[node name="InteractionArea" type="Area2D" parent="."]
+
+[node name="InteractionCollision" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(4, 5)
+shape = SubResource("RectangleShape2D_3yksx")
+
+[node name="Tutorial" type="Label" parent="."]
+visible = false
+texture_filter = 2
+offset_left = 54.0
+offset_top = -14.0
+offset_right = 178.0
+offset_bottom = 9.0
+text = "Interaksi (Enter)"
+
+[connection signal="body_entered" from="InteractionArea" to="." method="_on_interaction_area_body_entered"]
+[connection signal="body_exited" from="InteractionArea" to="." method="_on_interaction_area_body_exited"]

@@ -1,0 +1,147 @@
+[gd_scene load_steps=18 format=3 uid="uid://bgc2n1d0nyja6"]
+
+[ext_resource type="Script" path="res://Script/ratna.gd" id="1_5t3d2"]
+[ext_resource type="Texture2D" uid="uid://c76dwqj4e4o6b" path="res://Asset/CharacterSprite/Ratna.png" id="1_euq3b"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gtqcv"]
+atlas = ExtResource("1_euq3b")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0mpy"]
+atlas = ExtResource("1_euq3b")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i7tqk"]
+atlas = ExtResource("1_euq3b")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_inahi"]
+atlas = ExtResource("1_euq3b")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8sofc"]
+atlas = ExtResource("1_euq3b")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vwnum"]
+atlas = ExtResource("1_euq3b")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cxfv6"]
+atlas = ExtResource("1_euq3b")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s31ca"]
+atlas = ExtResource("1_euq3b")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qdyxl"]
+atlas = ExtResource("1_euq3b")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3d4y8"]
+atlas = ExtResource("1_euq3b")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lowee"]
+atlas = ExtResource("1_euq3b")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g1w1n"]
+atlas = ExtResource("1_euq3b")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tt6fq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gtqcv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0mpy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i7tqk")
+}],
+"loop": true,
+"name": &"JalanAtas",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_inahi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8sofc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vwnum")
+}],
+"loop": true,
+"name": &"JalanBawah",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cxfv6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s31ca")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qdyxl")
+}],
+"loop": true,
+"name": &"JalanKanan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3d4y8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lowee")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g1w1n")
+}],
+"loop": true,
+"name": &"JalanKiri",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7c2yy"]
+size = Vector2(59, 89)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3yksx"]
+size = Vector2(131, 164)
+
+[node name="Ratna" type="CharacterBody2D"]
+script = ExtResource("1_5t3d2")
+
+[node name="Animation" type="AnimatedSprite2D" parent="."]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_tt6fq")
+animation = &"JalanKiri"
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_7c2yy")
+
+[node name="InteractionArea" type="Area2D" parent="."]
+
+[node name="InteractionCollision" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(4, 5)
+shape = SubResource("RectangleShape2D_3yksx")
+
+[node name="Tutorial" type="Label" parent="."]
+visible = false
+texture_filter = 2
+offset_left = 54.0
+offset_top = -14.0
+offset_right = 178.0
+offset_bottom = 9.0
+text = "Interaksi (Enter)"
+
+[connection signal="body_entered" from="InteractionArea" to="." method="_on_interaction_area_body_entered"]
+[connection signal="body_exited" from="InteractionArea" to="." method="_on_interaction_area_body_exited"]
