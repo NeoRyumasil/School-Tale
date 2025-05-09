@@ -5,8 +5,6 @@ res://Character/pak_heri.tscn
 res://Object/checkpoint.tscn
 res://UI/Dialogs/dialog_box_andi.tscn
 res://UI/Dialogs/dialog_box_raka.tscn
-res://Script/pak_heri.gd
-res://Script/dialog_box_pak_heri.gd
-res://Script/dialog_box_andi.gd
-res://Script/andi.gd
-res://Script/global_items.gd
+res://Script/nelly.gd
+res://Character/guntur.tscn
+res://Script/guntur.gd

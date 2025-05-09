@@ -216,17 +216,28 @@ lines = {
 "type": &"dialogue"
 },
 "29": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
 "id": "29",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "Day1SceneTriggerKelas"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "true"
+}]),
+"is_blocking": true
+},
 "next_id": "30",
-"notes": "",
 "parent_id": "26",
-"tags": PackedStringArray(),
-"text": "GlobalItems.Day1SceneTriggerKelas = true",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "GlobalItems.Day1SceneTriggerKelas = true",
-"type": &"dialogue"
+"type": &"mutation"
 },
 "3": {
 "character": "Raka",
@@ -405,17 +416,28 @@ lines = {
 "type": &"response"
 },
 "45": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
 "id": "45",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "reputation"
+}, {
+"type": "assignment",
+"value": "+="
+}, {
+"type": "number",
+"value": 10
+}]),
+"is_blocking": true
+},
 "next_id": "48",
-"notes": "",
 "parent_id": "44",
-"tags": PackedStringArray(),
-"text": "GlobalItems.reputation += 10",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "GlobalItems.reputation += 10",
-"type": &"dialogue"
+"type": &"mutation"
 },
 "46": {
 "character": "",
@@ -431,17 +453,28 @@ lines = {
 "type": &"response"
 },
 "47": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
 "id": "47",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "reputation"
+}, {
+"type": "assignment",
+"value": "-="
+}, {
+"type": "number",
+"value": 5
+}]),
+"is_blocking": true
+},
 "next_id": "48",
-"notes": "",
 "parent_id": "46",
-"tags": PackedStringArray(),
-"text": "GlobalItems.reputation -= 5",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "GlobalItems.reputation -= 5",
-"type": &"dialogue"
+"type": &"mutation"
 },
 "48": {
 "character": "Guntur",
@@ -603,15 +636,36 @@ lines = {
 "character": "Raka",
 "character_replacements": Array[Dictionary]([]),
 "id": "63",
-"next_id": &"end",
+"next_id": "64",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "Loh ini liontin siapa? Sepertinya sangat mahal
- ",
+"text": "Loh ini liontin siapa? Sepertinya sangat mahal",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Loh ini liontin siapa? Sepertinya sangat mahal
- ",
+"translation_key": "Loh ini liontin siapa? Sepertinya sangat mahal",
 "type": &"dialogue"
+},
+"64": {
+"id": "64",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "NellyMission"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "true"
+}]),
+"is_blocking": true
+},
+"next_id": &"end",
+"type": &"mutation"
 },
 "7": {
 "character": "Raka",
@@ -678,7 +732,7 @@ if GlobalItems.haveTasHitam && GlobalItems.isDay1:
 	- Kembalikan Tas Andi
 		Raka: Hei, Andi. Ini... tas kamu, kan?
 		Andi: Oh... iya. Aku.. minta maaf merepotkan mu.
-		GlobalItems.Day1SceneTriggerKelas = true
+		set GlobalItems.Day1SceneTriggerKelas = true
 		=> Act2RuangKelas
 	- Diam saja
 		Andi: ...
@@ -694,9 +748,9 @@ Raka: Hah!? Tapi aku kan...
 Zara: Yo, kenapa lu perhitungan sih dengan teman sendiri! Kamu tau ga kalau gua capek nyapu kelas?
 Edi: Hahahaha!, ayo buruan taruh di di depan kelas 10 B. Mau gak?
 - Hah, iya deh gua kerjain.
-	GlobalItems.reputation += 10
+	set GlobalItems.reputation += 10
 - Loh kok gua!
-	GlobalItems.reputation -= 5
+	set GlobalItems.reputation -= 5
 Guntur:  Pokoknya lu ya yang angkut sampah, Thank you RAKA.
 Endi: Oke Andi, kamu harus jelasin ke kita sekarang!
 Andi: Kenapa harus aku?
@@ -713,5 +767,5 @@ Raka: Gawat, Sebentar lagi aku harus pulang.
 
 ~ Act2Kantin
 Raka: Loh ini liontin siapa? Sepertinya sangat mahal
-	"
+set GlobalItems.NellyMission = true"
 metadata/dialogue_manager_version = "2.45.0"

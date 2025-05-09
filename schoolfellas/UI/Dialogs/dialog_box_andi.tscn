@@ -1,7 +1,55 @@
-[gd_scene load_steps=3 format=3 uid="uid://crhqalwpuavnc"]
+[gd_scene load_steps=3 format=3 uid="uid://c72nhdspejv72"]
 
-[ext_resource type="Script" path="res://Script/dialog_box_andi.gd" id="1_wax8d"]
 [ext_resource type="Texture2D" uid="uid://cxq6dctc087gq" path="res://Asset/LED-Black-screen-3.jpg" id="2_syirk"]
+
+[sub_resource type="GDScript" id="GDScript_aydpw"]
+script/source = "extends Control
+
+var dialogIndex = 0
+var isFinished = false
+var currentDialog : Array = []
+
+@onready var dialogText: RichTextLabel = $Box/DialogText
+
+func _ready() -> void:
+	showDialog()
+
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed(\"Interact\"):
+		dialogLoader()
+		
+func showDialog():
+	dialogIndex = 0
+	dialogLoader()
+
+func dialogLoader():
+	
+	if GlobalItems.haveTasHitam && GlobalItems.isDay1:
+		currentDialog = dialog.dialogKelasD1
+	elif !GlobalItems.haveTasHitam && !GlobalItems.isDay1:
+		currentDialog = [\"Hello\"]
+	
+	if dialogIndex < currentDialog.size() :
+		isFinished = false
+		dialogText.bbcode_text = currentDialog[dialogIndex]
+		dialogText.visible_characters = 0 
+
+		var tween = create_tween()
+		tween.tween_property(dialogText, \"visible_characters\", currentDialog[dialogIndex].length(), 1).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN_OUT)
+		
+		if GlobalItems.isAndiTurns:
+			dialogIndex += 1
+			
+	else:
+		queue_free()
+		isFinished = true
+		
+	
+
+	
+
+		
+"
 
 [node name="dialog_box_andi" type="Control"]
 layout_mode = 3
@@ -10,7 +58,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_wax8d")
+script = SubResource("GDScript_aydpw")
 
 [node name="Box" type="Control" parent="."]
 layout_mode = 1

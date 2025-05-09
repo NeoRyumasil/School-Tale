@@ -1,6 +1,7 @@
-[gd_scene load_steps=18 format=3 uid="uid://6m7qbi5vvm78"]
+[gd_scene load_steps=19 format=3 uid="uid://6m7qbi5vvm78"]
 
 [ext_resource type="Texture2D" uid="uid://bdjrmfsyru683" path="res://Asset/CharacterSprite/Nelly.png" id="1_65dhb"]
+[ext_resource type="Script" path="res://Script/nelly.gd" id="2_li344"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yb5ya"]
 atlas = ExtResource("1_65dhb")
@@ -120,6 +121,7 @@ font_size = 8
 
 [node name="Nelly" type="CharacterBody2D"]
 scale = Vector2(3.719, 3.719)
+script = ExtResource("2_li344")
 
 [node name="Animation" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
@@ -143,3 +145,6 @@ offset_right = 140.671
 offset_bottom = 17.8911
 text = "Interaksi (Enter)"
 label_settings = SubResource("LabelSettings_j3tbo")
+
+[connection signal="body_entered" from="InteractionArea" to="." method="_on_interaction_area_body_entered"]
+[connection signal="body_exited" from="InteractionArea" to="." method="_on_interaction_area_body_exited"]
