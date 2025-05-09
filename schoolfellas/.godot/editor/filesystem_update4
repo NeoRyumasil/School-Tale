@@ -29,3 +29,8 @@ res://Object/tas.tscn
 res://Script/tas.gd
 res://lorong_dari_kelas_lain.tscn
 res://Script/scene_trigger_to_lorong_dari_kelas_lain.gd
+res://Script/global_items.gd
+res://Script/scene_kelas_day_1.gd
+res://Character/nelly.tscn
+res://scene_kelas_day_1.tscn
+res://Script/edi.gd
