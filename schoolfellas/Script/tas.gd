@@ -1,8 +1,8 @@
 extends Area2D
 
 var canInteract = false
-
-
+@export var dialogResource = DialogueResource
+@export var dialogStart : String = "start"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -25,4 +25,5 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 
 func _interaction():
 	GlobalItems.haveTasHitam = true
+	DialogueManager.show_example_dialogue_balloon(load("res://Script/DialogCharacter/Tas.dialogue"), dialogStart)
 	queue_free()

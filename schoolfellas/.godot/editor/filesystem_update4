@@ -22,3 +22,8 @@ res://Script/scene_trigger_lorong_kelas.gd
 res://ruang_kelas_lain.tscn
 res://ruang_kelas.tscn
 res://Script/scene_trigger_lorong_kelas_lain.gd
+res://Script/scene_trigger_parkiran.gd
+res://Script/scene_trigger_to_lorong.gd
+res://lorong_dari_kelas.tscn
+res://Object/tas.tscn
+res://Script/tas.gd

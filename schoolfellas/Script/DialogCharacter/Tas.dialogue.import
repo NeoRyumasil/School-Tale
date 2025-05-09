@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://ixc23eq5w6k"
+path="res://.godot/imported/Tas.dialogue-9636fb7eff052bba023e347e39b1efe1.tres"
+
+[deps]
+
+source_file="res://Script/DialogCharacter/Tas.dialogue"
+dest_files=["res://.godot/imported/Tas.dialogue-9636fb7eff052bba023e347e39b1efe1.tres"]
+
+[params]
+
+defaults=true
