@@ -27,3 +27,5 @@ res://Script/scene_trigger_to_lorong.gd
 res://lorong_dari_kelas.tscn
 res://Object/tas.tscn
 res://Script/tas.gd
+res://lorong_dari_kelas_lain.tscn
+res://Script/scene_trigger_to_lorong_dari_kelas_lain.gd
