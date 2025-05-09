@@ -18,3 +18,7 @@ res://Character/faldo.tscn
 res://map_parkiran_out.tscn
 res://Script/scene_trigger_Lorong.gd
 res://intro_out.tscn
+res://Script/scene_trigger_lorong_kelas.gd
+res://ruang_kelas_lain.tscn
+res://ruang_kelas.tscn
+res://Script/scene_trigger_lorong_kelas_lain.gd

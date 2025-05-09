@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://mna44bi3ffw2"]
+[gd_scene load_steps=18 format=3 uid="uid://mna44bi3ffw2"]
 
 [ext_resource type="Texture2D" uid="uid://bkuc8hjm41jwu" path="res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png" id="2_8ppso"]
 [ext_resource type="Texture2D" uid="uid://cq35y22s5blao" path="res://Asset/TileSet/DC55F088-EB2C-4379-986E-3C8B53E8C019.png" id="3_oqsop"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dg0ddh1js6hbq" path="res://Character/player.tscn" id="6_nn8aj"]
 [ext_resource type="PackedScene" uid="uid://bj3nl1bygp06t" path="res://Object/loker.tscn" id="7_q1v2d"]
 [ext_resource type="PackedScene" uid="uid://buywt0vlicdeh" path="res://Object/tempat_sampah_kecil_samping.tscn" id="8_xkjrx"]
+[ext_resource type="Script" path="res://Script/scene_trigger_lorong_kelas_lain.gd" id="9_b1n41"]
 [ext_resource type="Script" path="res://Script/scene_trigger_Lorong.gd" id="9_o86ty"]
 [ext_resource type="Script" path="res://Script/scene_trigger_lorong_kelas.gd" id="10_1gotb"]
 
@@ -4572,7 +4573,7 @@ position = Vector2(-451.5, 637)
 shape = SubResource("RectangleShape2D_x81xp")
 
 [node name="Scene_Trigger_Lorong_Kelas2" type="StaticBody2D" parent="Scene_Triggers"]
-script = ExtResource("10_1gotb")
+script = ExtResource("9_b1n41")
 
 [node name="Area2D" type="Area2D" parent="Scene_Triggers/Scene_Trigger_Lorong_Kelas2"]
 position = Vector2(11, 415)
