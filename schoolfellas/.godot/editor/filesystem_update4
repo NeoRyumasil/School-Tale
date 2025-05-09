@@ -15,3 +15,6 @@ res://Character/hartono.tscn
 res://Script/hartono.gd
 res://Script/faldo.gd
 res://Character/faldo.tscn
+res://map_parkiran_out.tscn
+res://Script/scene_trigger_Lorong.gd
+res://intro_out.tscn
