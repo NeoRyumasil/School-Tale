@@ -1,0 +1,17 @@
+~ Start
+if GlobalItems.haveSampah == true:
+	- Buang Sampah
+		set GlobalItems.reputation += 5
+		set GlobalItems.haveSampah = false
+	- Diam Saja
+		set GlobalItems.reputation += 0
+else :
+	% Ini hanyalah tong sampah biasa.
+	=> END
+	% Kamu berpikir apakah didalamnya terdapat harta karun?
+	=> END
+	% Terkadang kamu bisa menemukan barang berguna disini.
+	=> END
+	% Apakah sampah benar-benar tidak berguna?
+	=> END
+=> END

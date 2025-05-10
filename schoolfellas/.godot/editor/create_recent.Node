@@ -1,3 +1,7 @@
+Timer
+PathFollow2D
+Path2D
+Node2D
 Control
 TextureRect
 TextureButton
@@ -9,7 +13,3 @@ HBoxContainer
 Camera2D
 CharacterBody2D
 AnimatedSprite2D
-Label
-CollisionShape2D
-Area2D
-Node2D

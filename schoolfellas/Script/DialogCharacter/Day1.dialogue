@@ -27,7 +27,8 @@ if GlobalItems.haveTasHitam && GlobalItems.isDay1:
 		Raka: Hei, Andi. Ini... tas kamu, kan?
 		Andi: Oh... iya. Aku.. minta maaf merepotkan mu.
 		set GlobalItems.Day1SceneTriggerKelas = true
-		=> Act2RuangKelas
+		do get_tree().change_scene_to_file("res://scene_kelas_day_1.tscn")
+		=> END
 	- Diam saja
 		Andi: ...
 else:
@@ -49,6 +50,8 @@ Guntur:  Pokoknya lu ya yang angkut sampah, Thank you RAKA.
 Kamu mendapatkan Sampah.
 Endi: Oke Andi, kamu harus jelasin ke kita sekarang!
 Andi: Kenapa harus aku?
+set GlobalItems.haveSampah = true
+do get_tree().change_scene_to_file("res://lorong_dari_kelas.tscn")
 => END
 
 ~ Act1Kantin

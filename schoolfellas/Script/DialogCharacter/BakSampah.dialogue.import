@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://caaflk2co3pyv"
+path="res://.godot/imported/BakSampah.dialogue-84e2a997f2f11d3ecc31cb8e2a2c7404.tres"
+
+[deps]
+
+source_file="res://Script/DialogCharacter/BakSampah.dialogue"
+dest_files=["res://.godot/imported/BakSampah.dialogue-84e2a997f2f11d3ecc31cb8e2a2c7404.tres"]
+
+[params]
+
+defaults=true

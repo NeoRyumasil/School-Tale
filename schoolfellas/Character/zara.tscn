@@ -171,7 +171,7 @@ script = ExtResource("1_qdnc4")
 texture_filter = 1
 scale = Vector2(3.719, 3.719)
 sprite_frames = SubResource("SpriteFrames_qh0rs")
-animation = &"Idle"
+animation = &"JalanKiri"
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -0.5)

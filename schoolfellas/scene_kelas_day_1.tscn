@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://cp8j0ruirpjcw"]
+[gd_scene load_steps=36 format=3 uid="uid://cp8j0ruirpjcw"]
 
 [ext_resource type="Script" path="res://Script/scene_kelas_day_1.gd" id="1_fg4xo"]
 [ext_resource type="Texture2D" uid="uid://bkuc8hjm41jwu" path="res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png" id="2_ct0w5"]
@@ -5108,6 +5108,30 @@ texture = ExtResource("9_yjerl")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_nah44")
 
+[sub_resource type="Curve2D" id="Curve2D_w5mk0"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 2.33337, 4, 0, 0, 0, 0, -215, -8.66667, 0, 0, 0, 0, -317.667, -14.6667, 0, 0, 0, 0, -344.667, -14.3333)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_0f60w"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 2575, 269, 0, 0, 0, 0, 1986, 285, 0, 0, 0, 0, 1235, 309)
+}
+point_count = 3
+
+[sub_resource type="Curve2D" id="Curve2D_4dntp"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 2417, 251, 0, 0, 0, 0, 1946, 297, 0, 0, 0, 0, 1399, 262, 0, 0, 0, 0, 1343, 261)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_4d6kj"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 2768, 249, 0, 0, 0, 0, 1952, 274, 0, 0, 0, 0, 1461, 191)
+}
+point_count = 3
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2o4xy"]
 size = Vector2(89.5, 96)
 
@@ -5238,6 +5262,69 @@ scale = Vector2(3, 3)
 position = Vector2(1529, 678)
 scale = Vector2(3, 3)
 
+[node name="Characters" type="Node2D" parent="."]
+
+[node name="Path_Edi" type="Path2D" parent="Characters"]
+position = Vector2(2247, 257)
+scale = Vector2(3, 3)
+curve = SubResource("Curve2D_w5mk0")
+
+[node name="Edi_Follower" type="PathFollow2D" parent="Characters/Path_Edi"]
+position = Vector2(2.33337, 4)
+rotation = -3.08338
+rotates = false
+loop = false
+
+[node name="Edi" parent="Characters/Path_Edi/Edi_Follower" instance=ExtResource("18_bfwiw")]
+position = Vector2(2.56213, 3.85746)
+rotation = 3.08338
+
+[node name="Andi" parent="Characters" instance=ExtResource("14_mi0mg")]
+position = Vector2(909, 240)
+scale = Vector2(0.8, 0.8)
+
+[node name="Path_Nelly" type="Path2D" parent="Characters"]
+curve = SubResource("Curve2D_0f60w")
+
+[node name="Nelly_Follower" type="PathFollow2D" parent="Characters/Path_Nelly"]
+position = Vector2(2575, 269)
+rotation = 3.11443
+rotates = false
+loop = false
+
+[node name="Nelly" parent="Characters/Path_Nelly/Nelly_Follower" instance=ExtResource("15_hfj7q")]
+position = Vector2(-10.2136, 7.72551)
+rotation = -3.14159
+scale = Vector2(3, 3)
+
+[node name="Path_Zara" type="Path2D" parent="Characters"]
+curve = SubResource("Curve2D_4dntp")
+
+[node name="Zara_Follower" type="PathFollow2D" parent="Characters/Path_Zara"]
+position = Vector2(2417, 251)
+rotation = 3.04424
+rotates = false
+loop = false
+
+[node name="Zara" parent="Characters/Path_Zara/Zara_Follower" instance=ExtResource("17_1iyqn")]
+position = Vector2(-7.74426, 7.28173)
+rotation = -3.05433
+scale = Vector2(0.8, 0.8)
+
+[node name="Path_Guntur" type="Path2D" parent="Characters"]
+curve = SubResource("Curve2D_4d6kj")
+
+[node name="Guntur_Follower" type="PathFollow2D" parent="Characters/Path_Guntur"]
+position = Vector2(2768, 249)
+rotation = 3.11097
+rotates = false
+loop = false
+
+[node name="Guntur" parent="Characters/Path_Guntur/Guntur_Follower" instance=ExtResource("16_ien37")]
+position = Vector2(-1.93768, -2.06032)
+rotation = -3.14159
+scale = Vector2(0.8, 0.8)
+
 [node name="Scene_Triggers" type="Node2D" parent="."]
 
 [node name="Scene_Trigger_To_Lorong" type="StaticBody2D" parent="Scene_Triggers"]
@@ -5249,24 +5336,9 @@ script = ExtResource("13_5ew7v")
 position = Vector2(1856.25, 272)
 shape = SubResource("RectangleShape2D_2o4xy")
 
-[node name="Andi" parent="." instance=ExtResource("14_mi0mg")]
-position = Vector2(909, 240)
-scale = Vector2(0.8, 0.8)
-
-[node name="Nelly" parent="." instance=ExtResource("15_hfj7q")]
-position = Vector2(1362, 237)
-scale = Vector2(3, 3)
-
-[node name="Guntur" parent="." instance=ExtResource("16_ien37")]
-position = Vector2(1560, 246)
-scale = Vector2(0.8, 0.8)
-
-[node name="Zara" parent="." instance=ExtResource("17_1iyqn")]
-position = Vector2(1228, 249)
-scale = Vector2(0.8, 0.8)
-
-[node name="Edi" parent="." instance=ExtResource("18_bfwiw")]
-position = Vector2(1463, 328)
-scale = Vector2(3, 3)
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+autostart = true
 
 [connection signal="body_entered" from="Scene_Triggers/Scene_Trigger_To_Lorong/Area2D" to="Scene_Triggers/Scene_Trigger_To_Lorong" method="_on_area_2d_body_entered"]
