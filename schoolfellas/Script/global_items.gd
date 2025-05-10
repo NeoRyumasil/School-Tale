@@ -27,3 +27,5 @@ var Day1SceneTriggerKelas = false
 
 # MissionTrigger
 var NellyMission = false
+
+# Global Scene

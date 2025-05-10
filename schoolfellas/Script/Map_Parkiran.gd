@@ -16,6 +16,4 @@ func _process(delta: float) -> void:
 	pass
 
 func _spawn():
-	if GlobalItems.isCheckpointParkiran:
-		player.position = GlobalItems.checkpoint
 	pass

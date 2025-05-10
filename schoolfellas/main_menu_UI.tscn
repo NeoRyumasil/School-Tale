@@ -1,0 +1,66 @@
+[gd_scene load_steps=9 format=3 uid="uid://q6x6rixbk8mw"]
+
+[ext_resource type="Texture2D" uid="uid://cmkvmomj4o8ji" path="res://UI/title.png" id="1_0gqlk"]
+[ext_resource type="Texture2D" uid="uid://oqygty0jqci6" path="res://UI/Buttons/New Game.png" id="1_65ukj"]
+[ext_resource type="Script" path="res://main_menu_ui.gd" id="1_xu7t8"]
+[ext_resource type="Texture2D" uid="uid://chkf7q3wgxvuw" path="res://UI/Buttons/Continue.png" id="2_knirh"]
+[ext_resource type="Texture2D" uid="uid://cbao5dlv84238" path="res://UI/Buttons/New Game_hover.png" id="2_y1lq8"]
+[ext_resource type="Texture2D" uid="uid://b2x6fghvkkeff" path="res://UI/Buttons/Save & Quit.png" id="3_bcy4a"]
+[ext_resource type="Texture2D" uid="uid://n33qh1bwx82f" path="res://UI/Buttons/Continue_hover.png" id="4_lo4g4"]
+[ext_resource type="Texture2D" uid="uid://dsuibjle3w3nb" path="res://UI/Buttons/Save & Quit_hover.png" id="6_en7nd"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.0012, 1)
+script = ExtResource("1_xu7t8")
+
+[node name="MenuContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 338.0
+offset_top = 260.0
+offset_right = 378.0
+offset_bottom = 300.0
+scale = Vector2(2.37511, 2.50414)
+
+[node name="ButtonContainer" type="VBoxContainer" parent="MenuContainer"]
+layout_mode = 2
+
+[node name="Start" type="TextureButton" parent="MenuContainer/ButtonContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("1_65ukj")
+texture_pressed = ExtResource("2_y1lq8")
+texture_hover = ExtResource("2_y1lq8")
+
+[node name="Continue" type="TextureButton" parent="MenuContainer/ButtonContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("2_knirh")
+texture_pressed = ExtResource("4_lo4g4")
+texture_hover = ExtResource("4_lo4g4")
+
+[node name="Exit" type="TextureButton" parent="MenuContainer/ButtonContainer"]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("3_bcy4a")
+texture_pressed = ExtResource("6_en7nd")
+texture_hover = ExtResource("6_en7nd")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 293.0
+offset_top = 39.0
+offset_right = 483.0
+offset_bottom = 91.0
+scale = Vector2(2.72, 2.72)
+texture = ExtResource("1_0gqlk")
+
+[connection signal="pressed" from="MenuContainer/ButtonContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="MenuContainer/ButtonContainer/Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="MenuContainer/ButtonContainer/Exit" to="." method="_on_exit_pressed"]

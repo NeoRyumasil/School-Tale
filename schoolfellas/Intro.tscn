@@ -13,7 +13,7 @@
 [ext_resource type="Script" path="res://Script/scene_trigger_parkiran.gd" id="11_0iotl"]
 [ext_resource type="PackedScene" uid="uid://b71q43ylglp3q" path="res://Object/checkpoint.tscn" id="11_inoyg"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rd7hd"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_853w0"]
 texture = ExtResource("1_wcc6y")
 35:5/0 = 0
 36:5/0 = 0
@@ -4088,7 +4088,7 @@ texture = ExtResource("1_wcc6y")
 
 [sub_resource type="TileSet" id="TileSet_q8nmi"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_rd7hd")
+sources/0 = SubResource("TileSetAtlasSource_853w0")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q5mn1"]
 
