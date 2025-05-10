@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bidupqssu2o52"]
+[gd_scene load_steps=23 format=3 uid="uid://bidupqssu2o52"]
 
 [ext_resource type="Texture2D" uid="uid://bljv3cln3auid" path="res://Asset/CharacterSprite/Pak Heri.png" id="1_3he3i"]
 [ext_resource type="Script" path="res://Script/pak_heri.gd" id="1_rf1wo"]
@@ -7,6 +7,66 @@
 atlas = ExtResource("1_3he3i")
 region = Rect2(32, 0, 32, 32)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_ynio3"]
+atlas = ExtResource("1_3he3i")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5mpp8"]
+atlas = ExtResource("1_3he3i")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sbeab"]
+atlas = ExtResource("1_3he3i")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10xmk"]
+atlas = ExtResource("1_3he3i")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y7v7v"]
+atlas = ExtResource("1_3he3i")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3hhly"]
+atlas = ExtResource("1_3he3i")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x1fxp"]
+atlas = ExtResource("1_3he3i")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ejkui"]
+atlas = ExtResource("1_3he3i")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h6t3g"]
+atlas = ExtResource("1_3he3i")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_72nsw"]
+atlas = ExtResource("1_3he3i")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yg50v"]
+atlas = ExtResource("1_3he3i")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lh021"]
+atlas = ExtResource("1_3he3i")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i0far"]
+atlas = ExtResource("1_3he3i")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_43qux"]
+atlas = ExtResource("1_3he3i")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e2302"]
+atlas = ExtResource("1_3he3i")
+region = Rect2(0, 32, 32, 32)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_kijsi"]
 animations = [{
 "frames": [{
@@ -14,7 +74,87 @@ animations = [{
 "texture": SubResource("AtlasTexture_wc6ia")
 }],
 "loop": true,
-"name": &"default",
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ynio3")
+}],
+"loop": true,
+"name": &"IdleAtas",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5mpp8")
+}],
+"loop": true,
+"name": &"IdleKanan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sbeab")
+}],
+"loop": true,
+"name": &"IdleKiri",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_10xmk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y7v7v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3hhly")
+}],
+"loop": true,
+"name": &"JalanAtas",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x1fxp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ejkui")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h6t3g")
+}],
+"loop": true,
+"name": &"JalanBawah",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_72nsw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yg50v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lh021")
+}],
+"loop": true,
+"name": &"JalanKanan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i0far")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_43qux")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e2302")
+}],
+"loop": true,
+"name": &"JalanKiri",
 "speed": 5.0
 }]
 
@@ -35,6 +175,7 @@ texture_filter = 1
 position = Vector2(423, 304)
 scale = Vector2(3.719, 3.719)
 sprite_frames = SubResource("SpriteFrames_kijsi")
+animation = &"JalanKiri"
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2(435, 307.5)

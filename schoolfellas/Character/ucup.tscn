@@ -1,7 +1,23 @@
-[gd_scene load_steps=18 format=3 uid="uid://b7vdgcsrgnv8r"]
+[gd_scene load_steps=22 format=3 uid="uid://b7vdgcsrgnv8r"]
 
 [ext_resource type="Texture2D" uid="uid://fmgolofhml41" path="res://Asset/CharacterSprite/Ucup.png" id="1_frh80"]
 [ext_resource type="Script" path="res://Script/ucup.gd" id="1_tfwem"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kehvj"]
+atlas = ExtResource("1_frh80")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kw6p1"]
+atlas = ExtResource("1_frh80")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aius5"]
+atlas = ExtResource("1_frh80")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_po412"]
+atlas = ExtResource("1_frh80")
+region = Rect2(32, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b8fci"]
 atlas = ExtResource("1_frh80")
@@ -53,6 +69,38 @@ region = Rect2(64, 64, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_47ght"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kehvj")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kw6p1")
+}],
+"loop": true,
+"name": &"IdleAtas",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aius5")
+}],
+"loop": true,
+"name": &"IdleKanan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_po412")
+}],
+"loop": true,
+"name": &"IdleKiri",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_b8fci")
@@ -123,7 +171,7 @@ script = ExtResource("1_tfwem")
 texture_filter = 1
 scale = Vector2(3.719, 3.719)
 sprite_frames = SubResource("SpriteFrames_47ght")
-animation = &"JalanKiri"
+animation = &"Idle"
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -0.5)

@@ -1,7 +1,23 @@
-[gd_scene load_steps=19 format=3 uid="uid://6m7qbi5vvm78"]
+[gd_scene load_steps=23 format=3 uid="uid://6m7qbi5vvm78"]
 
 [ext_resource type="Texture2D" uid="uid://bdjrmfsyru683" path="res://Asset/CharacterSprite/Nelly.png" id="1_65dhb"]
 [ext_resource type="Script" path="res://Script/nelly.gd" id="2_li344"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0kum1"]
+atlas = ExtResource("1_65dhb")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lymrm"]
+atlas = ExtResource("1_65dhb")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wyqht"]
+atlas = ExtResource("1_65dhb")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i0w8e"]
+atlas = ExtResource("1_65dhb")
+region = Rect2(32, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yb5ya"]
 atlas = ExtResource("1_65dhb")
@@ -53,6 +69,38 @@ region = Rect2(0, 32, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7ehda"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0kum1")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lymrm")
+}],
+"loop": true,
+"name": &"IdleAtas",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wyqht")
+}],
+"loop": true,
+"name": &"IdleKanan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i0w8e")
+}],
+"loop": true,
+"name": &"IdleKiri",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_yb5ya")
@@ -126,7 +174,7 @@ script = ExtResource("2_li344")
 [node name="Animation" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_7ehda")
-animation = &"JalanBawah"
+animation = &"IdleKiri"
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2(0, 1.5)

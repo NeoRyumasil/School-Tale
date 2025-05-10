@@ -1,7 +1,23 @@
-[gd_scene load_steps=18 format=3 uid="uid://bl1bxmpsxre6b"]
+[gd_scene load_steps=22 format=3 uid="uid://bl1bxmpsxre6b"]
 
 [ext_resource type="Script" path="res://Script/faldo.gd" id="1_k0ayn"]
 [ext_resource type="Texture2D" uid="uid://dh2jlw43snta0" path="res://Asset/CharacterSprite/Faldo.png" id="1_ugcn4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x63qi"]
+atlas = ExtResource("1_ugcn4")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_thqwo"]
+atlas = ExtResource("1_ugcn4")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_02a0a"]
+atlas = ExtResource("1_ugcn4")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v0yki"]
+atlas = ExtResource("1_ugcn4")
+region = Rect2(32, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wn3ng"]
 atlas = ExtResource("1_ugcn4")
@@ -53,6 +69,38 @@ region = Rect2(64, 64, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_l61w5"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x63qi")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_thqwo")
+}],
+"loop": true,
+"name": &"IdleAtas",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_02a0a")
+}],
+"loop": true,
+"name": &"IdleKanan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v0yki")
+}],
+"loop": true,
+"name": &"IdleKiri",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_wn3ng")
@@ -123,7 +171,7 @@ script = ExtResource("1_k0ayn")
 texture_filter = 1
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_l61w5")
-animation = &"JalanKiri"
+animation = &"IdleKiri"
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -0.5)

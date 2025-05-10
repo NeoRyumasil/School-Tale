@@ -1,7 +1,23 @@
-[gd_scene load_steps=18 format=3 uid="uid://tj5xs7h0caw8"]
+[gd_scene load_steps=22 format=3 uid="uid://tj5xs7h0caw8"]
 
 [ext_resource type="Texture2D" uid="uid://cw2lhsw2tnls0" path="res://Asset/CharacterSprite/Widya.png" id="1_8fd8r"]
 [ext_resource type="Script" path="res://Script/widya.gd" id="1_sfxsy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r3u7o"]
+atlas = ExtResource("1_8fd8r")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7rm2s"]
+atlas = ExtResource("1_8fd8r")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ie8uc"]
+atlas = ExtResource("1_8fd8r")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_655ir"]
+atlas = ExtResource("1_8fd8r")
+region = Rect2(32, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_teay3"]
 atlas = ExtResource("1_8fd8r")
@@ -53,6 +69,38 @@ region = Rect2(0, 32, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_h0mue"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r3u7o")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7rm2s")
+}],
+"loop": true,
+"name": &"IdleAtas",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ie8uc")
+}],
+"loop": true,
+"name": &"IdleKanan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_655ir")
+}],
+"loop": true,
+"name": &"IdleKiri",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_teay3")
@@ -123,7 +171,7 @@ script = ExtResource("1_sfxsy")
 texture_filter = 1
 scale = Vector2(3.719, 3.719)
 sprite_frames = SubResource("SpriteFrames_h0mue")
-animation = &"JalanKiri"
+animation = &"IdleKiri"
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -0.5)

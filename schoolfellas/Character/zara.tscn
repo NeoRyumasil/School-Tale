@@ -1,7 +1,23 @@
-[gd_scene load_steps=18 format=3 uid="uid://blnubckqla0gq"]
+[gd_scene load_steps=22 format=3 uid="uid://blnubckqla0gq"]
 
 [ext_resource type="Script" path="res://Script/zara.gd" id="1_qdnc4"]
 [ext_resource type="Texture2D" uid="uid://ju2wo4jdln46" path="res://Asset/CharacterSprite/Zara.png" id="1_y543s"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0f6h"]
+atlas = ExtResource("1_y543s")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m7pfp"]
+atlas = ExtResource("1_y543s")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xu42p"]
+atlas = ExtResource("1_y543s")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r0hpd"]
+atlas = ExtResource("1_y543s")
+region = Rect2(32, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y740g"]
 atlas = ExtResource("1_y543s")
@@ -53,6 +69,38 @@ region = Rect2(0, 32, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_qh0rs"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y0f6h")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m7pfp")
+}],
+"loop": true,
+"name": &"IdleAtas",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xu42p")
+}],
+"loop": true,
+"name": &"IdleKanan",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r0hpd")
+}],
+"loop": true,
+"name": &"IdleKiri",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_y740g")
@@ -123,7 +171,7 @@ script = ExtResource("1_qdnc4")
 texture_filter = 1
 scale = Vector2(3.719, 3.719)
 sprite_frames = SubResource("SpriteFrames_qh0rs")
-animation = &"JalanAtas"
+animation = &"IdleKiri"
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -0.5)

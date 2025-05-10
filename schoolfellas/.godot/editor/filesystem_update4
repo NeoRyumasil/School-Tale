@@ -17,3 +17,15 @@ res://Script/game_ui.gd
 res://game_ui.tscn
 res://intro_out.tscn
 res://map_parkiran_out.tscn
+res://Character/andi.tscn
+res://Character/faldo.tscn
+res://Character/guntur.tscn
+res://Character/hartono.tscn
+res://Character/pak_heri.tscn
+res://Character/pak_jaka.tscn
+res://Character/player.tscn
+res://Character/putra.tscn
+res://Character/ratna.tscn
+res://Character/ucup.tscn
+res://Character/widya.tscn
+res://Character/zara.tscn
