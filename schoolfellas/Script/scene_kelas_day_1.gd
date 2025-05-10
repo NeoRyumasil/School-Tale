@@ -4,6 +4,7 @@ var Edi_Follower
 var Guntur_Follower
 var Nelly_Follower
 var Zara_Follower
+var Andi
 
 var actTrigger = false
 
@@ -13,10 +14,13 @@ var actTrigger = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	player = get_node("TileMaps/Player")
+	Andi = get_node("Characters/Andi/Animation")
 	Edi_Follower = get_node("Characters/Path_Edi/Edi_Follower")
 	Nelly_Follower = get_node("Characters/Path_Nelly/Nelly_Follower")
 	Zara_Follower = get_node("Characters/Path_Zara/Zara_Follower")
 	Guntur_Follower = get_node("Characters/Path_Guntur/Guntur_Follower")
+	
+	Andi.play("Idle_kanan")
 	pass # Replace with function body.
 
 

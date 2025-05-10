@@ -7,3 +7,6 @@ res://Object/tas.tscn
 res://Object/tempat_sampah_kecil_samping.tscn
 res://Character/guntur.tscn
 res://Script/nelly.gd
+res://Script/scene_kelas_day_1.gd
+res://Character/andi.tscn
+res://Script/ruang_kelas.gd
