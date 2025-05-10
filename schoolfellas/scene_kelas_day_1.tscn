@@ -5108,29 +5108,30 @@ texture = ExtResource("9_yjerl")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_nah44")
 
-[sub_resource type="Curve2D" id="Curve2D_w5mk0"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 2.33337, 4, 0, 0, 0, 0, -215, -8.66667, 0, 0, 0, 0, -317.667, -14.6667, 0, 0, 0, 0, -344.667, -14.3333)
-}
-point_count = 4
-
 [sub_resource type="Curve2D" id="Curve2D_0f60w"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 2575, 269, 0, 0, 0, 0, 1986, 285, 0, 0, 0, 0, 1235, 309)
+"points": PackedVector2Array(0, 0, 0, 0, 2575, 269, 0, 0, 0, 0, 1990, 223, 0, 0, 0, 0, 1367, 223)
 }
 point_count = 3
 
 [sub_resource type="Curve2D" id="Curve2D_4dntp"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 2417, 251, 0, 0, 0, 0, 1946, 297, 0, 0, 0, 0, 1399, 262, 0, 0, 0, 0, 1343, 261)
+"points": PackedVector2Array(0, 0, 0, 0, 2417, 251, 0, 0, 0, 0, 1946, 297, 0, 0, 0, 0, 1452, 272)
 }
-point_count = 4
+point_count = 3
 
 [sub_resource type="Curve2D" id="Curve2D_4d6kj"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 2768, 249, 0, 0, 0, 0, 1952, 274, 0, 0, 0, 0, 1461, 191)
+"points": PackedVector2Array(0, 0, 0, 0, 2768, 249, 0, 0, 0, 0, 1952, 274, 0, 0, 0, 0, 1765, 199, 0, 0, 0, 0, 1600, 199, 0, 0, 0, 0, 1307, 199)
 }
-point_count = 3
+point_count = 5
+
+[sub_resource type="Curve2D" id="Curve2D_w5mk0"]
+bake_interval = 3.0
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 2.33337, 4, 0, 0, 0, 0, -302.667, -5.33334, 0, 0, 0, 0, -378, -5.66666, 0, 0, 0, 0, -440.667, -5.33334)
+}
+point_count = 4
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2o4xy"]
 size = Vector2(89.5, 96)
@@ -5264,21 +5265,6 @@ scale = Vector2(3, 3)
 
 [node name="Characters" type="Node2D" parent="."]
 
-[node name="Path_Edi" type="Path2D" parent="Characters"]
-position = Vector2(2247, 257)
-scale = Vector2(3, 3)
-curve = SubResource("Curve2D_w5mk0")
-
-[node name="Edi_Follower" type="PathFollow2D" parent="Characters/Path_Edi"]
-position = Vector2(2.33337, 4)
-rotation = -3.08338
-rotates = false
-loop = false
-
-[node name="Edi" parent="Characters/Path_Edi/Edi_Follower" instance=ExtResource("18_bfwiw")]
-position = Vector2(2.56213, 3.85746)
-rotation = 3.08338
-
 [node name="Andi" parent="Characters" instance=ExtResource("14_mi0mg")]
 position = Vector2(909, 240)
 scale = Vector2(0.8, 0.8)
@@ -5324,6 +5310,21 @@ loop = false
 position = Vector2(-1.93768, -2.06032)
 rotation = -3.14159
 scale = Vector2(0.8, 0.8)
+
+[node name="Path_Edi" type="Path2D" parent="Characters"]
+position = Vector2(2668, 295)
+scale = Vector2(3, 3)
+curve = SubResource("Curve2D_w5mk0")
+
+[node name="Edi_Follower" type="PathFollow2D" parent="Characters/Path_Edi"]
+position = Vector2(2.33337, 4)
+rotation = -3.08338
+rotates = false
+loop = false
+
+[node name="Edi" parent="Characters/Path_Edi/Edi_Follower" instance=ExtResource("18_bfwiw")]
+position = Vector2(2.56213, 3.85746)
+rotation = 3.08338
 
 [node name="Scene_Triggers" type="Node2D" parent="."]
 

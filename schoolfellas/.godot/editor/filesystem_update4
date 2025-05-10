@@ -1,10 +1,9 @@
 res://scene_kelas_day_1.tscn
-res://Script/scene_kelas_day_1.gd
 res://Character/zara.tscn
+res://Character/edi.tscn
 res://ruang_kelas.tscn
-res://Script/edi.gd
-res://Script/zara.gd
 res://Character/player.tscn
 res://Object/tas.tscn
 res://Object/tempat_sampah_kecil_samping.tscn
-res://Script/tempat_sampah.gd
+res://Character/guntur.tscn
+res://Script/nelly.gd
