@@ -3,9 +3,17 @@
 [ext_resource type="Texture2D" uid="uid://cpnfo4lev5hrm" path="res://Asset/CharacterSprite/Andi.png" id="1_20tjx"]
 [ext_resource type="Script" path="res://Script/andi.gd" id="1_posxs"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_g7tne"]
+atlas = ExtResource("1_20tjx")
+region = Rect2(32, 0, 32, 32)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_g6tdg"]
 atlas = ExtResource("1_20tjx")
 region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ri4lv"]
+atlas = ExtResource("1_20tjx")
+region = Rect2(32, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jo21a"]
 atlas = ExtResource("1_20tjx")
@@ -59,22 +67,30 @@ region = Rect2(32, 32, 32, 32)
 atlas = ExtResource("1_20tjx")
 region = Rect2(0, 32, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_g7tne"]
-atlas = ExtResource("1_20tjx")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ri4lv"]
-atlas = ExtResource("1_20tjx")
-region = Rect2(32, 64, 32, 32)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_viqff"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g7tne")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_g6tdg")
 }],
 "loop": true,
 "name": &"Idle_Atas",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ri4lv")
+}],
+"loop": true,
+"name": &"Idle_kanan",
 "speed": 5.0
 }, {
 "frames": [{
@@ -140,22 +156,6 @@ animations = [{
 "loop": true,
 "name": &"Jalan_Kiri",
 "speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_g7tne")
-}],
-"loop": true,
-"name": &"idle",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ri4lv")
-}],
-"loop": true,
-"name": &"idle_kanan",
-"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ibavc"]
@@ -171,7 +171,7 @@ script = ExtResource("1_posxs")
 texture_filter = 1
 scale = Vector2(3.719, 3.719)
 sprite_frames = SubResource("SpriteFrames_viqff")
-animation = &"Jalan_Kiri"
+animation = &"Idle"
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -0.5)

@@ -171,7 +171,7 @@ script = ExtResource("1_k0ayn")
 texture_filter = 1
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_l61w5")
-animation = &"IdleKiri"
+animation = &"Idle"
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -0.5)
