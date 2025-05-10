@@ -1,7 +1,8 @@
-CanvasLayer
+Control
+TextureRect
 TextureButton
 Button
-TextureRect
+CanvasLayer
 VBoxContainer
 MarginContainer
 HBoxContainer

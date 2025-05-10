@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://bqwa363n22cv5"]
+[gd_scene load_steps=28 format=3 uid="uid://bqwa363n22cv5"]
 
 [ext_resource type="Texture2D" uid="uid://bkuc8hjm41jwu" path="res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png" id="3_d8iwh"]
 [ext_resource type="Texture2D" uid="uid://r4pakdofcvcv" path="res://Designs/Dinding Kelas.png" id="4_fpt6m"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://dpyiwsxo2ngmb" path="res://Character/andi.tscn" id="13_oy1qx"]
 [ext_resource type="PackedScene" uid="uid://xqg0t0ea6mo7" path="res://Object/bangku_meja_kelas.tscn" id="13_r514h"]
 [ext_resource type="Script" path="res://Script/scene_trigger_to_lorong.gd" id="14_h2uuj"]
+[ext_resource type="PackedScene" uid="uid://updwxgjptqwa" path="res://game_ui.tscn" id="14_xvph4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h85a2"]
 texture = ExtResource("3_d8iwh")
@@ -5248,5 +5249,7 @@ position = Vector2(909, 240)
 scale = Vector2(0.8, 0.8)
 
 [node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Game UI" parent="UI" instance=ExtResource("14_xvph4")]
 
 [connection signal="body_entered" from="Scene_Triggers/Scene_Trigger_To_Lorong/Area2D" to="Scene_Triggers/Scene_Trigger_To_Lorong" method="_on_area_2d_body_entered"]

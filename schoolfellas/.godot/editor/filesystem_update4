@@ -13,3 +13,7 @@ res://Script/Map_Parkiran.gd
 res://main_menu_UI.tscn
 res://main_menu_ui.gd
 res://Script/global_items.gd
+res://Script/game_ui.gd
+res://game_ui.tscn
+res://intro_out.tscn
+res://map_parkiran_out.tscn

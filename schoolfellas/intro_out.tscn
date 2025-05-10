@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bf48he3ewl68o"]
+[gd_scene load_steps=17 format=3 uid="uid://bf48he3ewl68o"]
 
 [ext_resource type="Texture2D" uid="uid://bkuc8hjm41jwu" path="res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png" id="1_0cpvr"]
 [ext_resource type="PackedScene" uid="uid://dpidheki4q8sw" path="res://Object/tas.tscn" id="2_ptr0j"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://bb3ry6pursk8d" path="res://Object/tempat_sampah_besar.tscn" id="9_tjmog"]
 [ext_resource type="Script" path="res://Script/scene_trigger_parkiran.gd" id="10_vh7d6"]
 [ext_resource type="PackedScene" uid="uid://b71q43ylglp3q" path="res://Object/checkpoint.tscn" id="11_3d7e4"]
+[ext_resource type="PackedScene" uid="uid://updwxgjptqwa" path="res://game_ui.tscn" id="12_d45u2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1boo3"]
 texture = ExtResource("1_0cpvr")
@@ -4171,12 +4172,14 @@ position = Vector2(3140, -609)
 position = Vector2(129, 59.5)
 shape = SubResource("RectangleShape2D_cmyrh")
 
-[node name="UI" type="CanvasLayer" parent="."]
-
 [node name="Checkpoints" type="Node2D" parent="."]
 
 [node name="Checkpoint" parent="Checkpoints" instance=ExtResource("11_3d7e4")]
 position = Vector2(3276, -362)
 scale = Vector2(6, 2)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Game UI" parent="UI" instance=ExtResource("12_d45u2")]
 
 [connection signal="body_entered" from="SceneTriggers/SceneTrigger/Area2D" to="SceneTriggers/SceneTrigger" method="_on_area_2d_body_entered"]
