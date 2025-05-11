@@ -10,3 +10,14 @@ res://Character/guntur.tscn
 res://Character/andi.tscn
 res://Script/global_items.gd
 res://Script/playerMovement.gd
+res://kantin.tscn
+res://Script/kantin.gd
+res://Object/bangku_kantin.tscn
+res://Object/kios.tscn
+res://Script/scene_trigger_to_lorong_kantin.gd
+res://Script/scene_trigger_lorong_kelas_lain.gd
+res://Script/scene_trigger_lorong_kantin.gd
+res://lorong_dari_kelas.tscn
+res://lorong_dari_kelas_lain.tscn
+res://lorong.tscn
+res://lorong_dari_kantin.tscn

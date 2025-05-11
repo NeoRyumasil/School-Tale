@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://mna44bi3ffw2"]
+[gd_scene load_steps=21 format=3 uid="uid://mna44bi3ffw2"]
 
 [ext_resource type="Texture2D" uid="uid://bkuc8hjm41jwu" path="res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png" id="2_8ppso"]
 [ext_resource type="Texture2D" uid="uid://cq35y22s5blao" path="res://Asset/TileSet/DC55F088-EB2C-4379-986E-3C8B53E8C019.png" id="3_oqsop"]
@@ -9,9 +9,10 @@
 [ext_resource type="Script" path="res://Script/scene_trigger_lorong_kelas_lain.gd" id="9_b1n41"]
 [ext_resource type="Script" path="res://Script/scene_trigger_Lorong.gd" id="9_o86ty"]
 [ext_resource type="Script" path="res://Script/scene_trigger_lorong_kelas.gd" id="10_1gotb"]
+[ext_resource type="Script" path="res://Script/scene_trigger_lorong_kantin.gd" id="10_2pws4"]
 [ext_resource type="PackedScene" uid="uid://updwxgjptqwa" path="res://game_ui.tscn" id="10_oldcp"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vn16r"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4gsp0"]
 texture = ExtResource("2_8ppso")
 35:5/0 = 0
 36:5/0 = 0
@@ -4086,9 +4087,9 @@ texture = ExtResource("2_8ppso")
 
 [sub_resource type="TileSet" id="TileSet_m8oy2"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_vn16r")
+sources/0 = SubResource("TileSetAtlasSource_4gsp0")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_utryt"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1xycd"]
 texture = ExtResource("3_oqsop")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -4266,9 +4267,9 @@ texture = ExtResource("3_oqsop")
 
 [sub_resource type="TileSet" id="TileSet_cjsly"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_utryt")
+sources/0 = SubResource("TileSetAtlasSource_1xycd")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q6ktq"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2u0gh"]
 texture = ExtResource("4_sdy73")
 1:0/0 = 0
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -4478,13 +4479,16 @@ texture = ExtResource("4_sdy73")
 
 [sub_resource type="TileSet" id="TileSet_oovrq"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_q6ktq")
+sources/0 = SubResource("TileSetAtlasSource_2u0gh")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_unm1v"]
 size = Vector2(860, 143.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x81xp"]
 size = Vector2(103, 144)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q7bso"]
+size = Vector2(925, 132)
 
 [node name="Lorong" type="Node2D"]
 
@@ -4583,10 +4587,22 @@ position = Vector2(11, 415)
 position = Vector2(-451, 8)
 shape = SubResource("RectangleShape2D_x81xp")
 
+[node name="Scene_Trigger_Lorong_Kantin" type="StaticBody2D" parent="Scene_Triggers"]
+script = ExtResource("10_2pws4")
+
+[node name="Area2D" type="Area2D" parent="Scene_Triggers/Scene_Trigger_Lorong_Kantin"]
+position = Vector2(11, 415)
+
+[node name="Collision" type="CollisionShape2D" parent="Scene_Triggers/Scene_Trigger_Lorong_Kantin/Area2D"]
+position = Vector2(137.5, -346)
+shape = SubResource("RectangleShape2D_q7bso")
+
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="Game UI" parent="UI" instance=ExtResource("10_oldcp")]
+metadata/_edit_use_anchors_ = true
 
 [connection signal="body_entered" from="Scene_Triggers/Scene_Trigger_Back/Area2D" to="Scene_Triggers/Scene_Trigger_Back" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Scene_Triggers/Scene_Trigger_Lorong_Kelas/Area2D" to="Scene_Triggers/Scene_Trigger_Lorong_Kelas" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Scene_Triggers/Scene_Trigger_Lorong_Kelas2/Area2D" to="Scene_Triggers/Scene_Trigger_Lorong_Kelas2" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Scene_Triggers/Scene_Trigger_Lorong_Kantin/Area2D" to="Scene_Triggers/Scene_Trigger_Lorong_Kantin" method="_on_area_2d_body_entered"]

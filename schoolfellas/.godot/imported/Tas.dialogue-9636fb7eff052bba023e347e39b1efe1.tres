@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_rre0k"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_5h8qm"]
 
 [resource]
-script = ExtResource("1_rre0k")
+script = ExtResource("1_5h8qm")
 using_states = PackedStringArray()
 titles = {
 "start": "2"
@@ -18,10 +18,33 @@ lines = {
 "type": &"title"
 },
 "2": {
+"id": "2",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "onCutscene"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "true"
+}]),
+"is_blocking": true
+},
+"next_id": "3",
+"type": &"mutation"
+},
+"3": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "2",
-"next_id": "3",
+"id": "3",
+"next_id": "4",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Kamu Mendapatkan Tas",
@@ -29,14 +52,39 @@ lines = {
 "translation_key": "Kamu Mendapatkan Tas",
 "type": &"dialogue"
 },
-"3": {
-"id": "3",
+"4": {
+"id": "4",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "onCutscene"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "false"
+}]),
+"is_blocking": true
+},
+"next_id": "5",
+"type": &"mutation"
+},
+"5": {
+"id": "5",
 "is_snippet": false,
 "next_id": "end",
 "type": &"goto"
 }
 }
 raw_text = "~ start
+set GlobalItems.onCutscene = true
 Kamu Mendapatkan Tas
+set GlobalItems.onCutscene = false
 => END"
 metadata/dialogue_manager_version = "2.45.0"

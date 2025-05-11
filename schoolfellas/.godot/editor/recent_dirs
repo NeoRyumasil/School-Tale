@@ -1,9 +1,10 @@
+res://
 res://Script
+res://Object
+res://Asset/ObjectSprite
 res://Asset/CharacterSprite
 res://UI/Buttons
-res://
 res://UI
 res://Character
-res://Object
 res://UI/Dialogs
 res://Asset/TileSet

@@ -1,18 +1,20 @@
 c693a20e708c4e09bfa9edf12a750cf8
-::res://::1746955031
+::res://::1746957834
 game_ui.tscn::PackedScene::1434965195251361108::1746882543::0::1::::<><>::res://Script/game_ui.gd<>uid://c7phcmtviv8cd::::res://UI/Buttons/pause_button.png<>uid://b5wyikfucxdgy::::res://UI/Buttons/pause_x.png<>uid://cvaujmbykmcib::::res://UI/Buttons/pause_button_hover.png<>uid://civjm2br6ghvj::::res://UI/Buttons/Bg pause screen.png<>uid://chkf7q3wgxvuw::::res://UI/Buttons/Continue.png<>uid://n33qh1bwx82f::::res://UI/Buttons/Continue_hover.png<>uid://b2x6fghvkkeff::::res://UI/Buttons/Save & Quit.png<>uid://dsuibjle3w3nb::::res://UI/Buttons/Save & Quit_hover.png
 Intro.tscn::PackedScene::6928879277986396888::1746882539::0::1::::<><>::res://Script/Map_Parkiran.gd<>uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>uid://bidupqssu2o52::::res://Character/pak_heri.tscn<>uid://dj0ubi2ilaln5::::res://Object/mobil_merah.tscn<>uid://ccwr58lebqsxr::::res://Object/mobil_kuning.tscn<>uid://bp8m25m3wt57x::::res://Object/mobil_putih.tscn<>uid://cn53so5eabh7::::res://Object/mobil_biru.tscn<>uid://bb3ry6pursk8d::::res://Object/tempat_sampah_besar.tscn<>uid://dpidheki4q8sw::::res://Object/tas.tscn<>res://Script/scene_trigger_parkiran.gd<>uid://b71q43ylglp3q::::res://Object/checkpoint.tscn<>uid://updwxgjptqwa::::res://game_ui.tscn
 intro_out.tscn::PackedScene::2799248271629158692::1746882544::0::1::::<><>::uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://dpidheki4q8sw::::res://Object/tas.tscn<>uid://bidupqssu2o52::::res://Character/pak_heri.tscn<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>uid://ccwr58lebqsxr::::res://Object/mobil_kuning.tscn<>uid://bp8m25m3wt57x::::res://Object/mobil_putih.tscn<>uid://cn53so5eabh7::::res://Object/mobil_biru.tscn<>uid://dj0ubi2ilaln5::::res://Object/mobil_merah.tscn<>uid://bb3ry6pursk8d::::res://Object/tempat_sampah_besar.tscn<>res://Script/scene_trigger_parkiran.gd<>uid://b71q43ylglp3q::::res://Object/checkpoint.tscn<>uid://updwxgjptqwa::::res://game_ui.tscn
-lorong.tscn::PackedScene::869156347605470147::1746882540::0::1::::<><>::uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://cq35y22s5blao::::res://Asset/TileSet/DC55F088-EB2C-4379-986E-3C8B53E8C019.png<>uid://dxohp5sad1ukh::::res://Asset/TileSet/8F965E9F-4433-46E1-B34B-27F5C45570DB.png<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>uid://bj3nl1bygp06t::::res://Object/loker.tscn<>uid://buywt0vlicdeh::::res://Object/tempat_sampah_kecil_samping.tscn<>res://Script/scene_trigger_lorong_kelas_lain.gd<>res://Script/scene_trigger_Lorong.gd<>res://Script/scene_trigger_lorong_kelas.gd<>uid://updwxgjptqwa::::res://game_ui.tscn
-lorong_dari_kelas.tscn::PackedScene::1994730142848790655::1746882545::0::1::::<><>::uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://cq35y22s5blao::::res://Asset/TileSet/DC55F088-EB2C-4379-986E-3C8B53E8C019.png<>uid://dxohp5sad1ukh::::res://Asset/TileSet/8F965E9F-4433-46E1-B34B-27F5C45570DB.png<>uid://bj3nl1bygp06t::::res://Object/loker.tscn<>uid://buywt0vlicdeh::::res://Object/tempat_sampah_kecil_samping.tscn<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>res://Script/scene_trigger_Lorong.gd<>res://Script/scene_trigger_lorong_kelas.gd<>res://Script/scene_trigger_lorong_kelas_lain.gd<>uid://updwxgjptqwa::::res://game_ui.tscn
-lorong_dari_kelas_lain.tscn::PackedScene::18970033657680573::1746882546::0::1::::<><>::uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://cq35y22s5blao::::res://Asset/TileSet/DC55F088-EB2C-4379-986E-3C8B53E8C019.png<>uid://dxohp5sad1ukh::::res://Asset/TileSet/8F965E9F-4433-46E1-B34B-27F5C45570DB.png<>uid://bj3nl1bygp06t::::res://Object/loker.tscn<>uid://buywt0vlicdeh::::res://Object/tempat_sampah_kecil_samping.tscn<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>res://Script/scene_trigger_Lorong.gd<>res://Script/scene_trigger_lorong_kelas.gd<>res://Script/scene_trigger_lorong_kelas_lain.gd<>uid://updwxgjptqwa::::res://game_ui.tscn
+lorong.tscn::PackedScene::869156347605470147::1746958464::0::1::::<><>::uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://cq35y22s5blao::::res://Asset/TileSet/DC55F088-EB2C-4379-986E-3C8B53E8C019.png<>uid://dxohp5sad1ukh::::res://Asset/TileSet/8F965E9F-4433-46E1-B34B-27F5C45570DB.png<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>uid://bj3nl1bygp06t::::res://Object/loker.tscn<>uid://buywt0vlicdeh::::res://Object/tempat_sampah_kecil_samping.tscn<>res://Script/scene_trigger_lorong_kelas_lain.gd<>res://Script/scene_trigger_Lorong.gd<>res://Script/scene_trigger_lorong_kelas.gd<>res://Script/scene_trigger_lorong_kantin.gd<>uid://updwxgjptqwa::::res://game_ui.tscn
+lorong_dari_kelas.tscn::PackedScene::1994730142848790655::1746958467::0::1::::<><>::uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://cq35y22s5blao::::res://Asset/TileSet/DC55F088-EB2C-4379-986E-3C8B53E8C019.png<>uid://dxohp5sad1ukh::::res://Asset/TileSet/8F965E9F-4433-46E1-B34B-27F5C45570DB.png<>uid://bj3nl1bygp06t::::res://Object/loker.tscn<>uid://buywt0vlicdeh::::res://Object/tempat_sampah_kecil_samping.tscn<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>res://Script/scene_trigger_Lorong.gd<>res://Script/scene_trigger_lorong_kelas.gd<>res://Script/scene_trigger_lorong_kelas_lain.gd<>uid://updwxgjptqwa::::res://game_ui.tscn<>res://Script/scene_trigger_lorong_kantin.gd
+lorong_dari_kelas_lain.tscn::PackedScene::18970033657680573::1746958468::0::1::::<><>::uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://cq35y22s5blao::::res://Asset/TileSet/DC55F088-EB2C-4379-986E-3C8B53E8C019.png<>uid://dxohp5sad1ukh::::res://Asset/TileSet/8F965E9F-4433-46E1-B34B-27F5C45570DB.png<>uid://bj3nl1bygp06t::::res://Object/loker.tscn<>uid://buywt0vlicdeh::::res://Object/tempat_sampah_kecil_samping.tscn<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>res://Script/scene_trigger_Lorong.gd<>res://Script/scene_trigger_lorong_kelas.gd<>res://Script/scene_trigger_lorong_kelas_lain.gd<>uid://updwxgjptqwa::::res://game_ui.tscn<>res://Script/scene_trigger_lorong_kantin.gd
 main_menu.tscn::PackedScene::348491754650046::1746882538::0::1::::<><>::uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://ccwr58lebqsxr::::res://Object/mobil_kuning.tscn<>uid://bp8m25m3wt57x::::res://Object/mobil_putih.tscn<>uid://cn53so5eabh7::::res://Object/mobil_biru.tscn<>uid://dj0ubi2ilaln5::::res://Object/mobil_merah.tscn<>uid://bb3ry6pursk8d::::res://Object/tempat_sampah_besar.tscn<>uid://q6x6rixbk8mw::::res://main_menu_UI.tscn
 main_menu_ui.gd::GDScript::-1::1746880554::0::1::::<>Control<>::
 main_menu_UI.tscn::PackedScene::1188469965331222130::1746882543::0::1::::<><>::uid://cmkvmomj4o8ji::::res://UI/title.png<>uid://oqygty0jqci6::::res://UI/Buttons/New Game.png<>res://main_menu_ui.gd<>uid://chkf7q3wgxvuw::::res://UI/Buttons/Continue.png<>uid://cbao5dlv84238::::res://UI/Buttons/New Game_hover.png<>uid://b2x6fghvkkeff::::res://UI/Buttons/Save & Quit.png<>uid://n33qh1bwx82f::::res://UI/Buttons/Continue_hover.png<>uid://dsuibjle3w3nb::::res://UI/Buttons/Save & Quit_hover.png
 map_parkiran_out.tscn::PackedScene::3843228060913895940::1746882546::0::1::::<><>::uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>uid://ccwr58lebqsxr::::res://Object/mobil_kuning.tscn<>uid://bp8m25m3wt57x::::res://Object/mobil_putih.tscn<>uid://cn53so5eabh7::::res://Object/mobil_biru.tscn<>uid://dj0ubi2ilaln5::::res://Object/mobil_merah.tscn<>uid://bb3ry6pursk8d::::res://Object/tempat_sampah_besar.tscn<>res://Script/scene_trigger_parkiran.gd<>uid://b71q43ylglp3q::::res://Object/checkpoint.tscn<>uid://updwxgjptqwa::::res://game_ui.tscn
-ruang_kelas.tscn::PackedScene::3554910166826455320::1746955260::0::1::::<><>::res://Script/ruang_kelas.gd<>uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://r4pakdofcvcv::::res://Designs/Dinding Kelas.png<>uid://bnekncxsf58ly::::res://Asset/TileSet/2115675A-D06A-453E-933D-F5B18A5F5717.png<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>uid://cd53rbp3l8sjv::::res://Asset/TileSet/D4288EBD-1092-49D0-9967-5986F1E6E978.png<>uid://d2pnssg6qvo64::::res://Asset/TileSet/C1D33C88-9086-4418-8749-74059A4F2F05.png<>res://Script/cameraLorong.gd<>uid://dklmfg6ec2j6v::::res://Asset/TileSet/703A7DEC-39C3-4050-87A4-3C68020A9808.png<>uid://b1fn1a7v5v46w::::res://Object/meja_guru.tscn<>uid://3n0hoq53um48::::res://Object/papan_tulis.tscn<>uid://dpyiwsxo2ngmb::::res://Character/andi.tscn<>uid://xqg0t0ea6mo7::::res://Object/bangku_meja_kelas.tscn<>res://Script/scene_trigger_to_lorong.gd<>uid://updwxgjptqwa::::res://game_ui.tscn
+kantin.tscn::PackedScene::7878588907444542075::1746958463::0::1::::<><>::uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>res://Script/kantin.gd<>uid://cpl1ok5ft5bf4::::res://Asset/TileSet/00571781-4015-4859-B8E8-A6E637E6A258.png<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>res://Script/cameraLorong.gd<>uid://r6mgrt32mexw::::res://Object/bangku_kantin.tscn<>uid://buywt0vlicdeh::::res://Object/tempat_sampah_kecil_samping.tscn<>uid://vmn35eetyji2::::res://Asset/TileSet/6D87389E-B62F-4317-A400-BDF5DD6B44FB.jpeg<>uid://b7trne3w4bspr::::res://Object/kios.tscn<>res://Script/scene_trigger_to_lorong_kantin.gd<>uid://updwxgjptqwa::::res://game_ui.tscn
+lorong_dari_kantin.tscn::PackedScene::643662802959591966::1746958466::0::1::::<><>::uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://cq35y22s5blao::::res://Asset/TileSet/DC55F088-EB2C-4379-986E-3C8B53E8C019.png<>uid://dxohp5sad1ukh::::res://Asset/TileSet/8F965E9F-4433-46E1-B34B-27F5C45570DB.png<>uid://bj3nl1bygp06t::::res://Object/loker.tscn<>uid://buywt0vlicdeh::::res://Object/tempat_sampah_kecil_samping.tscn<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>res://Script/scene_trigger_Lorong.gd<>res://Script/scene_trigger_lorong_kelas.gd<>res://Script/scene_trigger_lorong_kelas_lain.gd<>res://Script/scene_trigger_lorong_kantin.gd<>uid://updwxgjptqwa::::res://game_ui.tscn
+ruang_kelas.tscn::PackedScene::3554910166826455320::1746958461::0::1::::<><>::res://Script/ruang_kelas.gd<>uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://r4pakdofcvcv::::res://Designs/Dinding Kelas.png<>uid://bnekncxsf58ly::::res://Asset/TileSet/2115675A-D06A-453E-933D-F5B18A5F5717.png<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>uid://cd53rbp3l8sjv::::res://Asset/TileSet/D4288EBD-1092-49D0-9967-5986F1E6E978.png<>uid://d2pnssg6qvo64::::res://Asset/TileSet/C1D33C88-9086-4418-8749-74059A4F2F05.png<>res://Script/cameraLorong.gd<>uid://dklmfg6ec2j6v::::res://Asset/TileSet/703A7DEC-39C3-4050-87A4-3C68020A9808.png<>uid://b1fn1a7v5v46w::::res://Object/meja_guru.tscn<>uid://3n0hoq53um48::::res://Object/papan_tulis.tscn<>uid://dpyiwsxo2ngmb::::res://Character/andi.tscn<>uid://xqg0t0ea6mo7::::res://Object/bangku_meja_kelas.tscn<>res://Script/scene_trigger_to_lorong.gd<>uid://updwxgjptqwa::::res://game_ui.tscn
 ruang_kelas_lain.tscn::PackedScene::2892896417108152306::1746882541::0::1::::<><>::uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://r4pakdofcvcv::::res://Designs/Dinding Kelas.png<>uid://d2pnssg6qvo64::::res://Asset/TileSet/C1D33C88-9086-4418-8749-74059A4F2F05.png<>uid://dklmfg6ec2j6v::::res://Asset/TileSet/703A7DEC-39C3-4050-87A4-3C68020A9808.png<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>res://Script/cameraLorong.gd<>uid://cd53rbp3l8sjv::::res://Asset/TileSet/D4288EBD-1092-49D0-9967-5986F1E6E978.png<>uid://bnekncxsf58ly::::res://Asset/TileSet/2115675A-D06A-453E-933D-F5B18A5F5717.png<>uid://b1fn1a7v5v46w::::res://Object/meja_guru.tscn<>uid://3n0hoq53um48::::res://Object/papan_tulis.tscn<>uid://xqg0t0ea6mo7::::res://Object/bangku_meja_kelas.tscn<>res://Script/scene_trigger_to_lorong_dari_kelas_lain.gd<>uid://updwxgjptqwa::::res://game_ui.tscn
-scene_kelas_day_1.tscn::PackedScene::5894390509803022982::1746955262::0::1::::<><>::res://Script/scene_kelas_day_1.gd<>uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://r4pakdofcvcv::::res://Designs/Dinding Kelas.png<>uid://d2pnssg6qvo64::::res://Asset/TileSet/C1D33C88-9086-4418-8749-74059A4F2F05.png<>uid://dklmfg6ec2j6v::::res://Asset/TileSet/703A7DEC-39C3-4050-87A4-3C68020A9808.png<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>res://Script/cameraLorong.gd<>uid://cd53rbp3l8sjv::::res://Asset/TileSet/D4288EBD-1092-49D0-9967-5986F1E6E978.png<>uid://bnekncxsf58ly::::res://Asset/TileSet/2115675A-D06A-453E-933D-F5B18A5F5717.png<>uid://b1fn1a7v5v46w::::res://Object/meja_guru.tscn<>uid://3n0hoq53um48::::res://Object/papan_tulis.tscn<>uid://xqg0t0ea6mo7::::res://Object/bangku_meja_kelas.tscn<>res://Script/scene_trigger_to_lorong.gd<>uid://dpyiwsxo2ngmb::::res://Character/andi.tscn<>uid://6m7qbi5vvm78::::res://Character/nelly.tscn<>uid://cvv4dif23ri7n::::res://Character/guntur.tscn<>uid://blnubckqla0gq::::res://Character/zara.tscn<>uid://bhr5035meof0d::::res://Character/edi.tscn
+scene_kelas_day_1.tscn::PackedScene::5894390509803022982::1746958462::0::1::::<><>::res://Script/scene_kelas_day_1.gd<>uid://bkuc8hjm41jwu::::res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png<>uid://r4pakdofcvcv::::res://Designs/Dinding Kelas.png<>uid://d2pnssg6qvo64::::res://Asset/TileSet/C1D33C88-9086-4418-8749-74059A4F2F05.png<>uid://dklmfg6ec2j6v::::res://Asset/TileSet/703A7DEC-39C3-4050-87A4-3C68020A9808.png<>uid://dg0ddh1js6hbq::::res://Character/player.tscn<>res://Script/cameraLorong.gd<>uid://cd53rbp3l8sjv::::res://Asset/TileSet/D4288EBD-1092-49D0-9967-5986F1E6E978.png<>uid://bnekncxsf58ly::::res://Asset/TileSet/2115675A-D06A-453E-933D-F5B18A5F5717.png<>uid://b1fn1a7v5v46w::::res://Object/meja_guru.tscn<>uid://3n0hoq53um48::::res://Object/papan_tulis.tscn<>uid://xqg0t0ea6mo7::::res://Object/bangku_meja_kelas.tscn<>res://Script/scene_trigger_to_lorong.gd<>uid://dpyiwsxo2ngmb::::res://Character/andi.tscn<>uid://6m7qbi5vvm78::::res://Character/nelly.tscn<>uid://cvv4dif23ri7n::::res://Character/guntur.tscn<>uid://blnubckqla0gq::::res://Character/zara.tscn<>uid://bhr5035meof0d::::res://Character/edi.tscn
 scene_trigger.gd::GDScript::-1::1746418397::0::1::::<>StaticBody2D<>::
 ::res://addons/::1746688223
 ::res://addons/dialogue_manager/::1746688223
@@ -83,7 +85,7 @@ main_view.gd::GDScript::-1::1746688223::0::1::::<>Control<>::
 main_view.tscn::PackedScene::4884668666408697448::1746688223::0::1::::<><>::res://addons/dialogue_manager/views/main_view.gd<>uid://civ6shmka5e8u::::res://addons/dialogue_manager/components/code_edit.tscn<>uid://dnufpcdrreva3::::res://addons/dialogue_manager/components/files_list.tscn<>uid://ctns6ouwwd68i::::res://addons/dialogue_manager/components/title_list.tscn<>uid://co8yl23idiwbi::::res://addons/dialogue_manager/components/update_button.tscn<>uid://gr8nakpbrhby::::res://addons/dialogue_manager/components/search_and_replace.tscn<>uid://cs8pwrxr5vxix::::res://addons/dialogue_manager/components/errors_panel.tscn<>res://addons/dialogue_manager/components/code_edit_syntax_highlighter.gd<>uid://cpg4lg1r3ff6m::::res://addons/dialogue_manager/views/settings_view.tscn<>uid://0n7hwviyyly4::::res://addons/dialogue_manager/components/find_in_files.tscn
 settings_view.gd::GDScript::-1::1746688223::0::1::::<>TabContainer<>::
 settings_view.tscn::PackedScene::5839841081119266502::1746688223::0::1::::<><>::res://addons/dialogue_manager/views/settings_view.gd
-::res://Asset/::1746345847
+::res://Asset/::1746955610
 LED-Black-screen-3.jpg::CompressedTexture2D::6422102533806976116::1746345730::1746345780::1::::<><>::
 ::res://Asset/CharacterSprite/::1746764749
 Andi.png::CompressedTexture2D::5852841059218961130::1746350989::1746351017::1::::<><>::
@@ -100,8 +102,10 @@ Ratna.png::CompressedTexture2D::7083102368224270303::1746764698::1746764749::1::
 Ucup.png::CompressedTexture2D::376106653931276816::1746764698::1746764749::1::::<><>::
 Widya.png::CompressedTexture2D::6373415494918964769::1746764698::1746764749::1::::<><>::
 Zara.png::CompressedTexture2D::674666574633695509::1746764698::1746764749::1::::<><>::
-::res://Asset/ObjectSprite/::1746370180
+::res://Asset/ObjectSprite/::1746955620
+996D2FC7-2570-4A08-90C3-3E1B4D3C50CF.png::CompressedTexture2D::6883363016041207017::1746955531::1746955620::1::::<><>::
 BangkuMeja Kelas.png::CompressedTexture2D::8631541901561577547::1746350642::1746350809::1::::<><>::
+CE968149-AB95-48C0-8B6D-D086101B71DD.png::CompressedTexture2D::5109737155648917682::1746955541::1746955620::1::::<><>::
 Loker.png::CompressedTexture2D::935394351929675466::1746366555::1746366572::1::::<><>::
 Meja Guru.png::CompressedTexture2D::7049787949296819658::1746350642::1746350809::1::::<><>::
 Mobil Biru.png::CompressedTexture2D::5560407276635770671::1746350491::1746350809::1::::<><>::
@@ -114,30 +118,32 @@ Tas.png::CompressedTexture2D::4512977272934770070::1746370153::1746370180::1::::
 Tempat Sampah Besar.png::CompressedTexture2D::5269489320168167799::1746350642::1746350809::1::::<><>::
 Tempat Sampah Kecil (Depan).png::CompressedTexture2D::6920645280285863064::1746350642::1746350809::1::::<><>::
 Tempat Sampah Kecil.png::CompressedTexture2D::6356116421145334118::1746350642::1746350809::1::::<><>::
-::res://Asset/TileSet/::1746416501
+::res://Asset/TileSet/::1746955620
+6D87389E-B62F-4317-A400-BDF5DD6B44FB.jpeg::CompressedTexture2D::1499579154670506559::1746955519::1746955620::1::::<><>::
 8F965E9F-4433-46E1-B34B-27F5C45570DB.png::CompressedTexture2D::8802960152680861739::1746365763::1746365775::1::::<><>::
 703A7DEC-39C3-4050-87A4-3C68020A9808.png::CompressedTexture2D::7884596538851531407::1746416496::1746416501::1::::<><>::
+00571781-4015-4859-B8E8-A6E637E6A258.png::CompressedTexture2D::5849986392009323915::1746955534::1746955620::1::::<><>::
 2115675A-D06A-453E-933D-F5B18A5F5717.png::CompressedTexture2D::3307763688655128274::1746415121::1746415169::1::::<><>::
 C1D33C88-9086-4418-8749-74059A4F2F05.png::CompressedTexture2D::9086148916933177595::1746416185::1746416192::1::::<><>::
 D4288EBD-1092-49D0-9967-5986F1E6E978.png::CompressedTexture2D::5047069742199562887::1746415938::1746415953::1::::<><>::
 DC55F088-EB2C-4379-986E-3C8B53E8C019.png::CompressedTexture2D::5955531272243258274::1746364610::1746364632::1::::<><>::
 EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png::CompressedTexture2D::3129777422490717572::1746345896::1746345920::1::::<><>::
-::res://Character/::1746955031
-andi.tscn::PackedScene::8262165776778762441::1746955262::0::1::::<><>::uid://cpnfo4lev5hrm::::res://Asset/CharacterSprite/Andi.png<>res://Script/andi.gd
-edi.tscn::PackedScene::2914704683158024089::1746955259::0::1::::<><>::res://Script/edi.gd<>uid://bbmkas0fur5mm::::res://Asset/CharacterSprite/Edi.png
+::res://Character/::1746957832
+andi.tscn::PackedScene::8262165776778762441::1746956288::0::1::::<><>::uid://cpnfo4lev5hrm::::res://Asset/CharacterSprite/Andi.png<>res://Script/andi.gd
+edi.tscn::PackedScene::2914704683158024089::1746958460::0::1::::<><>::res://Script/edi.gd<>uid://bbmkas0fur5mm::::res://Asset/CharacterSprite/Edi.png
 faldo.tscn::PackedScene::3212274229871105703::1746888276::0::1::::<><>::res://Script/faldo.gd<>uid://dh2jlw43snta0::::res://Asset/CharacterSprite/Faldo.png
-guntur.tscn::PackedScene::6291925595967755221::1746955262::0::1::::<><>::uid://d3l03gbttyymm::::res://Asset/CharacterSprite/Guntur.png<>res://Script/guntur.gd
+guntur.tscn::PackedScene::6291925595967755221::1746956287::0::1::::<><>::uid://d3l03gbttyymm::::res://Asset/CharacterSprite/Guntur.png<>res://Script/guntur.gd
 hartono.tscn::PackedScene::8814332974877946141::1746888276::0::1::::<><>::uid://dpe2ytf3l37wx::::res://Asset/CharacterSprite/Hartono.png<>res://Script/hartono.gd
 icon.svg::CompressedTexture2D::3214667454421332020::1746345730::1746345780::1::::<><>::
 nelly.tscn::PackedScene::2202598268572478025::1746888276::0::1::::<><>::uid://bdjrmfsyru683::::res://Asset/CharacterSprite/Nelly.png<>res://Script/nelly.gd
 pak_heri.tscn::PackedScene::2955366561849166759::1746888276::0::1::::<><>::uid://bljv3cln3auid::::res://Asset/CharacterSprite/Pak Heri.png<>res://Script/pak_heri.gd
 pak_jaka.tscn::PackedScene::6099275736841395333::1746888277::0::1::::<><>::uid://85snm4w3djji::::res://Asset/CharacterSprite/Pak Jaka.png<>res://Script/pak_jaka.gd
-player.tscn::PackedScene::7632192473381571206::1746955262::0::1::::<><>::res://Script/playerMovement.gd<>uid://coyk5tnnwvbvp::::res://Asset/CharacterSprite/Raka.png
+player.tscn::PackedScene::7632192473381571206::1746958462::0::1::::<><>::res://Script/playerMovement.gd<>uid://coyk5tnnwvbvp::::res://Asset/CharacterSprite/Raka.png
 putra.tscn::PackedScene::6629385645909000421::1746888277::0::1::::<><>::uid://bf0mnjpmc20a7::::res://Asset/CharacterSprite/Putra.png<>res://Script/putra.gd
 ratna.tscn::PackedScene::2813346446550601779::1746888277::0::1::::<><>::res://Script/ratna.gd<>uid://c76dwqj4e4o6b::::res://Asset/CharacterSprite/Ratna.png
 ucup.tscn::PackedScene::4676008612321257775::1746888277::0::1::::<><>::uid://fmgolofhml41::::res://Asset/CharacterSprite/Ucup.png<>res://Script/ucup.gd
 widya.tscn::PackedScene::1354031007157539469::1746888277::0::1::::<><>::uid://cw2lhsw2tnls0::::res://Asset/CharacterSprite/Widya.png<>res://Script/widya.gd
-zara.tscn::PackedScene::3186551121399908592::1746955259::0::1::::<><>::res://Script/zara.gd<>uid://ju2wo4jdln46::::res://Asset/CharacterSprite/Zara.png
+zara.tscn::PackedScene::3186551121399908592::1746958460::0::1::::<><>::res://Script/zara.gd<>uid://ju2wo4jdln46::::res://Asset/CharacterSprite/Zara.png
 ::res://Designs/::1746369139
 Desain Kelas.png::CompressedTexture2D::600971761263680184::1746368446::1746368525::1::::<><>::
 Desain Lorong.png::CompressedTexture2D::2584893074465718937::1746364101::1746364104::1::::<><>::
@@ -145,7 +151,7 @@ Desain Map.png::CompressedTexture2D::7195175627196581676::1746361678::1746361692
 Dinding Kelas.png::CompressedTexture2D::1253988582116576269::1746369116::1746369139::1::::<><>::
 Isi Kelas.jpeg::CompressedTexture2D::3150175763283450569::1746368488::1746368525::1::::<><>::
 Isi Lorong.jpeg::CompressedTexture2D::5627159334479508147::1746364229::1746364397::1::::<><>::
-::res://Object/::1746955031
+::res://Object/::1746957834
 bangku_meja_kelas.tscn::PackedScene::1647783431290660068::1746360207::0::1::::<><>::uid://du8gh7sq7h26j::::res://Asset/ObjectSprite/BangkuMeja Kelas.png
 checkpoint.tscn::PackedScene::4687162269860565276::1746798660::0::1::::<><>::res://Script/checkpoint.gd
 loker.tscn::PackedScene::3076733186438980013::1746417325::0::1::::<><>::uid://nld2qn7mvjhq::::res://Asset/ObjectSprite/Loker.png
@@ -156,11 +162,13 @@ mobil_kuning.tscn::PackedScene::4959722878392890551::1746360593::0::1::::<><>::u
 mobil_merah.tscn::PackedScene::7843787675597039860::1746363893::0::1::::<><>::uid://ojgoil8oca12::::res://Asset/ObjectSprite/Mobil Merah.png
 mobil_putih.tscn::PackedScene::3508156220036720327::1746360766::0::1::::<><>::uid://q6i8o6u813de::::res://Asset/ObjectSprite/Mobil Putih.png
 papan_tulis.tscn::PackedScene::1993655719489233483::1746360812::0::1::::<><>::uid://c500yqkmieakw::::res://Asset/ObjectSprite/Papan Tulis.png
-tas.tscn::PackedScene::8228804605162250318::1746955262::0::1::::<><>::uid://b5kecuid4sp55::::res://Asset/ObjectSprite/Tas.png<>res://Script/tas.gd
+bangku_kantin.tscn::PackedScene::1257946294456016900::1746958463::0::1::::<><>::uid://c5cl8ot1uj4g8::::res://Asset/ObjectSprite/996D2FC7-2570-4A08-90C3-3E1B4D3C50CF.png
+kios.tscn::PackedScene::4672742516021384559::1746958463::0::1::::<><>::uid://ce2gvh24xvkic::::res://Asset/ObjectSprite/CE968149-AB95-48C0-8B6D-D086101B71DD.png
+tas.tscn::PackedScene::8228804605162250318::1746958462::0::1::::<><>::uid://b5kecuid4sp55::::res://Asset/ObjectSprite/Tas.png<>res://Script/tas.gd
 tempat_sampah_besar.tscn::PackedScene::2515488804703621613::1746363892::0::1::::<><>::uid://chctypojdw3h0::::res://Asset/ObjectSprite/Tempat Sampah Besar.png
 tempat_sampah_kecil_depan.tscn::PackedScene::697789069340722740::1746363893::0::1::::<><>::uid://c5uoatikqx56k::::res://Asset/ObjectSprite/Tempat Sampah Kecil (Depan).png
-tempat_sampah_kecil_samping.tscn::PackedScene::3841113672511447499::1746955262::0::1::::<><>::res://Script/tempat_sampah.gd<>uid://cws7kq8x8m4vy::::res://Asset/ObjectSprite/Tempat Sampah Kecil.png
-::res://Script/::1746955028
+tempat_sampah_kecil_samping.tscn::PackedScene::3841113672511447499::1746958462::0::1::::<><>::res://Script/tempat_sampah.gd<>uid://cws7kq8x8m4vy::::res://Asset/ObjectSprite/Tempat Sampah Kecil.png
+::res://Script/::1746957828
 andi.gd::GDScript::-1::1746884946::0::1::::<>CharacterBody2D<>::
 cameraLorong.gd::GDScript::-1::1746418211::0::1::::<>Camera2D<>::
 checkpoint.gd::GDScript::-1::1746591390::0::1::::<>Area2D<>::
@@ -177,11 +185,14 @@ pak_jaka.gd::GDScript::-1::1746884979::0::1::::<>CharacterBody2D<>::
 playerMovement.gd::GDScript::-1::1746955150::0::1::::<>CharacterBody2D<>::
 putra.gd::GDScript::-1::1746884984::0::1::::<>CharacterBody2D<>::
 ratna.gd::GDScript::-1::1746884989::0::1::::<>CharacterBody2D<>::
+kantin.gd::GDScript::-1::1746957873::0::1::::<>Node2D<>::
+scene_trigger_lorong_kantin.gd::GDScript::-1::1746958334::0::1::::<>StaticBody2D<>::
+scene_trigger_to_lorong_kantin.gd::GDScript::-1::1746958047::0::1::::<>StaticBody2D<>::
 ruang_kelas.gd::GDScript::-1::1746897006::0::1::::<>Node2D<>::
 scene_kelas_day_1.gd::GDScript::-1::1746955071::0::1::::<>Node2D<>::
 scene_trigger_Lorong.gd::GDScript::-1::1746800710::0::1::::<>StaticBody2D<>::
 scene_trigger_lorong_kelas.gd::GDScript::-1::1746801437::0::1::::<>StaticBody2D<>::
-scene_trigger_lorong_kelas_lain.gd::GDScript::-1::1746801494::0::1::::<>StaticBody2D<>::
+scene_trigger_lorong_kelas_lain.gd::GDScript::-1::1746958276::0::1::::<>StaticBody2D<>::
 scene_trigger_parkiran.gd::GDScript::-1::1746801727::0::1::::<>StaticBody2D<>::
 scene_trigger_to_lorong.gd::GDScript::-1::1746802433::0::1::::<>StaticBody2D<>::
 scene_trigger_to_lorong_dari_kelas_lain.gd::GDScript::-1::1746803097::0::1::::<>StaticBody2D<>::
@@ -190,10 +201,10 @@ tempat_sampah.gd::GDScript::-1::1746893977::0::1::::<>StaticBody2D<>::
 ucup.gd::GDScript::-1::1746884994::0::1::::<>CharacterBody2D<>::
 widya.gd::GDScript::-1::1746884999::0::1::::<>CharacterBody2D<>::
 zara.gd::GDScript::-1::1746895315::0::1::::<>CharacterBody2D<>::
-::res://Script/DialogCharacter/::1746895566
-BakSampah.dialogue::Resource::4773165163136907201::1746955187::1746955263::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
-Day1.dialogue::Resource::5544849187933049668::1746955257::1746955263::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
-Tas.dialogue::Resource::17916546043222896::1746802587::1746803105::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
+::res://Script/DialogCharacter/::1746957834
+BakSampah.dialogue::Resource::4773165163136907201::1746955187::1746958468::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
+Day1.dialogue::Resource::5544849187933049668::1746955257::1746958468::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
+Tas.dialogue::Resource::17916546043222896::1746955301::1746958468::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
 ::res://UI/::1746879081
 title.png::CompressedTexture2D::5637048509270959262::1746879029::1746879081::1::::<><>::
 ::res://UI/Buttons/::1746881330
