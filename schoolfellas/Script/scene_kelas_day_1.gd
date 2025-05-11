@@ -1,9 +1,9 @@
 extends Node2D
 var player 
-var Edi_Follower
-var Guntur_Follower
-var Nelly_Follower
-var Zara_Follower
+var Edi
+var Guntur
+var Nelly
+var Zara
 var Andi
 
 var actTrigger = false
@@ -15,10 +15,10 @@ var actTrigger = false
 func _ready() -> void:
 	player = get_node("TileMaps/Player")
 	Andi = get_node("Characters/Andi/Animation")
-	Edi_Follower = get_node("Characters/Path_Edi/Edi_Follower")
-	Nelly_Follower = get_node("Characters/Path_Nelly/Nelly_Follower")
-	Zara_Follower = get_node("Characters/Path_Zara/Zara_Follower")
-	Guntur_Follower = get_node("Characters/Path_Guntur/Guntur_Follower")
+	Edi = get_node("Characters/Edi/Animation")
+	Nelly = get_node("Characters/Nelly/Animation")
+	Zara = get_node("Characters/Zara/Animation")
+	Guntur = get_node("Characters/Guntur/Animation")
 	
 	Andi.play("Idle_kanan")
 	pass # Replace with function body.
@@ -26,12 +26,10 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
-	var move_speed = 0.5
-	Edi_Follower.progress_ratio += move_speed * delta
-	Nelly_Follower.progress_ratio += move_speed * delta
-	Zara_Follower.progress_ratio += move_speed * delta
-	Guntur_Follower.progress_ratio += move_speed * delta
-	await $Timer.timeout
+	Edi.play("IdleKiri")
+	Nelly.play("IdleKiri")
+	Guntur.play("IdleKiri")
+	Zara.play("IdleKiri")
 	
 	if !actTrigger :
 		dialogStart = "Act2RuangKelas"

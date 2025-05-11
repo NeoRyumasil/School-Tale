@@ -1,4 +1,5 @@
 ~ Start
+set GlobalItems.onCutscene = true
 if GlobalItems.haveSampah == true:
 	- Buang Sampah
 		set GlobalItems.reputation += 5
@@ -10,4 +11,5 @@ else :
 	% Kamu berpikir apakah didalamnya terdapat harta karun?
 	% Terkadang kamu bisa menemukan barang berguna disini.
 	% Apakah sampah benar-benar tidak berguna?
+set GlobalItems.onCutscene = false
 => END

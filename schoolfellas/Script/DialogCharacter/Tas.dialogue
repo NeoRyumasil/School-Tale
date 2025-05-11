@@ -1,3 +1,5 @@
 ~ start
+set GlobalItems.onCutscene = true
 Kamu Mendapatkan Tas
+set GlobalItems.onCutscene = false
 => END

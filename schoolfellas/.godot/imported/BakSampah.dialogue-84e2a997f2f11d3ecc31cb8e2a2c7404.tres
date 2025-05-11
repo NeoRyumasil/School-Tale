@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_iq4ej"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_80yef"]
 
 [resource]
-script = ExtResource("1_iq4ej")
+script = ExtResource("1_80yef")
 using_states = PackedStringArray()
 titles = {
 "Start": "2"
@@ -21,48 +21,124 @@ lines = {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
 "id": "10",
-"next_id": "13",
+"next_id": "14",
 "notes": "",
-"parent_id": "8",
+"parent_id": "9",
+"siblings": [{
+"condition": {},
+"id": "10",
+"weight": 1.0
+}, {
+"condition": {},
+"id": "11",
+"weight": 1.0
+}, {
+"condition": {},
+"id": "12",
+"weight": 1.0
+}, {
+"condition": {},
+"id": "13",
+"weight": 1.0
+}],
 "tags": PackedStringArray(),
-"text": "Kamu berpikir apakah didalamnya terdapat harta karun?",
+"text": "Ini hanyalah tong sampah biasa.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Kamu berpikir apakah didalamnya terdapat harta karun?",
+"translation_key": "Ini hanyalah tong sampah biasa.",
 "type": &"dialogue"
 },
 "11": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
 "id": "11",
-"next_id": "13",
+"next_id": "14",
 "notes": "",
-"parent_id": "8",
+"parent_id": "9",
 "tags": PackedStringArray(),
-"text": "Terkadang kamu bisa menemukan barang berguna disini.",
+"text": "Kamu berpikir apakah didalamnya terdapat harta karun?",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Terkadang kamu bisa menemukan barang berguna disini.",
+"translation_key": "Kamu berpikir apakah didalamnya terdapat harta karun?",
 "type": &"dialogue"
 },
 "12": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
 "id": "12",
-"next_id": "13",
+"next_id": "14",
 "notes": "",
-"parent_id": "8",
+"parent_id": "9",
+"tags": PackedStringArray(),
+"text": "Terkadang kamu bisa menemukan barang berguna disini.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Terkadang kamu bisa menemukan barang berguna disini.",
+"type": &"dialogue"
+},
+"13": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "13",
+"next_id": "14",
+"notes": "",
+"parent_id": "9",
 "tags": PackedStringArray(),
 "text": "Apakah sampah benar-benar tidak berguna?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Apakah sampah benar-benar tidak berguna?",
 "type": &"dialogue"
 },
-"13": {
-"id": "13",
+"14": {
+"id": "14",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "onCutscene"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "false"
+}]),
+"is_blocking": true
+},
+"next_id": "15",
+"type": &"mutation"
+},
+"15": {
+"id": "15",
 "is_snippet": false,
 "next_id": "end",
 "type": &"goto"
 },
 "2": {
+"id": "2",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "onCutscene"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "true"
+}]),
+"is_blocking": true
+},
+"next_id": "3",
+"type": &"mutation"
+},
+"3": {
 "condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -82,29 +158,29 @@ lines = {
 "type": "colon"
 }])
 },
-"id": "2",
-"next_conditional_id": "8",
-"next_id": "3",
-"next_id_after": "13",
+"id": "3",
+"next_conditional_id": "9",
+"next_id": "4",
+"next_id_after": "14",
 "type": &"condition"
 },
-"3": {
+"4": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "3",
-"next_id": "4",
-"next_id_after": "13",
+"id": "4",
+"next_id": "5",
+"next_id_after": "14",
 "notes": "",
-"parent_id": "2",
-"responses": PackedStringArray("3", "6"),
+"parent_id": "3",
+"responses": PackedStringArray("4", "7"),
 "tags": PackedStringArray(),
 "text": "Buang Sampah",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Buang Sampah",
 "type": &"response"
 },
-"4": {
-"id": "4",
+"5": {
+"id": "5",
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -123,12 +199,12 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "5",
-"parent_id": "3",
+"next_id": "6",
+"parent_id": "4",
 "type": &"mutation"
 },
-"5": {
-"id": "5",
+"6": {
+"id": "6",
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -147,26 +223,26 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "13",
-"parent_id": "3",
+"next_id": "14",
+"parent_id": "4",
 "type": &"mutation"
 },
-"6": {
+"7": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "6",
-"next_id": "7",
-"next_id_after": "13",
+"id": "7",
+"next_id": "8",
+"next_id_after": "14",
 "notes": "",
-"parent_id": "2",
+"parent_id": "3",
 "tags": PackedStringArray(),
 "text": "Diam Saja",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Diam Saja",
 "type": &"response"
 },
-"7": {
-"id": "7",
+"8": {
+"id": "8",
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -185,49 +261,20 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "13",
-"parent_id": "6",
+"next_id": "14",
+"parent_id": "7",
 "type": &"mutation"
 },
-"8": {
-"id": "8",
-"next_conditional_id": "13",
-"next_id": "9",
-"next_id_after": "13",
-"type": &"condition"
-},
 "9": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
 "id": "9",
-"next_id": "13",
-"notes": "",
-"parent_id": "8",
-"siblings": [{
-"condition": {},
-"id": "9",
-"weight": 1.0
-}, {
-"condition": {},
-"id": "10",
-"weight": 1.0
-}, {
-"condition": {},
-"id": "11",
-"weight": 1.0
-}, {
-"condition": {},
-"id": "12",
-"weight": 1.0
-}],
-"tags": PackedStringArray(),
-"text": "Ini hanyalah tong sampah biasa.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Ini hanyalah tong sampah biasa.",
-"type": &"dialogue"
+"next_conditional_id": "14",
+"next_id": "10",
+"next_id_after": "14",
+"type": &"condition"
 }
 }
 raw_text = "~ Start
+set GlobalItems.onCutscene = true
 if GlobalItems.haveSampah == true:
 	- Buang Sampah
 		set GlobalItems.reputation += 5
@@ -239,5 +286,6 @@ else :
 	% Kamu berpikir apakah didalamnya terdapat harta karun?
 	% Terkadang kamu bisa menemukan barang berguna disini.
 	% Apakah sampah benar-benar tidak berguna?
+set GlobalItems.onCutscene = false
 => END"
 metadata/dialogue_manager_version = "2.45.0"

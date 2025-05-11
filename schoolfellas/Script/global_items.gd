@@ -29,3 +29,4 @@ var Day1SceneTriggerKelas = false
 var NellyMission = false
 
 # Global Scene
+var onCutscene = false
