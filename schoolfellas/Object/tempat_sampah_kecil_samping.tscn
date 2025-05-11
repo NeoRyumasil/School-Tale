@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://buywt0vlicdeh"]
+[gd_scene load_steps=6 format=3 uid="uid://buywt0vlicdeh"]
 
 [ext_resource type="Script" path="res://Script/tempat_sampah.gd" id="1_fsw7y"]
 [ext_resource type="Texture2D" uid="uid://cws7kq8x8m4vy" path="res://Asset/ObjectSprite/Tempat Sampah Kecil.png" id="1_ufcbi"]
+[ext_resource type="PackedScene" uid="uid://byfnnh6l6gh55" path="res://Object/starlion.tscn" id="3_aevsi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4vuxx"]
 size = Vector2(18, 22)
@@ -35,6 +36,11 @@ offset_right = 82.0
 offset_bottom = -22.0
 scale = Vector2(0.440001, 0.440001)
 text = "Interaksi (Enter)"
+
+[node name="Starlion" parent="." instance=ExtResource("3_aevsi")]
+visible = false
+position = Vector2(-12, -18)
+scale = Vector2(0.604163, 0.604163)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

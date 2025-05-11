@@ -13,6 +13,8 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("Interact") && canInteract:
 		_interaction()
 	
+	$Starlion/Animation.play("default")
+	
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.name == "Player" && !isHit:
 		canInteract = true

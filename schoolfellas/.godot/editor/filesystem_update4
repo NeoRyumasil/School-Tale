@@ -21,3 +21,11 @@ res://lorong_dari_kelas.tscn
 res://lorong_dari_kelas_lain.tscn
 res://lorong.tscn
 res://lorong_dari_kantin.tscn
+res://Intro.tscn
+res://intro_out.tscn
+res://Object/starlion.tscn
+res://Character/npc_1.tscn
+res://Character/npc_2.tscn
+res://Character/npc_3.tscn
+res://Character/npc_4.tscn
+res://Script/tempat_sampah.gd

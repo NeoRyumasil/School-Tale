@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://byfnnh6l6gh55"]
+
+[ext_resource type="Texture2D" uid="uid://bpy66x8dyfiqd" path="res://Asset/ObjectSprite/Star.png" id="1_hq4n5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_blbw7"]
+atlas = ExtResource("1_hq4n5")
+region = Rect2(0, 0, 24, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_if80m"]
+atlas = ExtResource("1_hq4n5")
+region = Rect2(24, 0, 24, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v1kjh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_blbw7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_if80m")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[node name="Starlion" type="StaticBody2D"]
+
+[node name="Animation" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_v1kjh")
+frame_progress = 0.541687
