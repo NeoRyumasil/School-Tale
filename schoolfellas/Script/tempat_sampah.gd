@@ -29,4 +29,9 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 
 func _interaction():
 	canInteract = false
-	DialogueManager.show_example_dialogue_balloon(load("res://Script/DialogCharacter/BakSampah.dialogue"), dialogStart)
+	if GlobalItems.Day1SceneTriggerKelas && !GlobalItems.haveLiontin && GlobalItems.Day1SceneTriggerKantin:
+		dialogStart = "Act2Kantin"
+		DialogueManager.show_example_dialogue_balloon(load("res://Script/DialogCharacter/Day1.dialogue"), dialogStart)
+	else:
+		dialogStart = "Start"
+		DialogueManager.show_example_dialogue_balloon(load("res://Script/DialogCharacter/BakSampah.dialogue"), dialogStart)

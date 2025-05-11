@@ -10,6 +10,7 @@ var isDay5 = false
 #Barang
 var haveTasHitam = false
 var haveSampah = false
+var haveLiontin = false
 
 #Checkpoint
 var checkpoint = Vector2.ZERO
@@ -24,6 +25,7 @@ var reputation = 0
 
 # SceneTrigger
 var Day1SceneTriggerKelas = false
+var Day1SceneTriggerKantin = false
 
 # MissionTrigger
 var NellyMission = false

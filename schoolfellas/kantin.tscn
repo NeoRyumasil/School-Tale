@@ -12,7 +12,7 @@
 [ext_resource type="Script" path="res://Script/scene_trigger_to_lorong_kantin.gd" id="10_mhnrv"]
 [ext_resource type="PackedScene" uid="uid://updwxgjptqwa" path="res://game_ui.tscn" id="11_7wetb"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_af6lw"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1dle5"]
 texture = ExtResource("1_dbfhi")
 35:5/0 = 0
 36:5/0 = 0
@@ -4087,9 +4087,9 @@ texture = ExtResource("1_dbfhi")
 
 [sub_resource type="TileSet" id="TileSet_8hmox"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_af6lw")
+sources/0 = SubResource("TileSetAtlasSource_1dle5")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vtgfr"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hs4hd"]
 texture = ExtResource("2_8bxg8")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -4566,7 +4566,7 @@ texture = ExtResource("2_8bxg8")
 
 [sub_resource type="TileSet" id="TileSet_72o3u"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_vtgfr")
+sources/0 = SubResource("TileSetAtlasSource_hs4hd")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0k71y"]
 size = Vector2(207.75, 50)

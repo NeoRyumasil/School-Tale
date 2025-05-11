@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_66hyd"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_1rpku"]
 
 [resource]
-script = ExtResource("1_66hyd")
+script = ExtResource("1_1rpku")
 using_states = PackedStringArray()
 titles = {
 "Act1Kantin": "68",
@@ -14,7 +14,7 @@ titles = {
 "Act2Kantin": "80",
 "Act2RuangKelas": "47"
 }
-character_names = PackedStringArray("Pak Heri", "Raka", "Pak Her i", "Andi", "Edi", "Guntur", "Nelly", "Zara", "Endi", "Murid")
+character_names = PackedStringArray("Pak Heri", "Raka", "Andi", "Edi", "Guntur", "Nelly", "Zara", "Endi", "Murid")
 first_title = "2"
 lines = {
 "1": {
@@ -894,7 +894,7 @@ lines = {
 "type": &"dialogue"
 },
 "7": {
-"character": "Pak Her i",
+"character": "Pak Heri",
 "character_replacements": Array[Dictionary]([]),
 "id": "7",
 "next_id": "8",
@@ -1048,7 +1048,45 @@ lines = {
 "type": &"dialogue"
 },
 "82": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
 "id": "82",
+"next_id": "83",
+"next_id_after": "87",
+"notes": "",
+"responses": PackedStringArray("82", "85"),
+"tags": PackedStringArray(),
+"text": "Ambil Liontin",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Ambil Liontin",
+"type": &"response"
+},
+"83": {
+"id": "83",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "haveLiontin"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "true"
+}]),
+"is_blocking": true
+},
+"next_id": "84",
+"parent_id": "82",
+"type": &"mutation"
+},
+"84": {
+"id": "84",
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -1067,11 +1105,49 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": "83",
+"next_id": "87",
+"parent_id": "82",
 "type": &"mutation"
 },
-"83": {
-"id": "83",
+"85": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "85",
+"next_id": "86",
+"next_id_after": "87",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Biarkan Saja",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Biarkan Saja",
+"type": &"response"
+},
+"86": {
+"id": "86",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobbalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "haveLiontin"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "false"
+}]),
+"is_blocking": true
+},
+"next_id": "87",
+"parent_id": "85",
+"type": &"mutation"
+},
+"87": {
+"id": "87",
 "mutation": {
 "expression": Array[Dictionary]([{
 "type": "variable",
@@ -1090,8 +1166,14 @@ lines = {
 }]),
 "is_blocking": true
 },
-"next_id": &"end",
+"next_id": "88",
 "type": &"mutation"
+},
+"88": {
+"id": "88",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
 },
 "9": {
 "character": "Pak Heri",
@@ -1112,7 +1194,7 @@ Pak Heri : Pagi, Nak Raka. Rajin amat datang pagi-pagi gini.
 Raka : Pagi, Pak. Iya, saya pikir lebih baik datang lebih awal.
 Pak Heri: Oh ya, semalem waktu saya patroli, saya nemuin tas yang ketinggalan di kelas lantai dua. Nggak ada nama, tapi isinya kayak punya siswa di kelas mu.
 Raka : Tas warna hitam? Ada gantungan kunci berbentuk robot?
-Pak Her i: Nah, itu dia. Kamu kenal?
+Pak Heri: Nah, itu dia. Kamu kenal?
 Raka : Iya, itu punya Andi. Dia duduk di sebelah saya kemarin. Kayaknya dia buru-buru pulang.
 Pak Heri : Kalau gitu, titip ya. Tasnya ada di ruang barang hilang. Kamu bisa ambil dulu sebelum bel masuk.
 Raka : Baik, Pak. Saya kembalikan ke Andi nanti.
@@ -1187,6 +1269,11 @@ set GlobalItems.onCutscene = false
 
 set GlobalItems.onCutscene = true
 Raka: Loh ini liontin siapa? Sepertinya sangat mahal
-set GlobalItems.NellyMission = true
-set GlobalItems.onCutscene = false"
+- Ambil Liontin
+	set GlobalItems.haveLiontin = true
+	set GlobalItems.NellyMission = true
+- Biarkan Saja
+	set GlobbalItems.haveLiontin = false
+set GlobalItems.onCutscene = false
+=> END"
 metadata/dialogue_manager_version = "2.45.0"

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://ib7vca40jdr7"
+path="res://.godot/imported/Skip.dialogue-cbee511d9fe1fe5efd9c0ca3cb364282.tres"
+
+[deps]
+
+source_file="res://Script/DialogCharacter/Skip.dialogue"
+dest_files=["res://.godot/imported/Skip.dialogue-cbee511d9fe1fe5efd9c0ca3cb364282.tres"]
+
+[params]
+
+defaults=true

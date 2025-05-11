@@ -4,7 +4,7 @@ Pak Heri : Pagi, Nak Raka. Rajin amat datang pagi-pagi gini.
 Raka : Pagi, Pak. Iya, saya pikir lebih baik datang lebih awal.
 Pak Heri: Oh ya, semalem waktu saya patroli, saya nemuin tas yang ketinggalan di kelas lantai dua. Nggak ada nama, tapi isinya kayak punya siswa di kelas mu.
 Raka : Tas warna hitam? Ada gantungan kunci berbentuk robot?
-Pak Her i: Nah, itu dia. Kamu kenal?
+Pak Heri: Nah, itu dia. Kamu kenal?
 Raka : Iya, itu punya Andi. Dia duduk di sebelah saya kemarin. Kayaknya dia buru-buru pulang.
 Pak Heri : Kalau gitu, titip ya. Tasnya ada di ruang barang hilang. Kamu bisa ambil dulu sebelum bel masuk.
 Raka : Baik, Pak. Saya kembalikan ke Andi nanti.
@@ -79,5 +79,10 @@ set GlobalItems.onCutscene = false
 
 set GlobalItems.onCutscene = true
 Raka: Loh ini liontin siapa? Sepertinya sangat mahal
-set GlobalItems.NellyMission = true
+- Ambil Liontin
+	set GlobalItems.haveLiontin = true
+	set GlobalItems.NellyMission = true
+- Biarkan Saja
+	set GlobbalItems.haveLiontin = false
 set GlobalItems.onCutscene = false
+=> END
