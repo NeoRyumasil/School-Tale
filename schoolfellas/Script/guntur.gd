@@ -48,9 +48,12 @@ func _on_interaction_area_body_exited(body: Node2D) -> void:
 func _interaction():
 	$Tutorial.visible = false
 	if GlobalItems.isDay1:
+		dialogResource = load("res://Script/DialogCharacter/Day1.dialogue")
 		dialogStart = "Act1RuangKelas"
-	
+	elif GlobalItems.isDay2 && GlobalItems.Day2AndiTriggerPerpus:
+		dialogResource = load("res://Script/DialogCharacter/Day2.dialogue")
+		dialogStart = "Act1Toilet"
 	if !isChat:
-		DialogueManager.show_example_dialogue_balloon(load("res://Script/DialogCharacter/Day1.dialogue"), dialogStart)
+		DialogueManager.show_example_dialogue_balloon(dialogResource, dialogStart)
 		isChat = true
 	

@@ -2,7 +2,10 @@
 set GlobalItems.onCutscene = true
 Kamu yakin mau pulang?
 - Iya
-	do get_tree().change_scene_to_file("res://to_be_continued.tscn")
+	if GlobalItems.isDay1:	
+		do get_tree().change_scene_to_file("res://intro_day_2.tscn")
+	if GlobalItems.isDay2:
+		do get_tree().change_scene_to_file("res://ending.tscn")
 - Tidak
 set GlobalItems.onCutscene = false
 => END

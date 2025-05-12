@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bd7fidpu0kxhr"]
+[gd_scene load_steps=13 format=3 uid="uid://bd7fidpu0kxhr"]
 
 [ext_resource type="Texture2D" uid="uid://bkuc8hjm41jwu" path="res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png" id="1_j5et7"]
 [ext_resource type="Texture2D" uid="uid://ch7hcfw7ucdqx" path="res://Asset/TileSet/C1560533-5BC1-4136-BF8E-1F738056DA96.png" id="2_1gsh8"]
@@ -6,8 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://b3jrdxjf1p6rj" path="res://Object/rak_perpus.tscn" id="5_p1x71"]
 [ext_resource type="PackedScene" uid="uid://updwxgjptqwa" path="res://game_ui.tscn" id="6_acb1p"]
 [ext_resource type="PackedScene" uid="uid://dg0ddh1js6hbq" path="res://Character/player.tscn" id="6_niwt1"]
+[ext_resource type="Script" path="res://Script/scene_lorong_kiri.gd" id="7_ty5j1"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1plxd"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kjoa5"]
 texture = ExtResource("1_j5et7")
 35:5/0 = 0
 36:5/0 = 0
@@ -4082,9 +4083,9 @@ texture = ExtResource("1_j5et7")
 
 [sub_resource type="TileSet" id="TileSet_ywbpo"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_1plxd")
+sources/0 = SubResource("TileSetAtlasSource_kjoa5")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5iwmn"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3ut8j"]
 texture = ExtResource("2_1gsh8")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -4602,7 +4603,10 @@ texture = ExtResource("2_1gsh8")
 
 [sub_resource type="TileSet" id="TileSet_nleyh"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_5iwmn")
+sources/0 = SubResource("TileSetAtlasSource_3ut8j")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1c2v5"]
+size = Vector2(106, 199)
 
 [node name="Perpustakaan" type="Node2D"]
 
@@ -4682,3 +4686,14 @@ limit_top = -425
 limit_right = 1380
 limit_bottom = 900
 limit_smoothed = true
+
+[node name="Scene_Trigger" type="StaticBody2D" parent="."]
+script = ExtResource("7_ty5j1")
+
+[node name="Area2D" type="Area2D" parent="Scene_Trigger"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Scene_Trigger/Area2D"]
+position = Vector2(339, 166.5)
+shape = SubResource("RectangleShape2D_1c2v5")
+
+[connection signal="body_entered" from="Scene_Trigger/Area2D" to="Scene_Trigger" method="_on_area_2d_body_entered"]

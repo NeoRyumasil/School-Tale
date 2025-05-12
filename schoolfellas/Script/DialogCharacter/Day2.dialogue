@@ -63,6 +63,7 @@ Kamu salah satu teman dekatnya, bukan?
 Pak Jaka: Kalau boleh, bantu Andi untuk belajar lebih rutin. Saya tahu kamu punya potensi untuk jadi pengaruh baik.
 Raka:  Baik, Pak. Saya akan bantu dia.
 do get_tree().change_scene_to_file("res://lorong_dari_ruang_guru.tscn")
+set GlobalItems.Day2AndiTriggerLapangan = false
 set GlobalItems.onCutscene = false
 => END
 
@@ -70,14 +71,20 @@ set GlobalItems.onCutscene = false
 set GlobalItems.onCutscene = true
 Andi: Kamu beneran mau bantuin aku?
 - Tentu. Gak ada yang salah dengan minta bantuan. Apalagi sama teman.
+	set GlobalItems.reputation += 10
 - Yah, aku cuma disuruh pak jaka sih
+	set GlobalItems.reputation -= 5
 Andi: Makasih, Rak. Aku bakal coba lebih serius mulai sekarang.
 Raka: Lihat, bagian ini gampang kok. Tinggal substitusi ke rumus, dan... Hei!?
 Andi: Iya... iya, ngerti...
 - Kamu masih ada yang gak paham?
+	set GlobalItems.reputation += 15
 - Bilang andi kalau gak paham!
+	set GlobalItems.reputation -= 5
 - (menatap andi dengan tajam)
-Andi:  Enggak, enggak. Aku cuma... ngantuk aja, mungkin. 
+	set GlobalItems.reputation -= 20
+Andi:  Enggak, enggak. Aku cuma... ngantuk aja, mungkin.
+do get_tree().change_scene_to_file("res://perpustakaan_scene_2.tscn") 
 set GlobalItems.onCutscene = false
 => END
 
@@ -86,8 +93,12 @@ set GlobalItems.onCutscene = true
 Raka: Hah? Andi?
 Raka: Ke toilet kali? Tapi dia nggak bilang apa-apa...
 - Harusnya aku cari dia.
+	set GlobalItems.reputation += 2
 - Mungkin dia sudah di kelas.
 set GlobalItems.onCutscene = false
+set GlobalItems.Day2AndiTriggerPerpus = true
+do get_tree().change_scene_to_file("res://lorong_kiri.tscn") 
+set GlobalItems.Day2AndiTriggerGuru = false
 => END
 
 ~ Act2LorongSekolah
@@ -99,9 +110,10 @@ set GlobalItems.onCutscene = false
 ~ Act1Toilet
 set GlobalItems.onCutscene = true
 Raka: Permisi... Kalian lihat Andi?
-Guntur: Oooh, nyari bocah ceking itu? (tertawa terkekeh)gua mah mana tahu, mungkin dia lagi ke luar angkasa, sama seperti impiannya
+Guntur: Oooh, nyari bocah ceking itu? gua mah mana tahu, mungkin dia lagi ke luar angkasa, sama seperti impiannya
 Faldo: hahahaha. Bisa aja lu tur
 Raka: Sialan, mereka pasti melakukan sesuatu ke ANDI
+set GlobalItems.AndiTriggerToilet = true
 set GlobalItems.onCutscene = false
 => END
 
@@ -132,32 +144,38 @@ Sekarang di sini, aku takut ngulangin semua itu lagi...
 - Jadi lu kabur cuma gara-gara takut gagal lagi? Ini sekolah, bukan tempat pelarian.
 Andi: Makasih, Raka... Gue janji gak kabur lagi.
 set GlobalItems.onCutscene = false
+set GlobalItems.andFlag = true
 => END
 
 ~ Act1Kantin
 set GlobalItems.onCutscene = true
-Raka: Nelly... ini punyamu, kah?
-Nelly: RAKA!, kok lu bisa nemuin benda itu? 
-- Oh ini punyamu
-- Lain kali jaga dong barangnya!
-- Aku rasa, aku nemu di Kotak Sampah
-Nelly: Eh... Aku sebenarnya aku ngga maksud membuangnya! Tapi aku terburu-buru karena aku ada urusan klub drama.
-- Boleh kubantu?
-	Nelly: Oh..., Lu punya nyali ya nawarin pekerjaan?
-	Nelly: Oke, bantu gua cari properti yang dibutuhin klub drama! Gua muak disuruh-suruh oleh ketua mata empat songong itu. Seluruh tugas yang dia kasih cuman untuk mengusirku dari ruangan klub. Dasar muka dua.
-	- Aku benci orang yg seperti itu.
-	- Cepat berikan saja informasinya.
-	- Barang apa yang harus kucari.
-	SURAT BARANG HILANG (NOTE)
-	PROPERTI UNTUK KLUB DRAMA
-
-	Tongkat Penyihir (sudah)
-	Jubah Merah (sudah)
-	TOPENG KOSTUM (HILANG!)
-
-	Note: Coba tanyakan ke WIDYA. Terakhir terlihat membawanya dari ruang properti ke perpustakaan.
-
-- Aku pergi...
+if GlobalItem.haveLiontin:
+	Raka: Nelly... ini punyamu, kah?
+	Nelly: RAKA!, kok lu bisa nemuin benda itu? 
+	- Oh ini punyamu
+		set GlobalItems.reputation += 5
+	- Lain kali jaga dong barangnya!
+		set GlobalItems.reputation -= 2
+	- Aku rasa, aku nemu di Kotak Sampah
+		set GlobalItems.reputation -= 5
+	Nelly: Eh... Aku sebenarnya aku ngga maksud membuangnya! Tapi aku terburu-buru karena aku ada urusan klub drama.
+	- Boleh kubantu?
+		Nelly: Oh..., Lu punya nyali ya nawarin pekerjaan?
+		Nelly: Oke, bantu gua cari properti yang dibutuhin klub drama! Gua muak disuruh-suruh oleh ketua mata empat songong itu. Seluruh tugas yang dia kasih cuman untuk mengusirku dari ruangan klub. Dasar muka dua.
+		- Aku benci orang yg seperti itu.
+			set GlobalItems.reputation += 7
+		- Cepat berikan saja informasinya.
+		- Barang apa yang harus kucari.
+		SURAT BARANG HILANG (NOTE)
+		PROPERTI UNTUK KLUB DRAMA
+		Tongkat Penyihir (sudah)
+		Jubah Merah (sudah)
+		TOPENG KOSTUM (HILANG!)
+		Note: Coba tanyakan ke WIDYA. Terakhir terlihat membawanya dari ruang properti ke perpustakaan.
+		set GlobalItems.Day2NellyTriggerKantin = true
+	- Aku pergi...
+else:
+	Nelly: Halo Rak
 set GlobalItems.onCutscene = false
 => END
 
@@ -168,15 +186,24 @@ Widya: Kamu anak baru yang dibicarakan itu ya?
 	Widya: Dahulu, aku dan NELLY bersahabat dekat dan senang dengan hal-hal berbau film. Dia ingin menjadi aktris dan aku ingin menjadi Sutradara, sehingga kita berdua masuk klub drama. Namun semua berubah sejak kecelakaan yang mencederai kakiku, NELLY tampaknya merasa bersalah atas kejadian tersebut.
 	Widya: Dia menghindariku semenjak itu. Dia juga bergaul dengan anak bermasalah seperti EDI.
 	- Berikan Liontin
+		set GlobalItems.haveLiontin = false
 		Widya: Liontin itu kan! Dari mana lu dapetin nya!
+		set GlobalItems.widFlag = true
 		- Aku nemuinnya di Tong Sampah
+			set GlobalItems.reputation -= 5
 		- Terjatuh di lantai
+			set GlobalItems.reputation += 5
 		Widya: Apa selama ini NELLY masih ingin berteman denganku? Aku memang teman yang jahat.
 		Raka: Bukannya terlalu cepat memberi asumsi seperti itu?
 	- Aku turut bersedih atas kecelakaan mu
-	Widya: Iya, gapapa. Aku baik-baik saja sekarang.
-	Raka: Baiklah, kalau begitu.
-- Baiklah.
+		Widya: Iya, gapapa. Aku baik-baik saja sekarang.
+		Raka: Baiklah, kalau begitu.
+	Widya: Oh iya, ini dia topengnya.
+	Raka: Terima Kasih...
+	set GlobalItems.haveTopeng = true
+	Widya: Aku juga menemukan kostum ini di tempat sampah, ini adalah properti klub drama.
+	Raka: Aku akan mengembalikannya ke aula
+- Yup.
 set GlobalItems.onCutscene = false
 => END
 
@@ -188,7 +215,7 @@ Raka: Orang gila! Kenapa lu seenaknya ngelaporin kita ke kepala sekolah?
 Ratna: Kenapa? Kalian berdua adalah murid bermasalah, terutama NELLY, yang sudah mencederai anggota kita, apa dia ngga cerita ke lu?
 Nelly: Tidak! Jangan percaya ke dia.
 Widya: Cukup!
-- berpihak
+if GlobalItems.widFlag:
 	Widya: RATNA!, Akui saja lu yang buang kostum itu kan? Aku udah dengar dari anggota klub lain. Lu ingin keluarin NELLY karena lu iri dia dekat dengan EDI kan?
 	Ratna: Ehh... Jangan ngomong sembarangan!
 	Widya: NELLY, aku minta maaf... Aku ga tahu kalau selama ini kamu masih mikirin aku.
@@ -198,7 +225,8 @@ Widya: Cukup!
 	Murid: IYA!, jangan seenaknya ubah-ubah susunan pemain drama secara mendadak!
 	Murid: Kerumunan siswa anggota klub drama Ceritakan alasan kenapa uang kas klub drama juga berkurang karena keperluan lu!
 	Ratna: AHH, aku pergi.
-- tidak berpihak
+	do get_tree().change_scene_to_file("res://kantin_day_2_act_2.tscn") 
+else:
 	Widya: RATNA!, hentikan perdebatan ini, jangan seenaknya menuduh orang. dan NELLY, kau sebaiknya jangan mendekati klub ini lagi
 	Nelly: Maksud lu? Lu percaya cerita yang disebarkan RATNA
 	Widya: Maksudku,...cukup. Aku sudah muak. Aku akan keluar dari klub ini
@@ -210,15 +238,17 @@ set GlobalItems.onCutscene = false
 
 ~ Act2Kantin
 set GlobalItems.onCutscene = true
-- berpihak
+if GlobalItems.widFlag:
 	Nelly: Aku minta maaf karena menjauh dari lu, WID WIDYA
 	Widya: Enggak kok, itu salah ku juga tidak memberi kabar lagi. Semoga dengan ini kita bisa berteman lagi.
 	Nelly: RAKA, aku juga berterimakasih kepadamu karena mencari KOSTUM drama milikku. Oh iya, nampaknya kamu WID WIDYA yang bakal jadi ketua Klub drama. Seluruh anggota terkesan dengan keberanian lu
 	Raka: Oh, jadi ini alasan kalian mentraktir ku sepiring bakso dan esteh. Thank you banget!
 	Widya: hah? Kita ga traktir lu sekarang, maksud ku setelah aku diangkat jadi ketua klub. Hehe
 	Raka: APA! Kok kalian ga bilang2
+	set GlobalItems.reputation += 30
 	Widya: Sepertinya ada barangku yang ketinggalan di perpustakaan aku akan mengambilnya dahulu
 set GlobalItems.onCutscene = false
+do get_tree().change_scene_to_file("res://kantin_day_2_act_3.tscn") 
 => END
 
 ~ Act3Kantin
@@ -228,5 +258,8 @@ Raka: Soal itu, aku turut berduka NEL.
 Nelly: Oh ya, terimakasih udah menemukan KOSTUM TOPENG milikku.
 Raka: NEL, kamu orang yang kuat! Aku turut prihatin dengan kejadian yang menimpa mu. Sebaiknya kau menjauhi orang seperti RATNA.
 Nelly: Hahaha, oh RAKA. garing amat sih
+set GlobalItems.reputation += 20
 set GlobalItems.onCutscene = false
+do get_tree().change_scene_to_file("res://map_parkiran_out.tscn") 
+set GlobalItems.nelFlag = true
 => END

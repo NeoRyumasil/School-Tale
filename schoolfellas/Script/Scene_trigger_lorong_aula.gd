@@ -12,7 +12,9 @@ func _process(delta: float) -> void:
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	if body.name == "Player":
+	if body.name == "Player" && !GlobalItems.haveTopeng:
 		get_tree().change_scene_to_file("res://aula.tscn")
+	elif body.name == "Player" && GlobalItems.haveTopeng:
+		get_tree().change_scene_to_file("res://aula_scene_1.tscn")
 	pass # Replace with function body.
  # Replace with function body.

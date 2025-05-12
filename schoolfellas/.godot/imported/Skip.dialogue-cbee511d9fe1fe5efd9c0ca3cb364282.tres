@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_wufv6"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_dc8tj"]
 
 [resource]
-script = ExtResource("1_wufv6")
+script = ExtResource("1_dc8tj")
 using_states = PackedStringArray()
 titles = {
 "Start": "2"
@@ -16,6 +16,35 @@ lines = {
 "next_id": "2",
 "text": "Start",
 "type": &"title"
+},
+"10": {
+"id": "10",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "onCutscene"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "false"
+}]),
+"is_blocking": true
+},
+"next_id": "11",
+"type": &"mutation"
+},
+"11": {
+"id": "11",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
 },
 "2": {
 "id": "2",
@@ -57,9 +86,9 @@ lines = {
 "character_replacements": Array[Dictionary]([]),
 "id": "4",
 "next_id": "5",
-"next_id_after": "7",
+"next_id_after": "10",
 "notes": "",
-"responses": PackedStringArray("4", "6"),
+"responses": PackedStringArray("4", "9"),
 "tags": PackedStringArray(),
 "text": "Iya",
 "text_replacements": Array[Dictionary]([]),
@@ -67,7 +96,28 @@ lines = {
 "type": &"response"
 },
 "5": {
+"condition": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "isDay1"
+}, {
+"type": "colon"
+}])
+},
 "id": "5",
+"next_conditional_id": "7",
+"next_id": "6",
+"next_id_after": "7",
+"parent_id": "4",
+"type": &"condition"
+},
+"6": {
+"id": "6",
 "mutation": {
 "expression": Array[Dictionary]([{
 "function": "get_tree",
@@ -80,31 +130,17 @@ lines = {
 "type": &"function",
 "value": Array[Array]([Array[Dictionary]([{
 "type": "string",
-"value": "res://to_be_continued.tscn"
+"value": "res://intro_day_2.tscn"
 }])])
 }]),
 "is_blocking": true
 },
 "next_id": "7",
-"parent_id": "4",
+"parent_id": "5",
 "type": &"mutation"
 },
-"6": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
-"id": "6",
-"next_id": "7",
-"next_id_after": "7",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "Tidak",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Tidak",
-"type": &"response"
-},
 "7": {
-"id": "7",
-"mutation": {
+"condition": {
 "expression": Array[Dictionary]([{
 "type": "variable",
 "value": "GlobalItems"
@@ -112,31 +148,63 @@ lines = {
 "type": "dot"
 }, {
 "type": "variable",
-"value": "onCutscene"
+"value": "isDay2"
 }, {
-"type": "assignment",
-"value": "="
-}, {
-"type": "variable",
-"value": "false"
-}]),
-"is_blocking": true
+"type": "colon"
+}])
 },
+"id": "7",
+"next_conditional_id": "10",
 "next_id": "8",
-"type": &"mutation"
+"next_id_after": "10",
+"parent_id": "4",
+"type": &"condition"
 },
 "8": {
 "id": "8",
-"is_snippet": false,
-"next_id": "end",
-"type": &"goto"
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "get_tree",
+"type": &"function",
+"value": Array[Array]([])
+}, {
+"type": "dot"
+}, {
+"function": "change_scene_to_file",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "res://ending.tscn"
+}])])
+}]),
+"is_blocking": true
+},
+"next_id": "10",
+"parent_id": "7",
+"type": &"mutation"
+},
+"9": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "9",
+"next_id": "10",
+"next_id_after": "10",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Tidak",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tidak",
+"type": &"response"
 }
 }
 raw_text = "~ Start
 set GlobalItems.onCutscene = true
 Kamu yakin mau pulang?
 - Iya
-	do get_tree().change_scene_to_file(\"res://to_be_continued.tscn\")
+	if GlobalItems.isDay1:	
+		do get_tree().change_scene_to_file(\"res://intro_day_2.tscn\")
+	if GlobalItems.isDay2:
+		do get_tree().change_scene_to_file(\"res://ending.tscn\")
 - Tidak
 set GlobalItems.onCutscene = false
 => END"

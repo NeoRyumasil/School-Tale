@@ -13,5 +13,5 @@ func _process(delta: float) -> void:
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
-		get_tree().change_scene_to_file("res://lorong_dari_kantin.tscn")
+		get_tree().change_scene_to_file("res://map_parkiran_out.tscn")
 	pass # Replace with function body.

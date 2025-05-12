@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://ctflnsw7bmwgt"]
+
+[ext_resource type="Texture2D" uid="uid://civjm2br6ghvj" path="res://UI/Buttons/Bg pause screen.png" id="1_owbng"]
+[ext_resource type="Script" path="res://ending.gd" id="1_tbah7"]
+[ext_resource type="Texture2D" uid="uid://cmkvmomj4o8ji" path="res://UI/title.png" id="2_hitgt"]
+
+[node name="Ending" type="Node2D"]
+position = Vector2(-67, -42)
+scale = Vector2(2.02448, 3.56784)
+script = ExtResource("1_tbah7")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+offset_left = -77.0
+offset_top = -54.0
+offset_right = 179.0
+offset_bottom = 202.0
+scale = Vector2(5.03217, 2.96324)
+texture = ExtResource("1_owbng")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer"]
+texture_filter = 1
+offset_left = 128.0
+offset_top = 183.0
+offset_right = 476.0
+offset_bottom = 278.0
+scale = Vector2(2.72, 2.72)
+texture = ExtResource("2_hitgt")

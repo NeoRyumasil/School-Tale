@@ -41,7 +41,7 @@ func _on_interaction_area_body_entered(body: Node2D) -> void:
 
 func _on_interaction_area_body_exited(body: Node2D) -> void:
 	if body.name == "Player":
-		$Tutorial.visible = false
+		$Tutorial.visisble = false
 		canInteract = false
 		isChat = false
 
@@ -49,8 +49,16 @@ func _interaction():
 	$Tutorial.visible = false
 	if GlobalItems.isDay1:
 		dialogStart = "Act1RuangKelas"
+		dialogResource = "res://Script/DialogCharacter/Day1.dialogue"
+	elif GlobalItems.isDay2:
+		if !GlobalItems.Day2NellyTriggerKantin:
+			dialogStart = "Act1Kantin"
+			dialogResource = "res://Script/DialogCharacter/Day2.dialogue"
+		if GlobalItems.Day2NellyTriggerKantin && GlobalItems.haveTopeng:
+			dialogStart = "Act1Aula"
+			dialogResource = "res://Script/DialogCharacter/Day1.dialogue"
 	
 	if !isChat:
-		DialogueManager.show_example_dialogue_balloon(load("res://Script/DialogCharacter/Day1.dialogue"), dialogStart)
+		DialogueManager.show_example_dialogue_balloon(load(dialogResource), dialogStart)
 		isChat = true
 	

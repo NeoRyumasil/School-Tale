@@ -33,6 +33,7 @@ if GlobalItems.haveTasHitam && GlobalItems.isDay1:
 	- Kembalikan Tas Andi
 		Raka: Hei, Andi. Ini... tas kamu, kan?
 		Andi: Oh... iya. Aku.. minta maaf merepotkan mu.
+		set GlobalItems.reputation += 10
 		set GlobalItems.Day1SceneTriggerKelas = true
 		do get_tree().change_scene_to_file("res://scene_kelas_day_1.tscn")
 		=> END

@@ -1,5 +1,6 @@
-[gd_scene load_steps=21 format=3 uid="uid://c7gehq7rt6va2"]
+[gd_scene load_steps=23 format=3 uid="uid://c7gehq7rt6va2"]
 
+[ext_resource type="Script" path="res://lorong_kiri.gd" id="1_sdqba"]
 [ext_resource type="Texture2D" uid="uid://bkuc8hjm41jwu" path="res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png" id="1_w64li"]
 [ext_resource type="Texture2D" uid="uid://cq35y22s5blao" path="res://Asset/TileSet/DC55F088-EB2C-4379-986E-3C8B53E8C019.png" id="2_wyg41"]
 [ext_resource type="Texture2D" uid="uid://dxohp5sad1ukh" path="res://Asset/TileSet/8F965E9F-4433-46E1-B34B-27F5C45570DB.png" id="3_b8jlb"]
@@ -12,6 +13,7 @@
 [ext_resource type="Script" path="res://scene_trigger_to_rg.gd" id="10_sa838"]
 [ext_resource type="PackedScene" uid="uid://updwxgjptqwa" path="res://game_ui.tscn" id="11_1qo7p"]
 [ext_resource type="Script" path="res://Script/Scene_trigger_lorong_aula.gd" id="11_5smay"]
+[ext_resource type="Script" path="res://Script/Lorong_to_perpus.gd" id="12_shepm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6muxo"]
 texture = ExtResource("1_w64li")
@@ -4489,6 +4491,7 @@ size = Vector2(860, 143.5)
 size = Vector2(103, 144)
 
 [node name="LorongKiri" type="Node2D"]
+script = ExtResource("1_sdqba")
 
 [node name="TileMaps" type="Node2D" parent="."]
 position = Vector2(-158, 395)
@@ -4629,6 +4632,16 @@ position = Vector2(11, 415)
 position = Vector2(-452, -1623)
 shape = SubResource("RectangleShape2D_x81xp")
 
+[node name="Scene_Trigger_Lorong_Kelas5" type="StaticBody2D" parent="Scene_Triggers"]
+script = ExtResource("12_shepm")
+
+[node name="Area2D" type="Area2D" parent="Scene_Triggers/Scene_Trigger_Lorong_Kelas5"]
+position = Vector2(11, 415)
+
+[node name="Collision" type="CollisionShape2D" parent="Scene_Triggers/Scene_Trigger_Lorong_Kelas5/Area2D"]
+position = Vector2(549, -343)
+shape = SubResource("RectangleShape2D_x81xp")
+
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="Game UI" parent="UI" instance=ExtResource("11_1qo7p")]
@@ -4639,3 +4652,4 @@ metadata/_edit_use_anchors_ = true
 [connection signal="body_entered" from="Scene_Triggers/Scene_Trigger_Lorong_Kelas2/Area2D" to="Scene_Triggers/Scene_Trigger_Lorong_Kelas2" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Scene_Triggers/Scene_Trigger_Lorong_Kelas3/Area2D" to="Scene_Triggers/Scene_Trigger_Lorong_Kelas3" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Scene_Triggers/Scene_Trigger_Lorong_Kelas4/Area2D" to="Scene_Triggers/Scene_Trigger_Lorong_Kelas4" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Scene_Triggers/Scene_Trigger_Lorong_Kelas5/Area2D" to="Scene_Triggers/Scene_Trigger_Lorong_Kelas5" method="_on_area_2d_body_entered"]

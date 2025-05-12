@@ -12,6 +12,9 @@ func _process(delta: float) -> void:
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	if body.name == "Player":
+	if body.name == "Player" && !GlobalItems.Day2AndiTriggerLapangan:
 		get_tree().change_scene_to_file("res://ruang_kelas.tscn")
+	if body.name == "Player" && GlobalItems.Day2AndiTriggerLapangan:
+		get_tree().change_scene_to_file("res://lorong_day_2.tscn")
+	
 	pass # Replace with function body.

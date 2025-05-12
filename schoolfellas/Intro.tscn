@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://c5ynvntn3xdsq"]
+[gd_scene load_steps=30 format=3 uid="uid://c5ynvntn3xdsq"]
 
 [ext_resource type="Script" path="res://Script/Map_Parkiran.gd" id="1_20v8c"]
 [ext_resource type="Texture2D" uid="uid://bkuc8hjm41jwu" path="res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png" id="1_wcc6y"]
@@ -18,7 +18,6 @@
 [ext_resource type="PackedScene" uid="uid://n4yfnvj0opv8" path="res://Object/rumput.tscn" id="10_h2nh2"]
 [ext_resource type="PackedScene" uid="uid://dpidheki4q8sw" path="res://Object/tas.tscn" id="10_nocht"]
 [ext_resource type="Script" path="res://Script/scene_trigger_parkiran.gd" id="11_0iotl"]
-[ext_resource type="PackedScene" uid="uid://b71q43ylglp3q" path="res://Object/checkpoint.tscn" id="11_inoyg"]
 [ext_resource type="PackedScene" uid="uid://wlclxhm131uk" path="res://Object/bangunan_sekolah_kanan.tscn" id="11_q5p3j"]
 [ext_resource type="PackedScene" uid="uid://updwxgjptqwa" path="res://game_ui.tscn" id="12_0xean"]
 [ext_resource type="Script" path="res://Script/Scene_Trigger_Out.gd" id="12_mt7wo"]
@@ -4314,13 +4313,6 @@ offset_right = -8.0
 offset_bottom = -2.0
 metadata/_edit_use_anchors_ = true
 
-[node name="Checkpoints" type="Node2D" parent="."]
-position = Vector2(-27, 36)
-
-[node name="Checkpoint" parent="Checkpoints" instance=ExtResource("11_inoyg")]
-position = Vector2(3276, -362)
-scale = Vector2(6, 2)
-
 [node name="Motor" parent="." instance=ExtResource("17_4uqey")]
 position = Vector2(1793, -882)
 scale = Vector2(3, 3)
@@ -4348,5 +4340,5 @@ scale = Vector2(3, 3)
 [connection signal="body_entered" from="SceneTriggers/SceneTrigger/Area2D" to="SceneTriggers/SceneTrigger" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="SceneTriggers/SceneLorongKiri/Area2D" to="SceneTriggers/SceneLorongKiri" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="SceneTriggers/SceneLorongKiri2/Area2D" to="SceneTriggers/SceneLorongKiri2" method="_on_area_2d_body_entered"]
-[connection signal="body_entered" from="SceneTriggers/SceneTriggerOut/Area2D" to="SceneTriggers/SceneLorongKiri" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="SceneTriggers/SceneTriggerOut/Area2D" to="SceneTriggers/SceneTriggerOut" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="SceneTriggers/Scene_Trigger_Lorong_Kantin/Area2D" to="SceneTriggers/Scene_Trigger_Lorong_Kantin" method="_on_area_2d_body_entered"]

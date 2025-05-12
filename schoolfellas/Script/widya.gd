@@ -30,8 +30,16 @@ func _interaction():
 	$Tutorial.visible = false
 	if GlobalItems.isDay1:
 		dialogStart = "Act1RuangKelas"
-	
+		dialogResource = load("res://Script/DialogCharacter/Day1.dialogue")
+	elif GlobalItems.isDay2 && GlobalItems.Day2AndiTriggerToilet:
+		dialogResource = load("res://Script/DialogCharacter/Day2.dialogue")
+		dialogStart = "Act3Perpustakaan"
+		
+	if GlobalItems.isDay2 && GlobalItems.Day2NellyTriggerKantin:
+		dialogResource = load("res://Script/DialogCharacter/Day2.dialogue")
+		dialogStart = "Act4Perpustakaan"
+		
 	if !isChat:
-		DialogueManager.show_example_dialogue_balloon(load("res://Script/DialogCharacter/Day1.dialogue"), dialogStart)
+		DialogueManager.show_example_dialogue_balloon(dialogResource, dialogStart)
 		isChat = true
 	

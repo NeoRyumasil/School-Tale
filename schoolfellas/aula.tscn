@@ -12,7 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://updwxgjptqwa" path="res://game_ui.tscn" id="10_lcibi"]
 [ext_resource type="Script" path="res://Script/Scene_Trigger_RuangGuru.gd" id="11_by6b3"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mjh04"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ia8g3"]
 texture = ExtResource("1_0l7n7")
 35:5/0 = 0
 36:5/0 = 0
@@ -4087,9 +4087,9 @@ texture = ExtResource("1_0l7n7")
 
 [sub_resource type="TileSet" id="TileSet_hpmmq"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_mjh04")
+sources/0 = SubResource("TileSetAtlasSource_ia8g3")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kpjcb"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qivbs"]
 texture = ExtResource("2_p1bxg")
 0:0/0 = 0
 1:0/0 = 0
@@ -4538,9 +4538,9 @@ texture = ExtResource("2_p1bxg")
 22:43/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_v1xdx"]
-sources/0 = SubResource("TileSetAtlasSource_kpjcb")
+sources/0 = SubResource("TileSetAtlasSource_qivbs")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vecvf"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lcph5"]
 texture = ExtResource("3_sk7jn")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -5476,7 +5476,7 @@ texture = ExtResource("3_sk7jn")
 
 [sub_resource type="TileSet" id="TileSet_bonsi"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_vecvf")
+sources/0 = SubResource("TileSetAtlasSource_lcph5")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k7exq"]
 size = Vector2(204, 54)

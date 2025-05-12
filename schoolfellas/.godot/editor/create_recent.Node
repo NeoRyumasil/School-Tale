@@ -1,3 +1,5 @@
+TextureRect
+CanvasLayer
 CollisionShape2D
 Area2D
 StaticBody2D
@@ -5,7 +7,6 @@ Camera2D
 Sprite2D
 RichTextLabel
 TextEdit
-CanvasLayer
 Node2D
 CharacterBody2D
 AnimatedSprite2D

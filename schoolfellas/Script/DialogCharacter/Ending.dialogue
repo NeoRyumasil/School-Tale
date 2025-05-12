@@ -1,0 +1,23 @@
+~ Start
+if GlobalItems.andFlag && GlobalItems.widFlag && GlobalItems.nelFlag:
+	Kamu sudah membantu Andi untuk mendapatkan kepercayaan dirinya
+	Kamu juga telah membantu Nelly dan Widya untuk kembali nyaman di klub drama
+elif !GlobalItems.andFlag && GlobalItems.widFlag && GlobalItems.nelFlag:
+	Kamu tidak membantu Andi untuk mendapatkan kepercayaan dirinya
+	Kamu membantu Nelly dan Widya untuk kembali nyaman di klub drama
+elif GlobalItems.andFlag && !GlobalItems.widFlag && !GlobalItems.nelFlag:
+	Kamu tidak membantu Andi untuk mendapatkan kepercayaan dirinya
+	Kamu tidak membantu Nelly dan Widya untuk kembali nyaman di klub drama
+elif !GlobalItems.andFlag && !GlobalItems.widFlag && !GlobalItems.nelFlag:
+	Kamu tidak membantu siapa-siapa dan reputasimu semakin hancur
+
+if GlobalItems.reputation > 40 :
+	Kamu semakin terkenal dengan reputasi baikmu dan semakin banyak orang yang ingin berteman denganmu
+	GOOD ENDING!
+else : 
+	Reputasimu semakin memburuk dan juga mengenai mental dan performamu
+	Kamu semakin tidak betah dan ingin pindah sekolah
+	BAD ENDING!
+	
+do get_tree().change_scene_to_file("res://main_menu.tscn")
+=> END

@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://bh323fmcyiqst"]
+[gd_scene load_steps=30 format=3 uid="uid://bh323fmcyiqst"]
 
 [ext_resource type="Script" path="res://Script/intro_day_2.gd" id="1_r48a6"]
 [ext_resource type="Texture2D" uid="uid://bkuc8hjm41jwu" path="res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png" id="2_w1mcr"]
@@ -23,7 +23,6 @@
 [ext_resource type="Script" path="res://Script/scene_trigger_lorong_kantin.gd" id="22_6541b"]
 [ext_resource type="PackedScene" uid="uid://updwxgjptqwa" path="res://game_ui.tscn" id="23_jxwhm"]
 [ext_resource type="PackedScene" uid="uid://dpyiwsxo2ngmb" path="res://Character/andi.tscn" id="24_86tg7"]
-[ext_resource type="PackedScene" uid="uid://b71q43ylglp3q" path="res://Object/checkpoint.tscn" id="24_omx7o"]
 [ext_resource type="PackedScene" uid="uid://cdfy7n0t74s21" path="res://Object/motor.tscn" id="25_5b1xh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8ynt0"]
@@ -4311,13 +4310,6 @@ offset_right = -8.0
 offset_bottom = -2.0
 metadata/_edit_use_anchors_ = true
 
-[node name="Checkpoints" type="Node2D" parent="."]
-position = Vector2(-27, 36)
-
-[node name="Checkpoint" parent="Checkpoints" instance=ExtResource("24_omx7o")]
-position = Vector2(3294, -367)
-scale = Vector2(6, 2)
-
 [node name="Motor" parent="." instance=ExtResource("25_5b1xh")]
 position = Vector2(1793, -882)
 scale = Vector2(3, 3)
@@ -4345,5 +4337,5 @@ scale = Vector2(3, 3)
 [connection signal="body_entered" from="SceneTriggers/SceneTrigger/Area2D" to="SceneTriggers/SceneTrigger" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="SceneTriggers/SceneLorongKiri/Area2D" to="SceneTriggers/SceneLorongKiri" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="SceneTriggers/SceneLorongKiri2/Area2D" to="SceneTriggers/SceneLorongKiri2" method="_on_area_2d_body_entered"]
-[connection signal="body_entered" from="SceneTriggers/SceneTriggerOut/Area2D" to="SceneTriggers/SceneLorongKiri" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="SceneTriggers/SceneTriggerOut/Area2D" to="SceneTriggers/SceneTriggerOut" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="SceneTriggers/Scene_Trigger_Lorong_Kantin/Area2D" to="SceneTriggers/Scene_Trigger_Lorong_Kantin" method="_on_area_2d_body_entered"]

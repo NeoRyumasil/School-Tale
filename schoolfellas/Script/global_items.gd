@@ -12,14 +12,13 @@ var haveTasHitam = false
 var haveSampah = false
 var haveLiontin = false
 var haveBuku = false
+var haveTopeng = false
 
 #Checkpoint
-var checkpoint = Vector2.ZERO
-
+var widFlag = false
+var nelFlag = false
+var andFlag = false
 var isParkiran = false
-
-func _setCheckpointPosition(position:Vector2):
-	checkpoint = position
 
 # Status
 var reputation = 0
@@ -29,6 +28,9 @@ var Day1SceneTriggerKelas = false
 var Day1SceneTriggerKantin = false
 var Day2AndiTriggerLapangan = false
 var Day2AndiTriggerGuru = false
+var Day2AndiTriggerPerpus = false
+var Day2AndiTriggerToilet = false
+var Day2NellyTriggerKantin = false
 
 # MissionTrigger
 var NellyMission = false
