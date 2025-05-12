@@ -18,5 +18,6 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		elif body.name == "Player" && !GlobalItems.haveTasHitam :
 			get_tree().change_scene_to_file("res://Intro_out.tscn")
 	if GlobalItems.isDay2:
-		get_tree().change_scene_to_file("res://map_parkiran_out.tscn")
+		if body.name == "Player":
+			get_tree().change_scene_to_file("res://map_parkiran_out.tscn")
 	pass # Replace with function body.

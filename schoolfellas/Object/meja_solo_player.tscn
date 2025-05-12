@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://x3qkvwgryaom"]
+
+[ext_resource type="Texture2D" uid="uid://dak5seagire42" path="res://Asset/ObjectSprite/DC4A8F0F-035A-4DFD-8766-6F6031EC96C8.png" id="1_sd2ef"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q42gt"]
+size = Vector2(43, 20)
+
+[node name="MejaSoloPlayer" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_sd2ef")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -6)
+shape = SubResource("RectangleShape2D_q42gt")

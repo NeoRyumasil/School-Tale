@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://mna44bi3ffw2"]
+[gd_scene load_steps=23 format=3 uid="uid://mna44bi3ffw2"]
 
 [ext_resource type="Texture2D" uid="uid://bkuc8hjm41jwu" path="res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png" id="2_8ppso"]
 [ext_resource type="Texture2D" uid="uid://cq35y22s5blao" path="res://Asset/TileSet/DC55F088-EB2C-4379-986E-3C8B53E8C019.png" id="3_oqsop"]
@@ -11,6 +11,8 @@
 [ext_resource type="Script" path="res://Script/scene_trigger_lorong_kelas.gd" id="10_1gotb"]
 [ext_resource type="Script" path="res://Script/scene_trigger_lorong_kantin.gd" id="10_2pws4"]
 [ext_resource type="PackedScene" uid="uid://updwxgjptqwa" path="res://game_ui.tscn" id="10_oldcp"]
+[ext_resource type="Script" path="res://Script/scene_trigger_lorong_kelas_Toilet.gd" id="12_sggb0"]
+[ext_resource type="Script" path="res://Script/scene_trigger_lorong_kelas_gudang.gd" id="13_owth6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7s0ew"]
 texture = ExtResource("2_8ppso")
@@ -4487,6 +4489,9 @@ size = Vector2(860, 143.5)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x81xp"]
 size = Vector2(103, 144)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ovmjk"]
+size = Vector2(103, 144)
+
 [node name="Lorong" type="Node2D"]
 
 [node name="TileMaps" type="Node2D" parent="."]
@@ -4619,7 +4624,29 @@ position = Vector2(11, 415)
 [node name="Game UI" parent="UI" instance=ExtResource("10_oldcp")]
 metadata/_edit_use_anchors_ = true
 
+[node name="Scene_Trigger_Lorong_Kelas3" type="StaticBody2D" parent="."]
+script = ExtResource("12_sggb0")
+
+[node name="Area2D" type="Area2D" parent="Scene_Trigger_Lorong_Kelas3"]
+position = Vector2(11, 415)
+
+[node name="Collision" type="CollisionShape2D" parent="Scene_Trigger_Lorong_Kelas3/Area2D"]
+position = Vector2(-443, -992)
+shape = SubResource("RectangleShape2D_ovmjk")
+
+[node name="Scene_Trigger_Lorong_Kelas4" type="StaticBody2D" parent="."]
+script = ExtResource("13_owth6")
+
+[node name="Area2D" type="Area2D" parent="Scene_Trigger_Lorong_Kelas4"]
+position = Vector2(11, 415)
+
+[node name="Collision" type="CollisionShape2D" parent="Scene_Trigger_Lorong_Kelas4/Area2D"]
+position = Vector2(-448, -1620)
+shape = SubResource("RectangleShape2D_ovmjk")
+
 [connection signal="body_entered" from="Scene_Triggers/Scene_Trigger_Back/Area2D" to="Scene_Triggers/Scene_Trigger_Back" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Scene_Triggers/Scene_Trigger_Lorong_Kelas/Area2D" to="Scene_Triggers/Scene_Trigger_Lorong_Kelas" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Scene_Triggers/Scene_Trigger_Lorong_Kelas2/Area2D" to="Scene_Triggers/Scene_Trigger_Lorong_Kelas2" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Scene_Triggers/Scene_Trigger_Lorong_Kantin/Area2D" to="Scene_Triggers/Scene_Trigger_Lorong_Kantin" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Scene_Trigger_Lorong_Kelas3/Area2D" to="Scene_Trigger_Lorong_Kelas3" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Scene_Trigger_Lorong_Kelas4/Area2D" to="Scene_Trigger_Lorong_Kelas4" method="_on_area_2d_body_entered"]

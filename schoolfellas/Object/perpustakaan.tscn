@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://updwxgjptqwa" path="res://game_ui.tscn" id="6_acb1p"]
 [ext_resource type="PackedScene" uid="uid://dg0ddh1js6hbq" path="res://Character/player.tscn" id="6_niwt1"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3nk3w"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1plxd"]
 texture = ExtResource("1_j5et7")
 35:5/0 = 0
 36:5/0 = 0
@@ -4082,9 +4082,9 @@ texture = ExtResource("1_j5et7")
 
 [sub_resource type="TileSet" id="TileSet_ywbpo"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_3nk3w")
+sources/0 = SubResource("TileSetAtlasSource_1plxd")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_it6ck"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5iwmn"]
 texture = ExtResource("2_1gsh8")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -4602,7 +4602,7 @@ texture = ExtResource("2_1gsh8")
 
 [sub_resource type="TileSet" id="TileSet_nleyh"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_it6ck")
+sources/0 = SubResource("TileSetAtlasSource_5iwmn")
 
 [node name="Perpustakaan" type="Node2D"]
 

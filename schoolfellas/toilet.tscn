@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bk81m2fw3xusp"]
+[gd_scene load_steps=15 format=3 uid="uid://bk81m2fw3xusp"]
 
 [ext_resource type="Texture2D" uid="uid://bkuc8hjm41jwu" path="res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png" id="1_ryprq"]
 [ext_resource type="Texture2D" uid="uid://ccjjfc7kvo3nm" path="res://Asset/TileSet/3111D119-AAE3-42BD-8F34-A328A9E3B969.png" id="2_a6j0g"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://0nvqnn5k7qhg" path="res://Object/handwasher.tscn" id="6_fd76u"]
 [ext_resource type="PackedScene" uid="uid://dg0ddh1js6hbq" path="res://Character/player.tscn" id="7_u0xjd"]
 [ext_resource type="PackedScene" uid="uid://updwxgjptqwa" path="res://game_ui.tscn" id="8_my8ud"]
+[ext_resource type="Script" path="res://Script/to_Lorong.gd" id="9_7nfw8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2y01f"]
 texture = ExtResource("1_ryprq")
@@ -4381,6 +4382,9 @@ texture = ExtResource("2_a6j0g")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_3h0a7")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u16bl"]
+size = Vector2(123, 138)
+
 [node name="Toilet" type="Node2D"]
 
 [node name="TileMapL1" type="TileMap" parent="."]
@@ -4447,3 +4451,14 @@ offset_top = -2.0
 offset_right = -8.0
 offset_bottom = -2.0
 metadata/_edit_use_anchors_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+script = ExtResource("9_7nfw8")
+
+[node name="Area2D" type="Area2D" parent="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/Area2D"]
+position = Vector2(835.5, 430)
+shape = SubResource("RectangleShape2D_u16bl")
+
+[connection signal="body_entered" from="StaticBody2D/Area2D" to="StaticBody2D" method="_on_area_2d_body_entered"]

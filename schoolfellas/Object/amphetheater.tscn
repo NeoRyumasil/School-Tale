@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://l8ismvgvt3p6"]
+
+[ext_resource type="Texture2D" uid="uid://bm5l5ghk5sgu1" path="res://Asset/ObjectSprite/6FC1435C-BFBF-47DC-8440-29B878117AC1.png" id="1_msqe1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_axd2p"]
+size = Vector2(26, 32)
+
+[node name="Amphetheater" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_msqe1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_axd2p")

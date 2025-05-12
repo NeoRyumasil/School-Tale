@@ -4299,7 +4299,7 @@ script = ExtResource("22_6541b")
 position = Vector2(11, 415)
 
 [node name="Collision" type="CollisionShape2D" parent="SceneTriggers/Scene_Trigger_Lorong_Kantin/Area2D"]
-position = Vector2(126.5, -636)
+position = Vector2(157, -664)
 shape = SubResource("RectangleShape2D_s0j2u")
 
 [node name="UI" type="CanvasLayer" parent="."]

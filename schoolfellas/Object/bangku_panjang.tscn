@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dq2gbwqglk160"]
+
+[ext_resource type="Texture2D" uid="uid://cqcvv1xhyi36r" path="res://Asset/ObjectSprite/1C44234F-3433-4F22-93E1-06FF17880955.png" id="1_7cykc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bib0p"]
+size = Vector2(383, 31)
+
+[node name="BangkuPanjang" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_7cykc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -3.5)
+shape = SubResource("RectangleShape2D_bib0p")
