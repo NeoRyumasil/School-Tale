@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://huw348csr0oi" path="res://Asset/ObjectSprite/8A5FE532-1C41-4A6D-BE72-311B96FF5A29.png" id="1_tkodl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_noq85"]
-size = Vector2(28, 61)
+size = Vector2(97, 158)
 
 [node name="Pohon" type="StaticBody2D"]
 
@@ -13,5 +13,5 @@ position = Vector2(174, 258)
 texture = ExtResource("1_tkodl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(204, 302.5)
+position = Vector2(195.5, 286)
 shape = SubResource("RectangleShape2D_noq85")
