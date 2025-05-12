@@ -1,0 +1,218 @@
+~ Act1Parkiran
+set GlobalItems.onCutscene = true
+Pak Heri: Heh, dek RAKA
+Raka: Iya, Pak. Ada apa?
+Pak Heri: Tadi pagi buku ini ditemukan di ruang satpam.
+Pak Heri: Judulnya “Journey to the North”. Nggak ada nama pemiliknya, tapi aku dengar kamu suka baca dan... entah kenapa rasanya ini cocok buat kamu.
+Raka: "Journey to the North"...
+- Terima Buku
+	Raka: Ohhh... Terima kasih, Pak Heri. Saya pasti jaga dengan baik.
+	Pak Heri: Siapa tahu, buku itu bisa bantu kamu dalam perjalananmu... entah itu di sekolah, atau yang lebih jauh lagi. Hehe.
+	Raka: Entah kenapa... buku ini terasa familiar.
+- Menolak
+	Raka: Waduh saya gak tahu itu buku siapa pak.
+	Pak Heri: Yasudah, Saya kembalikan ke pos satpam.
+
+if GlobalItems.haveLiontin:
+	- Tanya mengenai Liontin:
+		Raka: Pak, maaf... Saya nemu ini kemarin sore waktu di dekat kantin. Bapak tahu ini milik siapa?
+		Pak Heri: Hmmm... Oh! Ini… Saya hafal. Ini punya si NELLY, anak klub drama itu.
+		Raka: Nelly?! Kenapa bisa sampai ke tempat sampah... 
+		Pak Heri:  Ya kamu tanya aja langsung sama dia. Kayaknya barang itu penting banget buat dia. Dulu waktu pertama MASUK SEKOLAH, dia nggak pernah lepasin liontin itu.
+		Raka: Kalau begitu... aku harus kasih ini langsung ke Nelly hari ini.
+set GlobalItems.onCutscene = false
+=> END
+
+~ Act1Lapangan
+set GlobalItems.onCutscene = true
+Raka: Andi, kamu lagi disini?
+Andi: RA... RAKA! Eh... Asik ya baca buku di bawah pohon ini?
+- Boleh Kok
+	Andi: Wah boleh banget!. Tapi, buku ini sangat berat. Jangan kaget ya... bukunya agak berat isinya.
+	Raka: Santai aja, aku juga suka semua genre.
+- Hmmm... Aku gak suka baca buku sih
+	Andi: Oke...	
+set GlobalItems.onCutscene = false
+=> END
+
+~ Act1LorongSekolah
+set GlobalItems.onCutscene = true
+Pak Jaka: RAKA, kamu dipanggil ke ruang guru. Ini soal temanmu, ANDI.
+set GlobalItems.onCutscene = false
+=> END
+
+~ Act1RuangGuru
+set GlobalItems.onCutscene = true
+Pak Jaka: Nilai Andi akhir-akhir ini menurun drastis. Kami khawatir dia terlalu banyak menyendiri dan menghindari pelajaran.
+Kamu salah satu teman dekatnya, bukan?
+- Iya, saya sering ngobrol dengannya
+- Maaf, Pak… saya rasa saya bukan orang yang tepat buat bantu dia belajar.
+Pak Jaka: Kalau boleh, bantu Andi untuk belajar lebih rutin. Saya tahu kamu punya potensi untuk jadi pengaruh baik.
+Raka:  Baik, Pak. Saya akan bantu dia.
+set GlobalItems.onCutscene = false
+=> END
+
+~ Act1Perpustakaan
+set GlobalItems.onCutscene = true
+Andi: Kamu beneran mau bantuin aku?
+- Tentu. Gak ada yang salah dengan minta bantuan. Apalagi sama teman.
+- Yah, aku cuma disuruh pak jaka sih
+Andi: Makasih, Rak. Aku bakal coba lebih serius mulai sekarang.
+Raka: Lihat, bagian ini gampang kok. Tinggal substitusi ke rumus, dan... Hei!?
+Andi: Iya... iya, ngerti...
+- Kamu masih ada yang gak paham?
+- Bilang andi kalau gak paham!
+- (menatap andi dengan tajam)
+Andi:  Enggak, enggak. Aku cuma... ngantuk aja, mungkin. 
+set GlobalItems.onCutscene = false
+=> END
+
+~ Act2Perpustakaan
+set GlobalItems.onCutscene = true
+Raka: Hah? Andi?
+Raka: Ke toilet kali? Tapi dia nggak bilang apa-apa...
+- Harusnya aku cari dia.
+- Mungkin dia sudah di kelas.
+set GlobalItems.onCutscene = false
+=> END
+
+~ Act2LorongSekolah
+set GlobalItems.onCutscene = true
+Raka: Jam sekolah dibuka sudah mau habis... Mungkin dia di toilet?
+set GlobalItems.onCutscene = false
+=> END
+
+~ Act1Toilet
+set GlobalItems.onCutscene = true
+Raka: Permisi... Kalian lihat Andi?
+Guntur: Oooh, nyari bocah ceking itu? (tertawa terkekeh)gua mah mana tahu, mungkin dia lagi ke luar angkasa, sama seperti impiannya
+Faldo: hahahaha. Bisa aja lu tur
+Raka: Sialan, mereka pasti melakukan sesuatu ke ANDI
+set GlobalItems.onCutscene = false
+=> END
+
+~ Act3Perpustakaan
+set GlobalItems.onCutscene = true
+Raka: Permisi kak, saya RAKA dari kelas 10 B
+Widya: Oh, perkenalkan saya WIDYA, saya anak kelas 11. Ada yang bisa dibantu.
+Raka: Apa kakak melihat anak kelas 10 yang berkacamata, nampaknya sedang membawa buku novel gitu
+Widya: Oh tadi aku melihat dia bersama temannya pergi keluar. Aku ingat temannya berambut panjang terurai ke belakang. Anak kacamata tdai meninggalkan buku yang ia baca di meja itu.
+Widya: Aku khawatir ke dia, karena muka dia tampak ketakutan. Apa benar si ANDI berteman dengan mereka?
+- Tidak, mereka mengganggunya
+	Widya: Ya tuhan, aku turut prihatin. Aku juga pernah diejek oleh mereka. Tapi aku tidak punya cukup alibi untuk menuduh mereka
+- Aku gak tahu sih
+	Widya: Oh ya, apa aku terlalu berpikir negatif?
+Widya: Baiklah kalau begitu, semoga ketemu
+set GlobalItems.onCutscene = false
+=> END
+
+~ Act1Gudang
+set GlobalItems.onCutscene = true
+Raka: Andi!? Lu ngapain di sini!?
+Andi: Gak papa. Aku cuma... pengen sendiri.
+- Gue ngerti, kadang kita butuh waktu sendiri. Tapi kalau ada yang bisa gue bantu, gue di sini, ya.
+- Serius, Andi? Ngumpet di gudang? Emang lo gak capek drama terus?
+Andi: Aku dulu pernah gagal. Di sekolah lama, aku dibully. Nilai hancur, orang tua kecewa, aku mulai... menghindar.
+Sekarang di sini, aku takut ngulangin semua itu lagi...
+- Lu gak sendirian, Di. Kita belajar bareng bukan buat jadi pintar semalam, tapi buat bangkit pelan-pelan.
+- Jadi lu kabur cuma gara-gara takut gagal lagi? Ini sekolah, bukan tempat pelarian.
+Andi: Makasih, Raka... Gue janji gak kabur lagi.
+set GlobalItems.onCutscene = false
+=> END
+
+~ Act1Kantin
+set GlobalItems.onCutscene = true
+Raka: Nelly... ini punyamu, kah?
+Nelly: RAKA!, kok lu bisa nemuin benda itu? 
+- Oh ini punyamu
+- Lain kali jaga dong barangnya!
+- Aku rasa, aku nemu di Kotak Sampah
+Nelly: Eh... Aku sebenarnya aku ngga maksud membuangnya! Tapi aku terburu-buru karena aku ada urusan klub drama.
+- Boleh kubantu?
+	Nelly: Oh..., Lu punya nyali ya nawarin pekerjaan?
+	Nelly: Oke, bantu gua cari properti yang dibutuhin klub drama! Gua muak disuruh-suruh oleh ketua mata empat songong itu. Seluruh tugas yang dia kasih cuman untuk mengusirku dari ruangan klub. Dasar muka dua.
+	- Aku benci orang yg seperti itu.
+	- Cepat berikan saja informasinya.
+	- Barang apa yang harus kucari.
+	SURAT BARANG HILANG (NOTE)
+	PROPERTI UNTUK KLUB DRAMA
+
+	Tongkat Penyihir (sudah)
+	Jubah Merah (sudah)
+	TOPENG KOSTUM (HILANG!)
+
+	Note: Coba tanyakan ke WIDYA. Terakhir terlihat membawanya dari ruang properti ke perpustakaan.
+
+- Aku pergi...
+set GlobalItems.onCutscene = false
+=> END
+
+~ Act4Perpustakaan
+set GlobalItems.onCutscene = true
+Widya: Kamu anak baru yang dibicarakan itu ya?
+- Ada apa dengan TOPENG itu?
+	Widya: Dahulu, aku dan NELLY bersahabat dekat dan senang dengan hal-hal berbau film. Dia ingin menjadi aktris dan aku ingin menjadi Sutradara, sehingga kita berdua masuk klub drama. Namun semua berubah sejak kecelakaan yang mencederai kakiku, NELLY tampaknya merasa bersalah atas kejadian tersebut.
+	Widya: Dia menghindariku semenjak itu. Dia juga bergaul dengan anak bermasalah seperti EDI.
+	- Berikan Liontin
+		Widya: Liontin itu kan! Dari mana lu dapetin nya!
+		- Aku nemuinnya di Tong Sampah
+		- Terjatuh di lantai
+		Widya: Apa selama ini NELLY masih ingin berteman denganku? Aku memang teman yang jahat.
+		Raka: Bukannya terlalu cepat memberi asumsi seperti itu?
+	- Aku turut bersedih atas kecelakaan mu
+	Widya: Iya, gapapa. Aku baik-baik saja sekarang.
+	Raka: Baiklah, kalau begitu.
+- Baiklah.
+set GlobalItems.onCutscene = false
+=> END
+
+~ Act1Aula
+set GlobalItems.onCutscene = true
+Nelly: RAKA,..itu kan?
+Ratna: Lu kok ikut campur urusan kita sih. Sebaiknya lu pergi dari sini atau aku lapor kalian ke kepala sekolah!!
+Raka: Orang gila! Kenapa lu seenaknya ngelaporin kita ke kepala sekolah?
+Ratna: Kenapa? Kalian berdua adalah murid bermasalah, terutama NELLY, yang sudah mencederai anggota kita, apa dia ngga cerita ke lu?
+Nelly: Tidak! Jangan percaya ke dia.
+Widya: Cukup!
+- berpihak
+	Widya: RATNA!, Akui saja lu yang buang kostum itu kan? Aku udah dengar dari anggota klub lain. Lu ingin keluarin NELLY karena lu iri dia dekat dengan EDI kan?
+	Ratna: Ehh... Jangan ngomong sembarangan!
+	Widya: NELLY, aku minta maaf... Aku ga tahu kalau selama ini kamu masih mikirin aku.
+	Ratna: Terus lu mau apa? Gua Ketua nya disini! Orang cacat seperti lu ga usah ngatur gua dan klub ini!
+	Raka: WOI! Beraninya lu ngomong kaya gitu.
+	Widya: Cukup! Lu boleh jadi Ketua Klub ini di atas kertas, tapi hampir seluruh anggota klub drama tidak suka dengan kelakuan lu!
+	Murid: IYA!, jangan seenaknya ubah-ubah susunan pemain drama secara mendadak!
+	Murid: Kerumunan siswa anggota klub drama Ceritakan alasan kenapa uang kas klub drama juga berkurang karena keperluan lu!
+	Ratna: AHH, aku pergi.
+- tidak berpihak
+	Widya: RATNA!, hentikan perdebatan ini, jangan seenaknya menuduh orang. dan NELLY, kau sebaiknya jangan mendekati klub ini lagi
+	Nelly: Maksud lu? Lu percaya cerita yang disebarkan RATNA
+	Widya: Maksudku,...cukup. Aku sudah muak. Aku akan keluar dari klub ini
+	Nelly: WIDYA! Tapi kan…
+	Ratna: Heh, sudah saya prediksi WIDYA, kau tidak akan sanggup dengan kondisi fisik seperti itu, HAHAHAHA
+	Nelly: Aku juga akan keluar!
+set GlobalItems.onCutscene = false
+=> END
+
+~ Act2Kantin
+set GlobalItems.onCutscene = true
+- berpihak
+	Nelly: Aku minta maaf karena menjauh dari lu, WID WIDYA
+	Widya: Enggak kok, itu salah ku juga tidak memberi kabar lagi. Semoga dengan ini kita bisa berteman lagi.
+	Nelly: RAKA, aku juga berterimakasih kepadamu karena mencari KOSTUM drama milikku. Oh iya, nampaknya kamu WID WIDYA yang bakal jadi ketua Klub drama. Seluruh anggota terkesan dengan keberanian lu
+	Raka: Oh, jadi ini alasan kalian mentraktir ku sepiring bakso dan esteh. Thank you banget!
+	Widya: hah? Kita ga traktir lu sekarang, maksud ku setelah aku diangkat jadi ketua klub. Hehe
+	Raka: APA! Kok kalian ga bilang2
+	Widya: Sepertinya ada barangku yang ketinggalan di perpustakaan aku akan mengambilnya dahulu
+set GlobalItems.onCutscene = false
+=> END
+
+~ Act3Kantin
+set GlobalItems.onCutscene = true
+Nelly: Dulu, aku yang menyebabkan WIDYA menjadi seperti itu, awalnya kita hanya bercanda. Namun, WIDYA terdorong dan tertabrak oleh mobil. Karena hal itu, aku tidak berani dekat dengan dia.
+Raka: Soal itu, aku turut berduka NEL.
+Nelly: Oh ya, terimakasih udah menemukan KOSTUM TOPENG milikku.
+Raka: NEL, kamu orang yang kuat! Aku turut prihatin dengan kejadian yang menimpa mu. Sebaiknya kau menjauhi orang seperti RATNA.
+Nelly: Hahaha, oh RAKA. garing amat sih
+set GlobalItems.onCutscene = false
+=> END
