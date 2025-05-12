@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqii5yjjscyih"]
+
+[ext_resource type="Texture2D" uid="uid://t0fhi2yied1d" path="res://Asset/ObjectSprite/8C08B18F-5F4D-4321-9974-CC3567BF4B2C.png" id="1_masup"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uj7hu"]
+size = Vector2(20, 11)
+
+[node name="ToiletMewah" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_masup")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4.5)
+shape = SubResource("RectangleShape2D_uj7hu")

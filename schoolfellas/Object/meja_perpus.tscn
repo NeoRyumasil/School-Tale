@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cu5efif17uugf"]
+
+[ext_resource type="Texture2D" uid="uid://btp73xdx2yyqj" path="res://Asset/ObjectSprite/4B1025E5-4AD5-419C-B471-D7253E79DE9C.png" id="1_coweo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bmovh"]
+size = Vector2(56, 24)
+
+[node name="MejaPerpus" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_coweo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 10)
+shape = SubResource("RectangleShape2D_bmovh")

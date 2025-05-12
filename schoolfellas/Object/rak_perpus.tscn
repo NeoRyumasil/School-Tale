@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3jrdxjf1p6rj"]
+
+[ext_resource type="Texture2D" uid="uid://bhbegluiaet4c" path="res://Asset/ObjectSprite/A8CBD72E-DBD2-48AB-B370-0FBC0290439B.png" id="1_n26e1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lbngh"]
+size = Vector2(100, 54)
+
+[node name="RakPerpus" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_n26e1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -10)
+shape = SubResource("RectangleShape2D_lbngh")

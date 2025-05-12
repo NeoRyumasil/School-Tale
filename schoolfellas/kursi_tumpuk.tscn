@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwj08f3muabwh"]
+
+[ext_resource type="Texture2D" uid="uid://ckojolbx6wcv4" path="res://Asset/ObjectSprite/AFE0139F-57EC-4F55-9E9D-70AB7AAF9B77.png" id="1_38fk7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_udlc8"]
+size = Vector2(18, 41)
+
+[node name="KursiTumpuk" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_38fk7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -4.5)
+shape = SubResource("RectangleShape2D_udlc8")

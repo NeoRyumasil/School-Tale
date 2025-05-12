@@ -1,6 +1,7 @@
 CollisionShape2D
-Sprite2D
+Camera2D
 StaticBody2D
+Sprite2D
 RichTextLabel
 TextEdit
 CanvasLayer
@@ -11,4 +12,3 @@ Timer
 PathFollow2D
 Path2D
 Control
-TextureRect

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://0nvqnn5k7qhg"]
+
+[ext_resource type="Texture2D" uid="uid://c3gmg7bctahx6" path="res://Asset/ObjectSprite/43123A3F-5450-49DF-81AE-E5379320B35F.png" id="1_8f1t8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lqh0v"]
+size = Vector2(20, 70)
+
+[node name="Handwasher" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_8f1t8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_lqh0v")

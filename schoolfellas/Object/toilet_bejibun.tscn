@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://dm446pf55u56f"]
+
+[ext_resource type="Texture2D" uid="uid://fy84fdda24i5" path="res://Asset/ObjectSprite/BFA33D72-803F-44C4-84F2-E4B4E6D3D6EB.png" id="1_o5fvr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gopna"]
+size = Vector2(54, 36)
+
+[node name="ToiletBejibun" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_o5fvr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -81)
+shape = SubResource("RectangleShape2D_gopna")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(0, -29)
+shape = SubResource("RectangleShape2D_gopna")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(0, 22)
+shape = SubResource("RectangleShape2D_gopna")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+position = Vector2(0, 72)
+shape = SubResource("RectangleShape2D_gopna")
