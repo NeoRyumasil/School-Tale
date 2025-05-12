@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqofbylthnpty"]
+
+[ext_resource type="Texture2D" uid="uid://domwbmmgpks8m" path="res://Asset/ObjectSprite/2576307F-1276-4262-B590-7D6502D83271.png" id="1_aag18"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xtr5m"]
+size = Vector2(58, 34)
+
+[node name="MejaKantorGuru" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_aag18")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -7)
+shape = SubResource("RectangleShape2D_xtr5m")

@@ -4266,6 +4266,19 @@ position = Vector2(3140, -609)
 position = Vector2(1407, 272)
 shape = SubResource("RectangleShape2D_p84uw")
 
+[node name="SceneLorongKiri2" type="StaticBody2D" parent="SceneTriggers"]
+script = ExtResource("20_dtjqq")
+
+[node name="Block" type="CollisionShape2D" parent="SceneTriggers/SceneLorongKiri2"]
+shape = SubResource("RectangleShape2D_6apci")
+
+[node name="Area2D" type="Area2D" parent="SceneTriggers/SceneLorongKiri2"]
+position = Vector2(3140, -609)
+
+[node name="Collision" type="CollisionShape2D" parent="SceneTriggers/SceneLorongKiri2/Area2D"]
+position = Vector2(892, -1309)
+shape = SubResource("RectangleShape2D_p84uw")
+
 [node name="SceneTriggerOut" type="StaticBody2D" parent="SceneTriggers"]
 script = ExtResource("11_qbk7a")
 
@@ -4322,5 +4335,6 @@ shape = SubResource("RectangleShape2D_72a0f")
 
 [connection signal="body_entered" from="SceneTriggers/SceneTrigger/Area2D" to="SceneTriggers/SceneTrigger" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="SceneTriggers/SceneLorongKiri/Area2D" to="SceneTriggers/SceneLorongKiri" method="_on_area_2d_body_entered"]
-[connection signal="body_entered" from="SceneTriggers/SceneTriggerOut/Area2D" to="SceneTriggers/SceneLorongKiri" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="SceneTriggers/SceneLorongKiri2/Area2D" to="SceneTriggers/SceneLorongKiri2" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="SceneTriggers/SceneTriggerOut/Area2D" to="SceneTriggers/SceneTriggerOut" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Scene_Trigger_Lorong_Kantin/Area2D" to="Scene_Trigger_Lorong_Kantin" method="_on_area_2d_body_entered"]

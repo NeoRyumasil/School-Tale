@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://6yhasdh3y5tx"]
+
+[ext_resource type="Texture2D" uid="uid://cicmjj2527bl8" path="res://Asset/ObjectSprite/B3F403EF-ADC8-4973-AA18-76A7FBFA9610.png" id="1_5vv5d"]
+
+[node name="FotoPres" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_5vv5d")

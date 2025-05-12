@@ -4115,13 +4115,13 @@ texture = ExtResource("1_hqu8d")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_lr5lj")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rywgt"]
+size = Vector2(177, 158)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uwifd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gwyy8"]
 size = Vector2(390, 206.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rywgt"]
-size = Vector2(177, 158)
 
 [node name="MapParkiranOut" type="Node2D"]
 
@@ -4227,6 +4227,28 @@ position = Vector2(940.575, -176.391)
 
 [node name="SceneTriggers" type="Node2D" parent="."]
 
+[node name="Scene_Trigger_Lorong_Kantin2" type="StaticBody2D" parent="SceneTriggers"]
+position = Vector2(1833, -2693)
+script = ExtResource("18_q3tf8")
+
+[node name="Area2D" type="Area2D" parent="SceneTriggers/Scene_Trigger_Lorong_Kantin2"]
+position = Vector2(11, 415)
+
+[node name="Collision" type="CollisionShape2D" parent="SceneTriggers/Scene_Trigger_Lorong_Kantin2/Area2D"]
+position = Vector2(157, -630)
+shape = SubResource("RectangleShape2D_rywgt")
+
+[node name="Scene_Trigger_Lorong_Kantin" type="StaticBody2D" parent="SceneTriggers"]
+position = Vector2(2393, -1111)
+script = ExtResource("18_q3tf8")
+
+[node name="Area2D" type="Area2D" parent="SceneTriggers/Scene_Trigger_Lorong_Kantin"]
+position = Vector2(11, 415)
+
+[node name="Collision" type="CollisionShape2D" parent="SceneTriggers/Scene_Trigger_Lorong_Kantin/Area2D"]
+position = Vector2(157, -630)
+shape = SubResource("RectangleShape2D_rywgt")
+
 [node name="SceneTrigger" type="StaticBody2D" parent="SceneTriggers"]
 script = ExtResource("8_un8dt")
 
@@ -4253,16 +4275,18 @@ position = Vector2(3140, -609)
 position = Vector2(1410, 265)
 shape = SubResource("RectangleShape2D_gwyy8")
 
-[node name="Scene_Trigger_Lorong_Kantin" type="StaticBody2D" parent="SceneTriggers/SceneLorongKiri/Area2D/Collision"]
-position = Vector2(-2157, -767)
-script = ExtResource("18_q3tf8")
+[node name="SceneLorongKiri2" type="StaticBody2D" parent="SceneTriggers"]
+script = ExtResource("19_qpayc")
 
-[node name="Area2D" type="Area2D" parent="SceneTriggers/SceneLorongKiri/Area2D/Collision/Scene_Trigger_Lorong_Kantin"]
-position = Vector2(11, 415)
+[node name="Block" type="CollisionShape2D" parent="SceneTriggers/SceneLorongKiri2"]
+shape = SubResource("RectangleShape2D_uwifd")
 
-[node name="Collision" type="CollisionShape2D" parent="SceneTriggers/SceneLorongKiri/Area2D/Collision/Scene_Trigger_Lorong_Kantin/Area2D"]
-position = Vector2(157, -630)
-shape = SubResource("RectangleShape2D_rywgt")
+[node name="Area2D" type="Area2D" parent="SceneTriggers/SceneLorongKiri2"]
+position = Vector2(3140, -609)
+
+[node name="Collision" type="CollisionShape2D" parent="SceneTriggers/SceneLorongKiri2/Area2D"]
+position = Vector2(850, -1317)
+shape = SubResource("RectangleShape2D_gwyy8")
 
 [node name="SceneTriggerOut" type="StaticBody2D" parent="SceneTriggers"]
 script = ExtResource("9_enl5o")
@@ -4312,7 +4336,9 @@ scale = Vector2(3, 3)
 position = Vector2(2081, -913)
 scale = Vector2(3, 3)
 
+[connection signal="body_entered" from="SceneTriggers/Scene_Trigger_Lorong_Kantin2/Area2D" to="SceneTriggers/Scene_Trigger_Lorong_Kantin2" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="SceneTriggers/Scene_Trigger_Lorong_Kantin/Area2D" to="SceneTriggers/Scene_Trigger_Lorong_Kantin" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="SceneTriggers/SceneTrigger/Area2D" to="SceneTriggers/SceneTrigger" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="SceneTriggers/SceneLorongKiri/Area2D" to="SceneTriggers/SceneLorongKiri" method="_on_area_2d_body_entered"]
-[connection signal="body_entered" from="SceneTriggers/SceneLorongKiri/Area2D/Collision/Scene_Trigger_Lorong_Kantin/Area2D" to="SceneTriggers/SceneLorongKiri/Area2D/Collision/Scene_Trigger_Lorong_Kantin" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="SceneTriggers/SceneLorongKiri2/Area2D" to="SceneTriggers/SceneLorongKiri2" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="SceneTriggers/SceneTriggerOut/Area2D" to="SceneTriggers/SceneLorongKiri" method="_on_area_2d_body_entered"]

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bu17d3svgmec7"]
+
+[ext_resource type="Texture2D" uid="uid://dgdh7iyfg76fc" path="res://Asset/ObjectSprite/CFB8DE04-099B-4209-90B6-34B1F968DA3E.png" id="1_8e2re"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i36to"]
+size = Vector2(201, 53)
+
+[node name="RakBuku" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_8e2re")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -10.5)
+shape = SubResource("RectangleShape2D_i36to")

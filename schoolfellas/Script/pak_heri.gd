@@ -34,7 +34,13 @@ func _interaction():
 	if GlobalItems.isDay1:
 		dialogStart = "Act1Parkiran"
 	
-	if !isChat:
-		DialogueManager.show_example_dialogue_balloon(load("res://Script/DialogCharacter/Day1.dialogue"), dialogStart)
-		isChat = true
+		if !isChat:
+			DialogueManager.show_example_dialogue_balloon(load("res://Script/DialogCharacter/Day1.dialogue"), dialogStart)
+			isChat = true
+	
+	elif GlobalItems.isDay2:
+		dialogStart = "Act1Parkiran"
+		if !isChat:
+			DialogueManager.show_example_dialogue_balloon(load("res://Script/DialogCharacter/Day2.dialogue"), dialogStart)
+			isChat = true
 	

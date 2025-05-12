@@ -9,6 +9,8 @@ Raka: "Journey to the North"...
 	Raka: Ohhh... Terima kasih, Pak Heri. Saya pasti jaga dengan baik.
 	Pak Heri: Siapa tahu, buku itu bisa bantu kamu dalam perjalananmu... entah itu di sekolah, atau yang lebih jauh lagi. Hehe.
 	Raka: Entah kenapa... buku ini terasa familiar.
+	Kamu mendapatkan buku
+	set GlobalItems.haveBuku = true
 - Menolak
 	Raka: Waduh saya gak tahu itu buku siapa pak.
 	Pak Heri: Yasudah, Saya kembalikan ke pos satpam.
@@ -27,18 +29,27 @@ set GlobalItems.onCutscene = false
 set GlobalItems.onCutscene = true
 Raka: Andi, kamu lagi disini?
 Andi: RA... RAKA! Eh... Asik ya baca buku di bawah pohon ini?
-- Boleh Kok
-	Andi: Wah boleh banget!. Tapi, buku ini sangat berat. Jangan kaget ya... bukunya agak berat isinya.
-	Raka: Santai aja, aku juga suka semua genre.
-- Hmmm... Aku gak suka baca buku sih
-	Andi: Oke...	
+if GlobalItems.haveBuku:
+	Andi: Eh... Kamu bawa buku juga mau baca bareng?
+	- Boleh Kok
+		Andi: Wah boleh banget!. Tapi, buku ini sangat berat. Jangan kaget ya... bukunya agak berat isinya.
+		Raka: Santai aja, aku juga suka semua genre.
+		set GlobalItems.reputation += 5
+		set GlobalItems.Day2AndiTriggerLapangan = true
+	- Hmmm... Aku gak suka baca buku sih
+		Andi: Oke...
+else:
+	Sepertinya Andi senang membaca buku
 set GlobalItems.onCutscene = false
 => END
 
 ~ Act1LorongSekolah
 set GlobalItems.onCutscene = true
-Pak Jaka: RAKA, kamu dipanggil ke ruang guru. Ini soal temanmu, ANDI.
+Pak Jaka: RAKA, kamu dipanggil ke ruang guru.
+Raka: Loh Ada apa pak?
+Pak Jaka: Datang saja
 set GlobalItems.onCutscene = false
+do get_tree().change_scene_to_file("res://lorong_dari_kelas.tscn")
 => END
 
 ~ Act1RuangGuru
@@ -46,9 +57,12 @@ set GlobalItems.onCutscene = true
 Pak Jaka: Nilai Andi akhir-akhir ini menurun drastis. Kami khawatir dia terlalu banyak menyendiri dan menghindari pelajaran.
 Kamu salah satu teman dekatnya, bukan?
 - Iya, saya sering ngobrol dengannya
+	set GlobalItems.reputation += 10
 - Maaf, Pak… saya rasa saya bukan orang yang tepat buat bantu dia belajar.
+	set GlobalItems.reputation -= 5
 Pak Jaka: Kalau boleh, bantu Andi untuk belajar lebih rutin. Saya tahu kamu punya potensi untuk jadi pengaruh baik.
 Raka:  Baik, Pak. Saya akan bantu dia.
+do get_tree().change_scene_to_file("res://lorong_dari_ruang_guru.tscn")
 set GlobalItems.onCutscene = false
 => END
 
