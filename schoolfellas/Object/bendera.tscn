@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3v8vrp5v45db"]
+
+[ext_resource type="Texture2D" uid="uid://duhh3macxtave" path="res://Asset/ObjectSprite/BF7A59AB-C9AD-4079-A87B-EDD5F41502F9.png" id="1_5v0rc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dd0v7"]
+size = Vector2(19, 16)
+
+[node name="Bendera" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(174, 258)
+texture = ExtResource("1_5v0rc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(222.5, 301)
+shape = SubResource("RectangleShape2D_dd0v7")

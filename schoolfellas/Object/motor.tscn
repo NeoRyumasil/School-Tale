@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdfy7n0t74s21"]
+
+[ext_resource type="Texture2D" uid="uid://1x6y3rdsudck" path="res://Asset/ObjectSprite/072F6DCA-AB1A-4117-A179-D977172808E1.png" id="1_ou16g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xfkko"]
+size = Vector2(11, 43)
+
+[node name="Motor" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(174, 258)
+texture = ExtResource("1_ou16g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(178, 258)
+shape = SubResource("RectangleShape2D_xfkko")

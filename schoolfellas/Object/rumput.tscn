@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://n4yfnvj0opv8"]
+
+[ext_resource type="Texture2D" uid="uid://dpuohmobjksap" path="res://Asset/ObjectSprite/1F2A2604-3E56-4018-AD40-909CBCF8A757.png" id="1_kruyn"]
+
+[node name="Rumput" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(146, 90)
+texture = ExtResource("1_kruyn")

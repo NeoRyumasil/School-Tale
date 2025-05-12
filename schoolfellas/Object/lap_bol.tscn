@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://civrbkn0coxxu"]
+
+[ext_resource type="Texture2D" uid="uid://boscniw1wv822" path="res://Asset/ObjectSprite/13889C21-4051-41D4-8AD5-37237230BAC0.png" id="1_g2m01"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bhid8"]
+size = Vector2(79, 17)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r7lk1"]
+size = Vector2(79, 14)
+
+[node name="LapBol" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(174, 258)
+texture = ExtResource("1_g2m01")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(173.5, 125.5)
+shape = SubResource("RectangleShape2D_bhid8")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(173.5, 395)
+shape = SubResource("RectangleShape2D_r7lk1")

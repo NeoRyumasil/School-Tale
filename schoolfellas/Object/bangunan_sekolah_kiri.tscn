@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://caekn7bb7olwe"]
+
+[ext_resource type="Texture2D" uid="uid://3rawncrxwc0y" path="res://Asset/ObjectSprite/D7AE3BCB-62B4-4474-A956-16C79947820E.png" id="1_whlio"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0b4ed"]
+size = Vector2(305.25, 195)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lgeov"]
+size = Vector2(223.5, 642)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t2m1o"]
+size = Vector2(118.625, 51.5)
+
+[node name="BangunanSekolahKiri" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(174, 258)
+texture = ExtResource("1_whlio")
+
+[node name="Collision2" type="CollisionShape2D" parent="."]
+position = Vector2(362.375, 521.5)
+shape = SubResource("RectangleShape2D_0b4ed")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(108.25, 247)
+shape = SubResource("RectangleShape2D_lgeov")
+
+[node name="Collision3" type="CollisionShape2D" parent="."]
+position = Vector2(74.3125, 592.75)
+shape = SubResource("RectangleShape2D_t2m1o")

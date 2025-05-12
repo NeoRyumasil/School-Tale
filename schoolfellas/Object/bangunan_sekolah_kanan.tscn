@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://wlclxhm131uk"]
+
+[ext_resource type="Texture2D" uid="uid://dbmc41kj3p1go" path="res://Asset/ObjectSprite/A58AFCEB-72CC-4EE3-82E6-2BD2E95FD1AC (1).png" id="1_1nwxf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gk6ow"]
+size = Vector2(75, 38)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_llwdh"]
+size = Vector2(75, 40)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xfcp0"]
+size = Vector2(114, 58)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gig0x"]
+size = Vector2(445, 111)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s3mll"]
+size = Vector2(233, 612)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ur5rb"]
+size = Vector2(308, 199)
+
+[node name="BangunanSekolahKanan" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(174, 258)
+texture = ExtResource("1_1nwxf")
+
+[node name="Collision4" type="CollisionShape2D" parent="."]
+texture_filter = 1
+position = Vector2(93.5, 78)
+shape = SubResource("RectangleShape2D_gk6ow")
+
+[node name="Collision5" type="CollisionShape2D" parent="."]
+position = Vector2(245.5, 78)
+shape = SubResource("RectangleShape2D_llwdh")
+
+[node name="Collision6" type="CollisionShape2D" parent="."]
+position = Vector2(427, 591)
+shape = SubResource("RectangleShape2D_xfcp0")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(279.5, 3.5)
+shape = SubResource("RectangleShape2D_gig0x")
+
+[node name="Collision2" type="CollisionShape2D" parent="."]
+position = Vector2(390.5, 257)
+shape = SubResource("RectangleShape2D_s3mll")
+
+[node name="Collision3" type="CollisionShape2D" parent="."]
+position = Vector2(139, 519.5)
+shape = SubResource("RectangleShape2D_ur5rb")

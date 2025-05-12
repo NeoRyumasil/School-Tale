@@ -6,18 +6,23 @@
 script = ExtResource("1_mc2xc")
 using_states = PackedStringArray()
 titles = {
+"Act1Aula": "170",
 "Act1Gudang": "110",
+"Act1Kantin": "124",
 "Act1Lapangan": "27",
 "Act1LorongSekolah": "39",
 "Act1Parkiran": "2",
 "Act1Perpustakaan": "56",
 "Act1RuangGuru": "45",
 "Act1Toilet": "86",
+"Act2Kantin": "198",
 "Act2LorongSekolah": "80",
 "Act2Perpustakaan": "71",
-"Act3Perpustakaan": "95"
+"Act3Kantin": "211",
+"Act3Perpustakaan": "95",
+"Act4Perpustakaan": "151"
 }
-character_names = PackedStringArray("Pak Heri", "Raka", "Tanya mengenai Liontin:", "Andi", "Pak Jaka", "Guntur", "Faldo", "Widya")
+character_names = PackedStringArray("Pak Heri", "Raka", "Tanya mengenai Liontin:", "Andi", "Pak Jaka", "Guntur", "Faldo", "Widya", "Nelly", "Note", "Ratna", "Murid")
 first_title = "2"
 lines = {
 "1": {
@@ -343,6 +348,99 @@ lines = {
 "next_id": "end",
 "type": &"goto"
 },
+"123": {
+"id": "123",
+"next_id": "124",
+"text": "Act1Kantin",
+"type": &"title"
+},
+"124": {
+"id": "124",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "onCutscene"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "true"
+}]),
+"is_blocking": true
+},
+"next_id": "125",
+"type": &"mutation"
+},
+"125": {
+"character": "Raka",
+"character_replacements": Array[Dictionary]([]),
+"id": "125",
+"next_id": "126",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Nelly... ini punyamu, kah?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Nelly... ini punyamu, kah?",
+"type": &"dialogue"
+},
+"126": {
+"character": "Nelly",
+"character_replacements": Array[Dictionary]([]),
+"id": "126",
+"next_id": "127",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "RAKA!, kok lu bisa nemuin benda itu?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "RAKA!, kok lu bisa nemuin benda itu?",
+"type": &"dialogue"
+},
+"127": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "127",
+"next_id": "130",
+"next_id_after": "130",
+"notes": "",
+"responses": PackedStringArray("127", "128", "129"),
+"tags": PackedStringArray(),
+"text": "Oh ini punyamu",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Oh ini punyamu",
+"type": &"response"
+},
+"128": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "128",
+"next_id": "130",
+"next_id_after": "130",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Lain kali jaga dong barangnya!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Lain kali jaga dong barangnya!",
+"type": &"response"
+},
+"129": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "129",
+"next_id": "130",
+"next_id_after": "130",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Aku rasa, aku nemu di Kotak Sampah",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Aku rasa, aku nemu di Kotak Sampah",
+"type": &"response"
+},
 "13": {
 "character": "Raka",
 "character_replacements": Array[Dictionary]([]),
@@ -354,6 +452,127 @@ lines = {
 "text": "Waduh saya gak tahu itu buku siapa pak.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Waduh saya gak tahu itu buku siapa pak.",
+"type": &"dialogue"
+},
+"130": {
+"character": "Nelly",
+"character_replacements": Array[Dictionary]([]),
+"id": "130",
+"next_id": "131",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Eh... Aku sebenarnya aku ngga maksud membuangnya! Tapi aku terburu-buru karena aku ada urusan klub drama.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Eh... Aku sebenarnya aku ngga maksud membuangnya! Tapi aku terburu-buru karena aku ada urusan klub drama.",
+"type": &"dialogue"
+},
+"131": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "131",
+"next_id": "132",
+"next_id_after": "147",
+"notes": "",
+"responses": PackedStringArray("131", "146"),
+"tags": PackedStringArray(),
+"text": "Boleh kubantu?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Boleh kubantu?",
+"type": &"response"
+},
+"132": {
+"character": "Nelly",
+"character_replacements": Array[Dictionary]([]),
+"id": "132",
+"next_id": "133",
+"notes": "",
+"parent_id": "131",
+"tags": PackedStringArray(),
+"text": "Oh..., Lu punya nyali ya nawarin pekerjaan?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Oh..., Lu punya nyali ya nawarin pekerjaan?",
+"type": &"dialogue"
+},
+"133": {
+"character": "Nelly",
+"character_replacements": Array[Dictionary]([]),
+"id": "133",
+"next_id": "134",
+"notes": "",
+"parent_id": "131",
+"tags": PackedStringArray(),
+"text": "Oke, bantu gua cari properti yang dibutuhin klub drama! Gua muak disuruh-suruh oleh ketua mata empat songong itu. Seluruh tugas yang dia kasih cuman untuk mengusirku dari ruangan klub. Dasar muka dua.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Oke, bantu gua cari properti yang dibutuhin klub drama! Gua muak disuruh-suruh oleh ketua mata empat songong itu. Seluruh tugas yang dia kasih cuman untuk mengusirku dari ruangan klub. Dasar muka dua.",
+"type": &"dialogue"
+},
+"134": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "134",
+"next_id": "137",
+"next_id_after": "137",
+"notes": "",
+"parent_id": "131",
+"responses": PackedStringArray("134", "135", "136"),
+"tags": PackedStringArray(),
+"text": "Aku benci orang yg seperti itu.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Aku benci orang yg seperti itu.",
+"type": &"response"
+},
+"135": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "135",
+"next_id": "137",
+"next_id_after": "137",
+"notes": "",
+"parent_id": "131",
+"tags": PackedStringArray(),
+"text": "Cepat berikan saja informasinya.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Cepat berikan saja informasinya.",
+"type": &"response"
+},
+"136": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "136",
+"next_id": "137",
+"next_id_after": "137",
+"notes": "",
+"parent_id": "131",
+"tags": PackedStringArray(),
+"text": "Barang apa yang harus kucari.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Barang apa yang harus kucari.",
+"type": &"response"
+},
+"137": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "137",
+"next_id": "138",
+"notes": "",
+"parent_id": "131",
+"tags": PackedStringArray(),
+"text": "SURAT BARANG HILANG (NOTE)",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "SURAT BARANG HILANG (NOTE)",
+"type": &"dialogue"
+},
+"138": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "138",
+"next_id": "140",
+"notes": "",
+"parent_id": "131",
+"tags": PackedStringArray(),
+"text": "PROPERTI UNTUK KLUB DRAMA",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "PROPERTI UNTUK KLUB DRAMA",
 "type": &"dialogue"
 },
 "14": {
@@ -368,6 +587,238 @@ lines = {
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Yasudah, Saya kembalikan ke pos satpam.",
 "type": &"dialogue"
+},
+"140": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "140",
+"next_id": "141",
+"notes": "",
+"parent_id": "131",
+"tags": PackedStringArray(),
+"text": "Tongkat Penyihir (sudah)",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tongkat Penyihir (sudah)",
+"type": &"dialogue"
+},
+"141": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "141",
+"next_id": "142",
+"notes": "",
+"parent_id": "131",
+"tags": PackedStringArray(),
+"text": "Jubah Merah (sudah)",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Jubah Merah (sudah)",
+"type": &"dialogue"
+},
+"142": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "142",
+"next_id": "144",
+"notes": "",
+"parent_id": "131",
+"tags": PackedStringArray(),
+"text": "TOPENG KOSTUM (HILANG!)",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "TOPENG KOSTUM (HILANG!)",
+"type": &"dialogue"
+},
+"144": {
+"character": "Note",
+"character_replacements": Array[Dictionary]([]),
+"id": "144",
+"next_id": "147",
+"notes": "",
+"parent_id": "131",
+"tags": PackedStringArray(),
+"text": "Coba tanyakan ke WIDYA. Terakhir terlihat membawanya dari ruang properti ke perpustakaan.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Coba tanyakan ke WIDYA. Terakhir terlihat membawanya dari ruang properti ke perpustakaan.",
+"type": &"dialogue"
+},
+"146": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "146",
+"next_id": "147",
+"next_id_after": "147",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Aku pergi...",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Aku pergi...",
+"type": &"response"
+},
+"147": {
+"id": "147",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "onCutscene"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "false"
+}]),
+"is_blocking": true
+},
+"next_id": "148",
+"type": &"mutation"
+},
+"148": {
+"id": "148",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"150": {
+"id": "150",
+"next_id": "151",
+"text": "Act4Perpustakaan",
+"type": &"title"
+},
+"151": {
+"id": "151",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "onCutscene"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "true"
+}]),
+"is_blocking": true
+},
+"next_id": "152",
+"type": &"mutation"
+},
+"152": {
+"character": "Widya",
+"character_replacements": Array[Dictionary]([]),
+"id": "152",
+"next_id": "153",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Kamu anak baru yang dibicarakan itu ya?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Kamu anak baru yang dibicarakan itu ya?",
+"type": &"dialogue"
+},
+"153": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "153",
+"next_id": "154",
+"next_id_after": "166",
+"notes": "",
+"responses": PackedStringArray("153", "165"),
+"tags": PackedStringArray(),
+"text": "Ada apa dengan TOPENG itu?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Ada apa dengan TOPENG itu?",
+"type": &"response"
+},
+"154": {
+"character": "Widya",
+"character_replacements": Array[Dictionary]([]),
+"id": "154",
+"next_id": "155",
+"notes": "",
+"parent_id": "153",
+"tags": PackedStringArray(),
+"text": "Dahulu, aku dan NELLY bersahabat dekat dan senang dengan hal-hal berbau film. Dia ingin menjadi aktris dan aku ingin menjadi Sutradara, sehingga kita berdua masuk klub drama. Namun semua berubah sejak kecelakaan yang mencederai kakiku, NELLY tampaknya merasa bersalah atas kejadian tersebut.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Dahulu, aku dan NELLY bersahabat dekat dan senang dengan hal-hal berbau film. Dia ingin menjadi aktris dan aku ingin menjadi Sutradara, sehingga kita berdua masuk klub drama. Namun semua berubah sejak kecelakaan yang mencederai kakiku, NELLY tampaknya merasa bersalah atas kejadian tersebut.",
+"type": &"dialogue"
+},
+"155": {
+"character": "Widya",
+"character_replacements": Array[Dictionary]([]),
+"id": "155",
+"next_id": "156",
+"notes": "",
+"parent_id": "153",
+"tags": PackedStringArray(),
+"text": "Dia menghindariku semenjak itu. Dia juga bergaul dengan anak bermasalah seperti EDI.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Dia menghindariku semenjak itu. Dia juga bergaul dengan anak bermasalah seperti EDI.",
+"type": &"dialogue"
+},
+"156": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "156",
+"next_id": "157",
+"next_id_after": "163",
+"notes": "",
+"parent_id": "153",
+"responses": PackedStringArray("156", "162"),
+"tags": PackedStringArray(),
+"text": "Berikan Liontin",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Berikan Liontin",
+"type": &"response"
+},
+"157": {
+"character": "Widya",
+"character_replacements": Array[Dictionary]([]),
+"id": "157",
+"next_id": "158",
+"notes": "",
+"parent_id": "156",
+"tags": PackedStringArray(),
+"text": "Liontin itu kan! Dari mana lu dapetin nya!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Liontin itu kan! Dari mana lu dapetin nya!",
+"type": &"dialogue"
+},
+"158": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "158",
+"next_id": "160",
+"next_id_after": "160",
+"notes": "",
+"parent_id": "156",
+"responses": PackedStringArray("158", "159"),
+"tags": PackedStringArray(),
+"text": "Aku nemuinnya di Tong Sampah",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Aku nemuinnya di Tong Sampah",
+"type": &"response"
+},
+"159": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "159",
+"next_id": "160",
+"next_id_after": "160",
+"notes": "",
+"parent_id": "156",
+"tags": PackedStringArray(),
+"text": "Terjatuh di lantai",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Terjatuh di lantai",
+"type": &"response"
 },
 "16": {
 "condition": {
@@ -388,6 +839,120 @@ lines = {
 "next_id": "17",
 "next_id_after": "23",
 "type": &"condition"
+},
+"160": {
+"character": "Widya",
+"character_replacements": Array[Dictionary]([]),
+"id": "160",
+"next_id": "161",
+"notes": "",
+"parent_id": "156",
+"tags": PackedStringArray(),
+"text": "Apa selama ini NELLY masih ingin berteman denganku? Aku memang teman yang jahat.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Apa selama ini NELLY masih ingin berteman denganku? Aku memang teman yang jahat.",
+"type": &"dialogue"
+},
+"161": {
+"character": "Raka",
+"character_replacements": Array[Dictionary]([]),
+"id": "161",
+"next_id": "163",
+"notes": "",
+"parent_id": "156",
+"tags": PackedStringArray(),
+"text": "Bukannya terlalu cepat memberi asumsi seperti itu?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Bukannya terlalu cepat memberi asumsi seperti itu?",
+"type": &"dialogue"
+},
+"162": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "162",
+"next_id": "163",
+"next_id_after": "163",
+"notes": "",
+"parent_id": "153",
+"tags": PackedStringArray(),
+"text": "Aku turut bersedih atas kecelakaan mu",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Aku turut bersedih atas kecelakaan mu",
+"type": &"response"
+},
+"163": {
+"character": "Widya",
+"character_replacements": Array[Dictionary]([]),
+"id": "163",
+"next_id": "164",
+"notes": "",
+"parent_id": "153",
+"tags": PackedStringArray(),
+"text": "Iya, gapapa. Aku baik-baik saja sekarang.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Iya, gapapa. Aku baik-baik saja sekarang.",
+"type": &"dialogue"
+},
+"164": {
+"character": "Raka",
+"character_replacements": Array[Dictionary]([]),
+"id": "164",
+"next_id": "166",
+"notes": "",
+"parent_id": "153",
+"tags": PackedStringArray(),
+"text": "Baiklah, kalau begitu.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Baiklah, kalau begitu.",
+"type": &"dialogue"
+},
+"165": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "165",
+"next_id": "166",
+"next_id_after": "166",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Baiklah.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Baiklah.",
+"type": &"response"
+},
+"166": {
+"id": "166",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "onCutscene"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "false"
+}]),
+"is_blocking": true
+},
+"next_id": "167",
+"type": &"mutation"
+},
+"167": {
+"id": "167",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"169": {
+"id": "169",
+"next_id": "170",
+"text": "Act1Aula",
+"type": &"title"
 },
 "17": {
 "character": "Tanya mengenai Liontin:",
@@ -415,6 +980,141 @@ lines = {
 "translation_key": "",
 "type": &"dialogue"
 },
+"170": {
+"id": "170",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "onCutscene"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "true"
+}]),
+"is_blocking": true
+},
+"next_id": "171",
+"type": &"mutation"
+},
+"171": {
+"character": "Nelly",
+"character_replacements": Array[Dictionary]([]),
+"id": "171",
+"next_id": "172",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "RAKA,..itu kan?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "RAKA,..itu kan?",
+"type": &"dialogue"
+},
+"172": {
+"character": "Ratna",
+"character_replacements": Array[Dictionary]([]),
+"id": "172",
+"next_id": "173",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Lu kok ikut campur urusan kita sih. Sebaiknya lu pergi dari sini atau aku lapor kalian ke kepala sekolah!!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Lu kok ikut campur urusan kita sih. Sebaiknya lu pergi dari sini atau aku lapor kalian ke kepala sekolah!!",
+"type": &"dialogue"
+},
+"173": {
+"character": "Raka",
+"character_replacements": Array[Dictionary]([]),
+"id": "173",
+"next_id": "174",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Orang gila! Kenapa lu seenaknya ngelaporin kita ke kepala sekolah?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Orang gila! Kenapa lu seenaknya ngelaporin kita ke kepala sekolah?",
+"type": &"dialogue"
+},
+"174": {
+"character": "Ratna",
+"character_replacements": Array[Dictionary]([]),
+"id": "174",
+"next_id": "175",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Kenapa? Kalian berdua adalah murid bermasalah, terutama NELLY, yang sudah mencederai anggota kita, apa dia ngga cerita ke lu?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Kenapa? Kalian berdua adalah murid bermasalah, terutama NELLY, yang sudah mencederai anggota kita, apa dia ngga cerita ke lu?",
+"type": &"dialogue"
+},
+"175": {
+"character": "Nelly",
+"character_replacements": Array[Dictionary]([]),
+"id": "175",
+"next_id": "176",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Tidak! Jangan percaya ke dia.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tidak! Jangan percaya ke dia.",
+"type": &"dialogue"
+},
+"176": {
+"character": "Widya",
+"character_replacements": Array[Dictionary]([]),
+"id": "176",
+"next_id": "177",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Cukup!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Cukup!",
+"type": &"dialogue"
+},
+"177": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "177",
+"next_id": "178",
+"next_id_after": "194",
+"notes": "",
+"responses": PackedStringArray("177", "187"),
+"tags": PackedStringArray(),
+"text": "berpihak",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "berpihak",
+"type": &"response"
+},
+"178": {
+"character": "Widya",
+"character_replacements": Array[Dictionary]([]),
+"id": "178",
+"next_id": "179",
+"notes": "",
+"parent_id": "177",
+"tags": PackedStringArray(),
+"text": "RATNA!, Akui saja lu yang buang kostum itu kan? Aku udah dengar dari anggota klub lain. Lu ingin keluarin NELLY karena lu iri dia dekat dengan EDI kan?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "RATNA!, Akui saja lu yang buang kostum itu kan? Aku udah dengar dari anggota klub lain. Lu ingin keluarin NELLY karena lu iri dia dekat dengan EDI kan?",
+"type": &"dialogue"
+},
+"179": {
+"character": "Ratna",
+"character_replacements": Array[Dictionary]([]),
+"id": "179",
+"next_id": "180",
+"notes": "",
+"parent_id": "177",
+"tags": PackedStringArray(),
+"text": "Ehh... Jangan ngomong sembarangan!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Ehh... Jangan ngomong sembarangan!",
+"type": &"dialogue"
+},
 "18": {
 "character": "Raka",
 "character_replacements": Array[Dictionary]([]),
@@ -426,6 +1126,136 @@ lines = {
 "text": "Pak, maaf... Saya nemu ini kemarin sore waktu di dekat kantin. Bapak tahu ini milik siapa?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Pak, maaf... Saya nemu ini kemarin sore waktu di dekat kantin. Bapak tahu ini milik siapa?",
+"type": &"dialogue"
+},
+"180": {
+"character": "Widya",
+"character_replacements": Array[Dictionary]([]),
+"id": "180",
+"next_id": "181",
+"notes": "",
+"parent_id": "177",
+"tags": PackedStringArray(),
+"text": "NELLY, aku minta maaf... Aku ga tahu kalau selama ini kamu masih mikirin aku.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "NELLY, aku minta maaf... Aku ga tahu kalau selama ini kamu masih mikirin aku.",
+"type": &"dialogue"
+},
+"181": {
+"character": "Ratna",
+"character_replacements": Array[Dictionary]([]),
+"id": "181",
+"next_id": "182",
+"notes": "",
+"parent_id": "177",
+"tags": PackedStringArray(),
+"text": "Terus lu mau apa? Gua Ketua nya disini! Orang cacat seperti lu ga usah ngatur gua dan klub ini!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Terus lu mau apa? Gua Ketua nya disini! Orang cacat seperti lu ga usah ngatur gua dan klub ini!",
+"type": &"dialogue"
+},
+"182": {
+"character": "Raka",
+"character_replacements": Array[Dictionary]([]),
+"id": "182",
+"next_id": "183",
+"notes": "",
+"parent_id": "177",
+"tags": PackedStringArray(),
+"text": "WOI! Beraninya lu ngomong kaya gitu.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "WOI! Beraninya lu ngomong kaya gitu.",
+"type": &"dialogue"
+},
+"183": {
+"character": "Widya",
+"character_replacements": Array[Dictionary]([]),
+"id": "183",
+"next_id": "184",
+"notes": "",
+"parent_id": "177",
+"tags": PackedStringArray(),
+"text": "Cukup! Lu boleh jadi Ketua Klub ini di atas kertas, tapi hampir seluruh anggota klub drama tidak suka dengan kelakuan lu!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Cukup! Lu boleh jadi Ketua Klub ini di atas kertas, tapi hampir seluruh anggota klub drama tidak suka dengan kelakuan lu!",
+"type": &"dialogue"
+},
+"184": {
+"character": "Murid",
+"character_replacements": Array[Dictionary]([]),
+"id": "184",
+"next_id": "185",
+"notes": "",
+"parent_id": "177",
+"tags": PackedStringArray(),
+"text": "IYA!, jangan seenaknya ubah-ubah susunan pemain drama secara mendadak!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "IYA!, jangan seenaknya ubah-ubah susunan pemain drama secara mendadak!",
+"type": &"dialogue"
+},
+"185": {
+"character": "Murid",
+"character_replacements": Array[Dictionary]([]),
+"id": "185",
+"next_id": "186",
+"notes": "",
+"parent_id": "177",
+"tags": PackedStringArray(),
+"text": "Kerumunan siswa anggota klub drama Ceritakan alasan kenapa uang kas klub drama juga berkurang karena keperluan lu!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Kerumunan siswa anggota klub drama Ceritakan alasan kenapa uang kas klub drama juga berkurang karena keperluan lu!",
+"type": &"dialogue"
+},
+"186": {
+"character": "Ratna",
+"character_replacements": Array[Dictionary]([]),
+"id": "186",
+"next_id": "194",
+"notes": "",
+"parent_id": "177",
+"tags": PackedStringArray(),
+"text": "AHH, aku pergi.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "AHH, aku pergi.",
+"type": &"dialogue"
+},
+"187": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "187",
+"next_id": "188",
+"next_id_after": "194",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "tidak berpihak",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "tidak berpihak",
+"type": &"response"
+},
+"188": {
+"character": "Widya",
+"character_replacements": Array[Dictionary]([]),
+"id": "188",
+"next_id": "189",
+"notes": "",
+"parent_id": "187",
+"tags": PackedStringArray(),
+"text": "RATNA!, hentikan perdebatan ini, jangan seenaknya menuduh orang. dan NELLY, kau sebaiknya jangan mendekati klub ini lagi",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "RATNA!, hentikan perdebatan ini, jangan seenaknya menuduh orang. dan NELLY, kau sebaiknya jangan mendekati klub ini lagi",
+"type": &"dialogue"
+},
+"189": {
+"character": "Nelly",
+"character_replacements": Array[Dictionary]([]),
+"id": "189",
+"next_id": "190",
+"notes": "",
+"parent_id": "187",
+"tags": PackedStringArray(),
+"text": "Maksud lu? Lu percaya cerita yang disebarkan RATNA",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Maksud lu? Lu percaya cerita yang disebarkan RATNA",
 "type": &"dialogue"
 },
 "19": {
@@ -440,6 +1270,130 @@ lines = {
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Hmmm... Oh! Ini… Saya hafal. Ini punya si NELLY, anak klub drama itu.",
 "type": &"dialogue"
+},
+"190": {
+"character": "Widya",
+"character_replacements": Array[Dictionary]([]),
+"id": "190",
+"next_id": "191",
+"notes": "",
+"parent_id": "187",
+"tags": PackedStringArray(),
+"text": "Maksudku,...cukup. Aku sudah muak. Aku akan keluar dari klub ini",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Maksudku,...cukup. Aku sudah muak. Aku akan keluar dari klub ini",
+"type": &"dialogue"
+},
+"191": {
+"character": "Nelly",
+"character_replacements": Array[Dictionary]([]),
+"id": "191",
+"next_id": "192",
+"notes": "",
+"parent_id": "187",
+"tags": PackedStringArray(),
+"text": "WIDYA! Tapi kan…",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "WIDYA! Tapi kan…",
+"type": &"dialogue"
+},
+"192": {
+"character": "Ratna",
+"character_replacements": Array[Dictionary]([]),
+"id": "192",
+"next_id": "193",
+"notes": "",
+"parent_id": "187",
+"tags": PackedStringArray(),
+"text": "Heh, sudah saya prediksi WIDYA, kau tidak akan sanggup dengan kondisi fisik seperti itu, HAHAHAHA",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Heh, sudah saya prediksi WIDYA, kau tidak akan sanggup dengan kondisi fisik seperti itu, HAHAHAHA",
+"type": &"dialogue"
+},
+"193": {
+"character": "Nelly",
+"character_replacements": Array[Dictionary]([]),
+"id": "193",
+"next_id": "194",
+"notes": "",
+"parent_id": "187",
+"tags": PackedStringArray(),
+"text": "Aku juga akan keluar!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Aku juga akan keluar!",
+"type": &"dialogue"
+},
+"194": {
+"id": "194",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "onCutscene"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "false"
+}]),
+"is_blocking": true
+},
+"next_id": "195",
+"type": &"mutation"
+},
+"195": {
+"id": "195",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
+"197": {
+"id": "197",
+"next_id": "198",
+"text": "Act2Kantin",
+"type": &"title"
+},
+"198": {
+"id": "198",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "onCutscene"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "true"
+}]),
+"is_blocking": true
+},
+"next_id": "199",
+"type": &"mutation"
+},
+"199": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "199",
+"next_id": "200",
+"next_id_after": "207",
+"notes": "",
+"responses": PackedStringArray("199"),
+"tags": PackedStringArray(),
+"text": "berpihak",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "berpihak",
+"type": &"response"
 },
 "2": {
 "id": "2",
@@ -477,6 +1431,126 @@ lines = {
 "translation_key": "Nelly?! Kenapa bisa sampai ke tempat sampah...",
 "type": &"dialogue"
 },
+"200": {
+"character": "Nelly",
+"character_replacements": Array[Dictionary]([]),
+"id": "200",
+"next_id": "201",
+"notes": "",
+"parent_id": "199",
+"tags": PackedStringArray(),
+"text": "Aku minta maaf karena menjauh dari lu, WID WIDYA",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Aku minta maaf karena menjauh dari lu, WID WIDYA",
+"type": &"dialogue"
+},
+"201": {
+"character": "Widya",
+"character_replacements": Array[Dictionary]([]),
+"id": "201",
+"next_id": "202",
+"notes": "",
+"parent_id": "199",
+"tags": PackedStringArray(),
+"text": "Enggak kok, itu salah ku juga tidak memberi kabar lagi. Semoga dengan ini kita bisa berteman lagi.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Enggak kok, itu salah ku juga tidak memberi kabar lagi. Semoga dengan ini kita bisa berteman lagi.",
+"type": &"dialogue"
+},
+"202": {
+"character": "Nelly",
+"character_replacements": Array[Dictionary]([]),
+"id": "202",
+"next_id": "203",
+"notes": "",
+"parent_id": "199",
+"tags": PackedStringArray(),
+"text": "RAKA, aku juga berterimakasih kepadamu karena mencari KOSTUM drama milikku. Oh iya, nampaknya kamu WID WIDYA yang bakal jadi ketua Klub drama. Seluruh anggota terkesan dengan keberanian lu",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "RAKA, aku juga berterimakasih kepadamu karena mencari KOSTUM drama milikku. Oh iya, nampaknya kamu WID WIDYA yang bakal jadi ketua Klub drama. Seluruh anggota terkesan dengan keberanian lu",
+"type": &"dialogue"
+},
+"203": {
+"character": "Raka",
+"character_replacements": Array[Dictionary]([]),
+"id": "203",
+"next_id": "204",
+"notes": "",
+"parent_id": "199",
+"tags": PackedStringArray(),
+"text": "Oh, jadi ini alasan kalian mentraktir ku sepiring bakso dan esteh. Thank you banget!",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Oh, jadi ini alasan kalian mentraktir ku sepiring bakso dan esteh. Thank you banget!",
+"type": &"dialogue"
+},
+"204": {
+"character": "Widya",
+"character_replacements": Array[Dictionary]([]),
+"id": "204",
+"next_id": "205",
+"notes": "",
+"parent_id": "199",
+"tags": PackedStringArray(),
+"text": "hah? Kita ga traktir lu sekarang, maksud ku setelah aku diangkat jadi ketua klub. Hehe",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "hah? Kita ga traktir lu sekarang, maksud ku setelah aku diangkat jadi ketua klub. Hehe",
+"type": &"dialogue"
+},
+"205": {
+"character": "Raka",
+"character_replacements": Array[Dictionary]([]),
+"id": "205",
+"next_id": "206",
+"notes": "",
+"parent_id": "199",
+"tags": PackedStringArray(),
+"text": "APA! Kok kalian ga bilang2",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "APA! Kok kalian ga bilang2",
+"type": &"dialogue"
+},
+"206": {
+"character": "Widya",
+"character_replacements": Array[Dictionary]([]),
+"id": "206",
+"next_id": "207",
+"notes": "",
+"parent_id": "199",
+"tags": PackedStringArray(),
+"text": "Sepertinya ada barangku yang ketinggalan di perpustakaan aku akan mengambilnya dahulu",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Sepertinya ada barangku yang ketinggalan di perpustakaan aku akan mengambilnya dahulu",
+"type": &"dialogue"
+},
+"207": {
+"id": "207",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "onCutscene"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "false"
+}]),
+"is_blocking": true
+},
+"next_id": "208",
+"type": &"mutation"
+},
+"208": {
+"id": "208",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
+},
 "21": {
 "character": "Pak Heri",
 "character_replacements": Array[Dictionary]([]),
@@ -489,6 +1563,124 @@ lines = {
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Ya kamu tanya aja langsung sama dia. Kayaknya barang itu penting banget buat dia. Dulu waktu pertama MASUK SEKOLAH, dia nggak pernah lepasin liontin itu.",
 "type": &"dialogue"
+},
+"210": {
+"id": "210",
+"next_id": "211",
+"text": "Act3Kantin",
+"type": &"title"
+},
+"211": {
+"id": "211",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "onCutscene"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "true"
+}]),
+"is_blocking": true
+},
+"next_id": "212",
+"type": &"mutation"
+},
+"212": {
+"character": "Nelly",
+"character_replacements": Array[Dictionary]([]),
+"id": "212",
+"next_id": "213",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Dulu, aku yang menyebabkan WIDYA menjadi seperti itu, awalnya kita hanya bercanda. Namun, WIDYA terdorong dan tertabrak oleh mobil. Karena hal itu, aku tidak berani dekat dengan dia.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Dulu, aku yang menyebabkan WIDYA menjadi seperti itu, awalnya kita hanya bercanda. Namun, WIDYA terdorong dan tertabrak oleh mobil. Karena hal itu, aku tidak berani dekat dengan dia.",
+"type": &"dialogue"
+},
+"213": {
+"character": "Raka",
+"character_replacements": Array[Dictionary]([]),
+"id": "213",
+"next_id": "214",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Soal itu, aku turut berduka NEL.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Soal itu, aku turut berduka NEL.",
+"type": &"dialogue"
+},
+"214": {
+"character": "Nelly",
+"character_replacements": Array[Dictionary]([]),
+"id": "214",
+"next_id": "215",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Oh ya, terimakasih udah menemukan KOSTUM TOPENG milikku.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Oh ya, terimakasih udah menemukan KOSTUM TOPENG milikku.",
+"type": &"dialogue"
+},
+"215": {
+"character": "Raka",
+"character_replacements": Array[Dictionary]([]),
+"id": "215",
+"next_id": "216",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "NEL, kamu orang yang kuat! Aku turut prihatin dengan kejadian yang menimpa mu. Sebaiknya kau menjauhi orang seperti RATNA.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "NEL, kamu orang yang kuat! Aku turut prihatin dengan kejadian yang menimpa mu. Sebaiknya kau menjauhi orang seperti RATNA.",
+"type": &"dialogue"
+},
+"216": {
+"character": "Nelly",
+"character_replacements": Array[Dictionary]([]),
+"id": "216",
+"next_id": "217",
+"notes": "",
+"tags": PackedStringArray(),
+"text": "Hahaha, oh RAKA. garing amat sih",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hahaha, oh RAKA. garing amat sih",
+"type": &"dialogue"
+},
+"217": {
+"id": "217",
+"mutation": {
+"expression": Array[Dictionary]([{
+"type": "variable",
+"value": "GlobalItems"
+}, {
+"type": "dot"
+}, {
+"type": "variable",
+"value": "onCutscene"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "variable",
+"value": "false"
+}]),
+"is_blocking": true
+},
+"next_id": "218",
+"type": &"mutation"
+},
+"218": {
+"id": "218",
+"is_snippet": false,
+"next_id": "end",
+"type": &"goto"
 },
 "22": {
 "character": "Raka",
@@ -1640,6 +2832,101 @@ Andi: Makasih, Raka... Gue janji gak kabur lagi.
 set GlobalItems.onCutscene = false
 => END
 
+~ Act1Kantin
+set GlobalItems.onCutscene = true
+Raka: Nelly... ini punyamu, kah?
+Nelly: RAKA!, kok lu bisa nemuin benda itu? 
+- Oh ini punyamu
+- Lain kali jaga dong barangnya!
+- Aku rasa, aku nemu di Kotak Sampah
+Nelly: Eh... Aku sebenarnya aku ngga maksud membuangnya! Tapi aku terburu-buru karena aku ada urusan klub drama.
+- Boleh kubantu?
+	Nelly: Oh..., Lu punya nyali ya nawarin pekerjaan?
+	Nelly: Oke, bantu gua cari properti yang dibutuhin klub drama! Gua muak disuruh-suruh oleh ketua mata empat songong itu. Seluruh tugas yang dia kasih cuman untuk mengusirku dari ruangan klub. Dasar muka dua.
+	- Aku benci orang yg seperti itu.
+	- Cepat berikan saja informasinya.
+	- Barang apa yang harus kucari.
+	SURAT BARANG HILANG (NOTE)
+	PROPERTI UNTUK KLUB DRAMA
 
+	Tongkat Penyihir (sudah)
+	Jubah Merah (sudah)
+	TOPENG KOSTUM (HILANG!)
+
+	Note: Coba tanyakan ke WIDYA. Terakhir terlihat membawanya dari ruang properti ke perpustakaan.
+
+- Aku pergi...
+set GlobalItems.onCutscene = false
+=> END
+
+~ Act4Perpustakaan
+set GlobalItems.onCutscene = true
+Widya: Kamu anak baru yang dibicarakan itu ya?
+- Ada apa dengan TOPENG itu?
+	Widya: Dahulu, aku dan NELLY bersahabat dekat dan senang dengan hal-hal berbau film. Dia ingin menjadi aktris dan aku ingin menjadi Sutradara, sehingga kita berdua masuk klub drama. Namun semua berubah sejak kecelakaan yang mencederai kakiku, NELLY tampaknya merasa bersalah atas kejadian tersebut.
+	Widya: Dia menghindariku semenjak itu. Dia juga bergaul dengan anak bermasalah seperti EDI.
+	- Berikan Liontin
+		Widya: Liontin itu kan! Dari mana lu dapetin nya!
+		- Aku nemuinnya di Tong Sampah
+		- Terjatuh di lantai
+		Widya: Apa selama ini NELLY masih ingin berteman denganku? Aku memang teman yang jahat.
+		Raka: Bukannya terlalu cepat memberi asumsi seperti itu?
+	- Aku turut bersedih atas kecelakaan mu
+	Widya: Iya, gapapa. Aku baik-baik saja sekarang.
+	Raka: Baiklah, kalau begitu.
+- Baiklah.
+set GlobalItems.onCutscene = false
+=> END
+
+~ Act1Aula
+set GlobalItems.onCutscene = true
+Nelly: RAKA,..itu kan?
+Ratna: Lu kok ikut campur urusan kita sih. Sebaiknya lu pergi dari sini atau aku lapor kalian ke kepala sekolah!!
+Raka: Orang gila! Kenapa lu seenaknya ngelaporin kita ke kepala sekolah?
+Ratna: Kenapa? Kalian berdua adalah murid bermasalah, terutama NELLY, yang sudah mencederai anggota kita, apa dia ngga cerita ke lu?
+Nelly: Tidak! Jangan percaya ke dia.
+Widya: Cukup!
+- berpihak
+	Widya: RATNA!, Akui saja lu yang buang kostum itu kan? Aku udah dengar dari anggota klub lain. Lu ingin keluarin NELLY karena lu iri dia dekat dengan EDI kan?
+	Ratna: Ehh... Jangan ngomong sembarangan!
+	Widya: NELLY, aku minta maaf... Aku ga tahu kalau selama ini kamu masih mikirin aku.
+	Ratna: Terus lu mau apa? Gua Ketua nya disini! Orang cacat seperti lu ga usah ngatur gua dan klub ini!
+	Raka: WOI! Beraninya lu ngomong kaya gitu.
+	Widya: Cukup! Lu boleh jadi Ketua Klub ini di atas kertas, tapi hampir seluruh anggota klub drama tidak suka dengan kelakuan lu!
+	Murid: IYA!, jangan seenaknya ubah-ubah susunan pemain drama secara mendadak!
+	Murid: Kerumunan siswa anggota klub drama Ceritakan alasan kenapa uang kas klub drama juga berkurang karena keperluan lu!
+	Ratna: AHH, aku pergi.
+- tidak berpihak
+	Widya: RATNA!, hentikan perdebatan ini, jangan seenaknya menuduh orang. dan NELLY, kau sebaiknya jangan mendekati klub ini lagi
+	Nelly: Maksud lu? Lu percaya cerita yang disebarkan RATNA
+	Widya: Maksudku,...cukup. Aku sudah muak. Aku akan keluar dari klub ini
+	Nelly: WIDYA! Tapi kan…
+	Ratna: Heh, sudah saya prediksi WIDYA, kau tidak akan sanggup dengan kondisi fisik seperti itu, HAHAHAHA
+	Nelly: Aku juga akan keluar!
+set GlobalItems.onCutscene = false
+=> END
+
+~ Act2Kantin
+set GlobalItems.onCutscene = true
+- berpihak
+	Nelly: Aku minta maaf karena menjauh dari lu, WID WIDYA
+	Widya: Enggak kok, itu salah ku juga tidak memberi kabar lagi. Semoga dengan ini kita bisa berteman lagi.
+	Nelly: RAKA, aku juga berterimakasih kepadamu karena mencari KOSTUM drama milikku. Oh iya, nampaknya kamu WID WIDYA yang bakal jadi ketua Klub drama. Seluruh anggota terkesan dengan keberanian lu
+	Raka: Oh, jadi ini alasan kalian mentraktir ku sepiring bakso dan esteh. Thank you banget!
+	Widya: hah? Kita ga traktir lu sekarang, maksud ku setelah aku diangkat jadi ketua klub. Hehe
+	Raka: APA! Kok kalian ga bilang2
+	Widya: Sepertinya ada barangku yang ketinggalan di perpustakaan aku akan mengambilnya dahulu
+set GlobalItems.onCutscene = false
+=> END
+
+~ Act3Kantin
+set GlobalItems.onCutscene = true
+Nelly: Dulu, aku yang menyebabkan WIDYA menjadi seperti itu, awalnya kita hanya bercanda. Namun, WIDYA terdorong dan tertabrak oleh mobil. Karena hal itu, aku tidak berani dekat dengan dia.
+Raka: Soal itu, aku turut berduka NEL.
+Nelly: Oh ya, terimakasih udah menemukan KOSTUM TOPENG milikku.
+Raka: NEL, kamu orang yang kuat! Aku turut prihatin dengan kejadian yang menimpa mu. Sebaiknya kau menjauhi orang seperti RATNA.
+Nelly: Hahaha, oh RAKA. garing amat sih
+set GlobalItems.onCutscene = false
+=> END
 "
 metadata/dialogue_manager_version = "2.45.0"
