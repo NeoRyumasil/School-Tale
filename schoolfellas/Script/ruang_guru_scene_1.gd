@@ -13,7 +13,7 @@ func _ready() -> void:
 	pakJaka = get_node("Pak Jaka/Animation")
 	
 	pakJaka.play("IdleKiri")
-	player.play("IdleKanan")
+	player.play("IdleKiri")
 	pass # Replace with function body.
 
 

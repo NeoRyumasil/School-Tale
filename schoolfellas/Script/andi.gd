@@ -38,7 +38,7 @@ func _interaction():
 	elif GlobalItems.isDay2:
 		if !GlobalItems.Day2AndiTriggerGuru && !GlobalItems.Day2AndiTriggerLapangan:
 			dialogStart = "Act1Lapangan"
-		elif GlobalItems.Day2AndiTriggerLapangan && GlobalItems.Day2AndiTriggerGuru && GlobalItems.Day2AndiTriggerPerpus:
+		elif GlobalItems.Day2AndiTriggerGuru && GlobalItems.Day2AndiTriggerPerpus:
 			dialogStart = "Act1Gudang"
 		if !isChat:
 			DialogueManager.show_example_dialogue_balloon(load("res://Script/DialogCharacter/Day2.dialogue"), dialogStart)

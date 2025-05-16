@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://cidhql8q08piw"]
+[gd_scene load_steps=25 format=3 uid="uid://cidhql8q08piw"]
 
 [ext_resource type="Script" path="res://Script/ruang_guru_scene_1.gd" id="1_tl4a7"]
 [ext_resource type="Texture2D" uid="uid://bkuc8hjm41jwu" path="res://Asset/TileSet/EB9A2E4D-1BEB-402E-BF47-8192DE6351DB.png" id="2_kfkdw"]
@@ -12,6 +12,7 @@
 [ext_resource type="Script" path="res://Script/cameraLorong.gd" id="10_2ls7v"]
 [ext_resource type="Texture2D" uid="uid://bnekncxsf58ly" path="res://Asset/TileSet/2115675A-D06A-453E-933D-F5B18A5F5717.png" id="11_u3ncl"]
 [ext_resource type="PackedScene" uid="uid://cs5sgenl45jll" path="res://Character/pak_jaka.tscn" id="12_ipn14"]
+[ext_resource type="Script" path="res://Script/Scene_Trigger_RuangGuru.gd" id="13_kexfy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bigri"]
 texture = ExtResource("2_kfkdw")
@@ -5452,6 +5453,9 @@ texture = ExtResource("11_u3ncl")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_bb2s4")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e3a8l"]
+size = Vector2(204, 55)
+
 [node name="RuangGuru_Scene1" type="Node2D"]
 script = ExtResource("1_tl4a7")
 
@@ -5542,7 +5546,7 @@ position = Vector2(1510, 7)
 scale = Vector2(3, 3)
 
 [node name="Player" parent="." instance=ExtResource("9_1hw4f")]
-position = Vector2(693, 760)
+position = Vector2(741, -190)
 scale = Vector2(1.1, 1.1)
 
 [node name="Camera" type="Camera2D" parent="Player"]
@@ -5570,5 +5574,18 @@ tile_set = SubResource("TileSet_hjncf")
 format = 2
 
 [node name="Pak Jaka" parent="." instance=ExtResource("12_ipn14")]
-position = Vector2(1545, 1109)
+position = Vector2(1574, 161)
 scale = Vector2(1.5, 1.5)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(564, -69)
+scale = Vector2(3, 3)
+script = ExtResource("13_kexfy")
+
+[node name="Area2D" type="Area2D" parent="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/Area2D"]
+position = Vector2(196.667, 453.333)
+shape = SubResource("RectangleShape2D_e3a8l")
+
+[connection signal="body_entered" from="StaticBody2D/Area2D" to="StaticBody2D" method="_on_area_2d_body_entered"]

@@ -1,7 +1,12 @@
+res://Character/nelly.tscn
+res://Script/nelly.gd
+res://lorong.tscn
+res://Script/scene_trigger_lorong_kelas_gudang.gd
+res://Character/andi.tscn
+res://Script/andi.gd
 res://Intro.tscn
 res://kantin.tscn
 res://aula.tscn
-res://lorong.tscn
 res://lorong_kiri.tscn
 res://Character/widya.tscn
 res://ending.tscn
@@ -10,7 +15,10 @@ res://main_menu.tscn
 res://main_menu_UI.tscn
 res://intro_day_2.tscn
 res://map_parkiran_out.tscn
-res://Character/nelly.tscn
-res://Script/nelly.gd
 res://Character/guntur.tscn
 res://kantin_day_2_act_1.tscn
+res://lorong_day_2.tscn
+res://Character/faldo.tscn
+res://Object/toliet.tscn
+res://toilet.tscn
+res://Script/Lorong_to_perpus.gd

@@ -14,9 +14,9 @@ func _process(delta: float) -> void:
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.name == "Player" && !GlobalItems.Day2AndiTriggerGuru:
 		get_tree().change_scene_to_file("res://Object/perpustakaan.tscn")
-	elif body.name == "Player" && GlobalItems.Day2AndiTriggerGuru:
+	elif body.name == "Player" && GlobalItems.Day2AndiTriggerGuru && !GlobalItems.Day2AndiTriggerToilet:
 		get_tree().change_scene_to_file("res://perpustakaan_scene_1.tscn")
-	elif  body.name == "Player" && GlobalItems.Day2AndiTriggerPerpus:
+	elif  body.name == "Player" && GlobalItems.Day2AndiTriggerToilet:
 		get_tree().change_scene_to_file("res://perpustakaan_scene_3.tscn")
 	
 	if body.name == "Player" && GlobalItems.Day2NellyTriggerKantin:

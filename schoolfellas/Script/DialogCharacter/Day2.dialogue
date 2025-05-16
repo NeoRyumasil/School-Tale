@@ -38,6 +38,7 @@ if GlobalItems.haveBuku:
 		set GlobalItems.Day2AndiTriggerLapangan = true
 	- Hmmm... Aku gak suka baca buku sih
 		Andi: Oke...
+		set GlobalItems.Day2AndiTriggerLapangan = true
 else:
 	Sepertinya Andi senang membaca buku
 set GlobalItems.onCutscene = false
@@ -49,6 +50,7 @@ Pak Jaka: RAKA, kamu dipanggil ke ruang guru.
 Raka: Loh Ada apa pak?
 Pak Jaka: Datang saja
 set GlobalItems.onCutscene = false
+set GlobalItems.Day2AndiTriggerGuru = true
 do get_tree().change_scene_to_file("res://lorong_dari_kelas.tscn")
 => END
 
@@ -98,7 +100,6 @@ Raka: Ke toilet kali? Tapi dia nggak bilang apa-apa...
 set GlobalItems.onCutscene = false
 set GlobalItems.Day2AndiTriggerPerpus = true
 do get_tree().change_scene_to_file("res://lorong_kiri.tscn") 
-set GlobalItems.Day2AndiTriggerGuru = false
 => END
 
 ~ Act2LorongSekolah
